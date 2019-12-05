@@ -1,0 +1,20 @@
+{
+  "sidebar": [{
+      "section": "Introduction",
+      "topics": [{
+        "title": "Abstract Submission",
+        "slug": "abstract-submission"
+      }, {
+        "title": "About HSS 2020",
+        "slug": "about-hss-2020"
+      }]
+    },
+    {
+      "section": "Setup",
+      "topics": [{
+        "title": "Test",
+        "slug": "test"
+      }]
+    }
+  ]
+}
