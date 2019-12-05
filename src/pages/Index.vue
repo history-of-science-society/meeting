@@ -16,21 +16,9 @@
       </div>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut
-          link="/abstract-submission"
-          text="Submit an Abstract"
-          icon="edit-icon"
-        />
-        <Shortcut
-          link="/theme-configuration"
-          text="Find a Collaborator"
-          icon="user-plus-icon"
-        />
-        <Shortcut
-          link="/theme-configuration#changing-colors"
-          text="Support HSS"
-          icon="heart-icon"
-        />
+        <Shortcut link="/abstract-submission" text="Submit an Abstract" icon="edit-icon" />
+        <Shortcut link="/theme-configuration" text="Find a Collaborator" icon="user-plus-icon" />
+        <Shortcut link="/theme-configuration#changing-colors" text="Support HSS" icon="heart-icon" />
       </nav>
     </div>
   </Layout>
@@ -108,9 +96,13 @@ h1,
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 1.5em;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   // color: $volta;
+
+  @include respond-above(md) {
+    font-size: 2.5rem;
+  }
 
   div {
     margin: 0 0.75em;
