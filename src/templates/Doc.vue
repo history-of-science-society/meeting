@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <date />
     <h1>
       {{ $page.doc.title }}
     </h1>
@@ -21,7 +22,12 @@ query Doc ($path: String!) {
 </page-query>
 
 <script>
+import Date from "~/components/dateAndLocation.vue";
+
 export default {
+  components: {
+    Date
+  },
   metaInfo() {
     return {
       title: this.$page.doc.title,

@@ -16,7 +16,7 @@ import {
   EyeIcon,
   EditIcon,
   UserPlusIcon,
-  HeartIcon
+  MessageSquareIcon
 } from "vue-feather-icons";
 
 export default {
@@ -26,7 +26,7 @@ export default {
     EyeIcon,
     EditIcon,
     UserPlusIcon,
-    HeartIcon
+    MessageSquareIcon
   },
   props: {
     link: {

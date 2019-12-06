@@ -1,7 +1,7 @@
 ---
-title: Terms and Conditions
+title: About
 date: 2019-12-06 07:42:34
-slug: terms
+slug: about
 ---
 
 ## Terms and Conditions

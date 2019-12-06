@@ -6,14 +6,21 @@ import '~/assets/scss/globals.scss'
 import Vuex from 'vuex'
 require('typeface-source-sans-pro')
 
-export default function (Vue, { router, head, isClient, appOptions }) {
+export default function (Vue, {
+  router,
+  head,
+  isClient,
+  appOptions
+}) {
   Vue.use(Vuex)
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
   // Add attributes to HTML tag
-  head.htmlAttrs = { lang: 'en' }
+  head.htmlAttrs = {
+    lang: 'en'
+  }
 
   head.link.push({
     rel: 'manifest',
@@ -22,7 +29,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
 
   head.meta.push({
     name: 'theme-color',
-    content: '#10c186'
+    content: '#666633'
   })
 
   head.meta.push({
@@ -34,6 +41,8 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     name: 'apple-mobile-web-app-status-bar-style',
     content: 'default'
   })
+
+
 
   // State
   appOptions.store = new Vuex.Store({
