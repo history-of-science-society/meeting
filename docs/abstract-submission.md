@@ -6,7 +6,7 @@ slug: abstract-submission
 
 ## Submit an Abstract
 
-### General Rules and Guidelines
+**General Rules and Guidelines**
 
 - **Nonrecurrence Rule:** Anyone presenting an individual paper, flashtalk, or on an organized session or roundtable (including commentators) cannot appear on the meeting program in any other capacity. Please note that roundtable presenters are also subject to this rule. Exceptions are allowed for individuals serving more than one role in a single session (e.g., moderator and presenter) or as a presenter on one session, but organizer or moderators on another. Other allowances will be made for presenters in special circumstances.
 - **Registration Required:** When registration opens, all meeting participants must register for the meeting and pay the registration fee. Failure to pay this fee will result in removal from the program
@@ -14,7 +14,7 @@ slug: abstract-submission
 - **Selection Guidelines:** The Committee on Meetings and Programs (CoMP) has established a set of best practices and guidelines for proposal. Program chairs will look to these best practices and guidelines when accepting abstracts for the 2019 meeting.
 - **Format:** The submission form only accepts plain text, which disallows italics and bold. All titles should conform to the Chicago Manual of Style's title guidelines. Use a [title capitalization tool](https://thecapitalizer.com) to ensure your title conforms to CMS rules.
 
-### Submission Types
+**Submission Types**
 
 **Organized Session**
 
@@ -34,7 +34,7 @@ slug: abstract-submission
 
 ## Find a Collaborator
 
-### Collaboration
+**Collaboration**
 
 Historically, Organized Sessions enjoy the [highest acceptance rates](https://hssonline.org/report/submissions/#acceptance-and-rejection-rates). If you are looking for collaborators to join your panel or are looking for a panel to join, we recommend the following resources:
 

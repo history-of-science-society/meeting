@@ -1,19 +1,29 @@
 {
   "sidebar": [{
-      "section": "Introduction",
+      "section": "Welcome",
+      "topics": [{
+        "title": "HSS 2020",
+        "slug": "hss-2020"
+      }]
+    }, {
+      "section": "Abstract Submission",
       "topics": [{
         "title": "Abstract Submission",
         "slug": "abstract-submission"
-      }, {
-        "title": "About HSS 2020",
-        "slug": "about-hss-2020"
       }]
     },
     {
-      "section": "Setup",
+      "section": "Support HSS",
       "topics": [{
-        "title": "Test",
-        "slug": "test"
+        "title": "Advertising",
+        "slug": "advertising"
+      }]
+    },
+    {
+      "section": "About",
+      "topics": [{
+        "title": "Terms and Conditions",
+        "slug": "terms"
       }]
     }
   ]

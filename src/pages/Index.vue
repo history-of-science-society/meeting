@@ -16,9 +16,22 @@
       </div>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/abstract-submission" text="Submit an Abstract" icon="edit-icon" />
-        <Shortcut link="/theme-configuration" text="Find a Collaborator" icon="user-plus-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="Support HSS" icon="heart-icon" />
+        <Shortcut
+          link="/abstract-submission"
+          text="Submit an Abstract"
+          icon="edit-icon"
+        />
+        <Shortcut
+          link="/support-hss"
+          text="Support HSS"
+          icon="heart-icon"
+          class="support"
+        />
+        <Shortcut
+          link="/theme-configuration"
+          text="Find a Collaborator"
+          icon="user-plus-icon"
+        />
       </nav>
     </div>
   </Layout>

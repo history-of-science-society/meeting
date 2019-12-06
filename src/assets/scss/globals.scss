@@ -67,17 +67,28 @@ a {
 }
 
 .external-link {
+  display: inline-block;
+  width: 250px;
+  max-width: 100vw;
   padding: 0.5rem 0.75rem;
 
   border-radius: 9px;
   font-weight: 600;
-
+  text-align: center;
   text-decoration: none;
+  transition: all .1s ease;
+  @include box-shadow($small: true);
+
+  &:hover {
+    @include box-shadow($large: true);
+
+  }
 
 
   .dark & {
     background: $darkLink;
     color: $textBright;
+
   }
 
   .bright & {
@@ -85,4 +96,8 @@ a {
     color: $textDark;
   }
 
+}
+
+.markdown img {
+  max-width: 100%;
 }

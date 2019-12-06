@@ -12,7 +12,7 @@
     "@gridsome/remark-prismjs": "0.0.6",
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.4",
-    "@gridsome/vue-remark": "^0.1.9",
+    "@gridsome/vue-remark": "0.1.7",
     "eslint": "^6.7.2",
     "gridsome": "^0.7.0",
     "gridsome-plugin-algolia": "^2.1.1",
