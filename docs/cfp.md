@@ -96,7 +96,22 @@ All submissions require a title, abstract, and classification according to topic
 - Southeast Asia
 - Global or Multilocational
 
-## Submission Types
+## Find a Collaborator
+
+Historically, Organized Sessions enjoy the [highest acceptance rates](https://hssonline.org/report/submissions/#acceptance-and-rejection-rates). If you are looking for collaborators to join your panel or are looking for a panel to join, we recommend the following resources:
+
+- Check our [Collaboration Spreadsheet](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) to see panels in need of speakers. Alternatively, to find collaborators, submit your session via our [online form](https://hssonline.formstack.com/forms/collaboration).
+- On Twitter, use or search the hashtag [#hss20](https://twitter.com/search?q=%23hss20) to find collaborators.
+
+## Independent Scholar Award
+
+Thanks to a generous gift by HSS Member Virginia Trimble, the Society will offer an award of \$500 for the best abstract submitted by an independent scholar. Those scholars who are part of an organized session or who submit an individual paper are eligible. Simply indicate on the submission form if an author wishes to be considered for this award.
+
+## SHOT
+
+You will be given an option to indicate if you would like to have your proposal be reviewed by the SHOT program committee for inclusion on the SHOT program. Please do not submit a proposal to both societies.
+
+## Submit an Abstract
 
 <div class="submission-type">
 
@@ -151,10 +166,3 @@ As part of a special Presidential Session, the HSS invites graduate student prop
 
 </div>
 </div>
-
-## Find a Collaborator
-
-Historically, Organized Sessions enjoy the [highest acceptance rates](https://hssonline.org/report/submissions/#acceptance-and-rejection-rates). If you are looking for collaborators to join your panel or are looking for a panel to join, we recommend the following resources:
-
-- Check our [Collaboration Spreadsheet](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) to see panels in need of speakers. Alternatively, to find collaborators, submit your session via our [online form](https://hssonline.formstack.com/forms/collaboration).
-- On Twitter, use or search the hashtag [#hss20](https://twitter.com/search?q=%23hss20) to find collaborators.
