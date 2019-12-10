@@ -31,6 +31,8 @@ The submission form only accepts plain text, which disallows italics and bold. A
 
 ## Diversity
 
+A diverse community is necessary for the HSS to fulfill its mission statement, &ldquo;to foster interest in the history of science,&rdquo; and to help scholars tell the stories of science. Therefore, the HSS collects demographic information for the following purposes: to understand the composition of its submitting authors, members, meeting attendees, and website visitors; to identify underserved and under-represented communities; to formulate strategies to increase representation from affected communities; and to communicate this data with its members and the public.
+
 The HSS will give strong preference to sessions that reflect diversity in affiliation, employment status, country of residence, gender, race/ethnicity, and presentation history.
 
 Because of this committment to diversity, the HSS requires authors and organizers to provide the following demographic information for each person participating on the panel:
@@ -107,9 +109,9 @@ Historically, Organized Sessions enjoy the [highest acceptance rates](https://hs
 
 Thanks to a generous gift by HSS Member Virginia Trimble, the Society will offer an award of \$500 for the best abstract submitted by an independent scholar. Those scholars who are part of an organized session or who submit an individual paper are eligible. Simply indicate on the submission form if an author wishes to be considered for this award.
 
-## SHOT
+## Joint Session
 
-You will be given an option to indicate if you would like to have your proposal be reviewed by the SHOT program committee for inclusion on the SHOT program. Please do not submit a proposal to both societies.
+Session proposals addressing themes and issues with interest to both societies are particularly welcome and will be included in both programs as joint HSS and SHOT sessions. When submitting a proposal for a joint session, please make explicit in your session abstract why/how your session brings together approaches/themes/speakers of interest to both HSS and SHOT.
 
 ## Submit an Abstract
 

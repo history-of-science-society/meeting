@@ -32,8 +32,11 @@
     {
       "section": "About",
       "topics": [{
-        "title": "About",
-        "slug": "about"
+        "title": "Contact Us",
+        "slug": "contact-us"
+      }, {
+        "title": "Terms and Conditions",
+        "slug": "terms-and-conditions"
       }]
     }
   ]
