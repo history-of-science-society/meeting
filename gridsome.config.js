@@ -20,7 +20,9 @@ module.exports = {
   templates: {
     Doc: "/:slug"
   },
-  plugins: [{
+
+  plugins: [
+    {
       use: "@gridsome/source-filesystem",
       options: {
         path: "docs/**/*.md",
@@ -41,7 +43,7 @@ module.exports = {
       options: {
         cacheTime: 600000
       }
-    },
+    }
     // {
     //   use: "@gridsome/vue-remark",
     //   options: {

@@ -5,7 +5,7 @@ description: Submit an abstract to the History of Science Society 2020 Annual Me
 slug: cfp
 ---
 
-<span style="background: #663333; font-weight: 600; padding: .25rem .5rem; font-size: 1.2em">Deadline: Sunday, 1 March 2020 (23:59 EST)</span>
+<span class="deadline">Deadline: Sunday, 1&nbsp;March&nbsp;2020&nbsp;(23:59&nbsp;EST)</span>
 
 The History of Science Society (HSS) will hold its 2020 conference in one of the US’s more interesting cities: New Orleans. This will be a joint meeting with the Society for the History of Technology (SHOT). The Society encourages submissions on all topics. Proposals (2,000-character maximum per abstract) must be submitted via the HSS online submission form. Unlike many academic societies, the HSS does not require that participants be members, but all participants must register for the meeting.
 
@@ -28,6 +28,20 @@ The Committee on Meetings and Programs (CoMP) has established a set of best prac
 
 **Format**<br>
 The submission form only accepts plain text, which disallows italics and bold. All titles should conform to the Chicago Manual of Style's title guidelines. Use a [title capitalization tool](https://thecapitalizer.com) to ensure your title conforms to CMS rules.
+
+## Diversity
+
+The HSS will give strong preference to sessions that reflect diversity in affiliation, employment status, country of residence, gender, race/ethnicity, and presentation history.
+
+Because of this committment to diversity, the HSS requires authors and organizers to provide the following demographic information for each person participating on the panel:
+
+- Name
+- Email
+- Affiliation (e.g., university, institution, company, independent scholar, etc.)
+- Country of residence
+- Gender
+- Race and/or Ethnicity
+- Presentation history
 
 ## Abstract Classification
 

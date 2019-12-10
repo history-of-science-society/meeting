@@ -23,11 +23,7 @@
           icon="message-square-icon"
           class="support"
         />
-        <Shortcut
-          link="/cfp#find-a-collaborator"
-          text="Find a Collaborator"
-          icon="user-plus-icon"
-        />
+        <Shortcut link="/cfp#find-a-collaborator" text="Find a Collaborator" icon="user-plus-icon" />
       </nav>
     </div>
     <p class="tagline">{{ this.description }}</p>
@@ -81,15 +77,17 @@ export default {
   display: flex;
   flex-direction: column;
 }
+
 p.subheader {
   margin: 1.5em auto 0;
   font-weight: 100;
 }
+
 h1 {
   font-family: "Adobe Garamond Pro", "Hoefler", "Garamond", "Times New Roman",
     Times, serif;
   letter-spacing: 3px;
-  margin-top: 0;
+  margin-top: 3px;
 }
 
 h1,
@@ -113,7 +111,7 @@ h1,
   // color: $volta;
 
   @include respond-above(md) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   div {
@@ -134,7 +132,7 @@ h1,
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin: 0;
 }
 

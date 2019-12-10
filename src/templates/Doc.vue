@@ -5,7 +5,6 @@
       {{ $page.doc.title }}
     </h1>
     <div class="markdown" v-html="$page.doc.content" />
-    <!-- <VueRemarkContent /> -->
   </Layout>
 </template>
 
