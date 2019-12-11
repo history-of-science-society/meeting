@@ -5,7 +5,6 @@ slug: support
 ---
 
 import supportCard from '~/components/supportCard.vue'
-import externalLink from '~/components/externalLink.vue'
 
 ## Levels of Support
 
@@ -21,8 +20,6 @@ The following benefits correspond to the sponsorship, advertising, and exhibitio
 ## Exhibit
 
 The History of Science Society's book exhibit is the epicenter of the annual meeting. Attendees gather at the exhibit to meet with colleagues, peruse the latest titles in the field, to chat with potential publishers, and take a break from sessions.
-
-<externalLink link="https://hssonline.org/report/book-exhibit/">See our <em>virtual</em> 2019 book exhibit</externalLink>
 
 ## Advertise
 
