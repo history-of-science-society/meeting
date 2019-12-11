@@ -1,6 +1,6 @@
 <template>
-  <a :href="link" class="external-link">
-    {{ text }}
+  <a :href="link" class="external-link" target="_blank" rel="noopener">
+    <slot></slot>
     <external-link-icon />
   </a>
 </template>
@@ -15,10 +15,17 @@ export default {
     link: {
       type: String,
       required: true
-    },
-    text: {
-      type: String
     }
   }
 };
 </script>
+
+<style lang="scss">
+.external-link {
+  svg {
+    height: 1rem;
+    margin-left: 1px;
+    transform: translateY(0.15em);
+  }
+}
+</style>
