@@ -5,6 +5,7 @@ slug: support
 ---
 
 import supportCard from '~/components/supportCard.vue'
+import extLink from '~/components/externalLink.vue'
 
 ## Levels of Support
 
@@ -16,6 +17,8 @@ The following benefits correspond to the sponsorship, advertising, and exhibitio
 <supportCard id="3"><g-image src="~/components/img/einstein.jpg" class="support__img" /></supportCard>
 <supportCard id="4"><g-image src="~/components/img/darwin.png" class="support__img" /></supportCard>
 </div>
+
+<ext-link link="https://google.com">Test</ext-link>
 
 ## Exhibit
 
