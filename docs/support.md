@@ -5,7 +5,6 @@ slug: support
 ---
 
 import supportCard from '~/components/supportCard.vue'
-import extLink from '~/components/externalLink.vue'
 
 ## Levels of Support
 
