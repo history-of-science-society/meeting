@@ -4,7 +4,8 @@
     <h1>
       {{ $page.doc.title }}
     </h1>
-    <div class="markdown" v-html="$page.doc.content" />
+    <!-- <div class="markdown" v-html="$page.doc.content" /> -->
+    <VueRemarkContent class="markdown" />
   </Layout>
 </template>
 
@@ -14,7 +15,7 @@ query Doc ($path: String!) {
     title
     path
     date (format: "D. MMMM YYYY")
-    timeToRead
+
     content
   }
 }

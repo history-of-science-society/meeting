@@ -1,43 +1,44 @@
 {
-  "sidebar": [{
+  "sidebar": [
+    {
       "section": "Welcome",
-      "topics": [{
-        "title": "HSS 2020",
-        "slug": "welcome"
-      }]
+      "topics": [
+        {
+          "title": "HSS 2020",
+          "slug": "welcome"
+        }
+      ]
     },
     {
       "section": "Call for Papers",
-      "topics": [{
-        "title": "Submit an Abstract",
-        "slug": "cfp"
-      }]
+      "topics": [
+        {
+          "title": "Submit an Abstract",
+          "slug": "cfp"
+        }
+      ]
     },
     {
       "section": "Exhibitors, Sponsors, and Advertisers",
-      "topics": [{
-          "title": "Exhibitors",
-          "slug": "exhibitors"
-        },
+      "topics": [
         {
-          "title": "Sponsors",
-          "slug": "sponsors"
-        },
-        {
-          "title": "Advertisers",
-          "slug": "advertisers"
+          "title": "Support",
+          "slug": "support"
         }
       ]
     },
     {
       "section": "About",
-      "topics": [{
-        "title": "Contact Us",
-        "slug": "contact-us"
-      }, {
-        "title": "Terms and Conditions",
-        "slug": "terms-and-conditions"
-      }]
+      "topics": [
+        {
+          "title": "Contact Us",
+          "slug": "contact-us"
+        },
+        {
+          "title": "Terms and Conditions",
+          "slug": "terms-and-conditions"
+        }
+      ]
     }
   ]
 }

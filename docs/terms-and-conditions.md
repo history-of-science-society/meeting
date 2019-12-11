@@ -4,8 +4,6 @@ date: 2019-12-06 07:42:34
 slug: terms-and-conditions
 ---
 
-## Terms and Conditions
-
 **Privacy Policy**
 
 **Purpose of Collecting Your Information**

@@ -5,8 +5,7 @@ description: Contact the HSS about the 2020 annual meeting
 slug: contact-us
 ---
 
-<form class="form" method="post" novalidate enctype="multipart/form-data" action="https://www.formstack.com/forms/index.php"
-    class="fsForm fsSingleColumn fsMaxCol1" id="fsForm3462092">
+<form class="form" method="post" novalidate enctype="multipart/form-data" action="https://www.formstack.com/forms/index.php"id="fsForm3462092">
     <input type="hidden" name="form" value="3462092" />
     <input type="hidden" name="viewkey" value="WASlSFwc5D" />
     <input type="hidden" name="hidden_fields" id="hidden_fields3462092" value="" />
@@ -50,7 +49,7 @@ slug: contact-us
                             <input type="text" id="field77929774-first" name="field77929774-first" size="20"
                                 aria-label="First Name" value="" required class="fsField fsFieldName fsRequired"
                                 aria-required="true" />
-                            <label class="fsSupporting fsRequiredLabel" for="field77929774-first">First Name
+                            <label class="fsSupporting fsRequiredLabel" for="field77929774-first">First Name</label>
                         </div>
                         <div class="fsSubField fsNameLast">
                             <input type="text" id="field77929774-last" name="field77929774-last" size="20"

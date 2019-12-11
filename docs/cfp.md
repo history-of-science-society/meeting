@@ -107,7 +107,7 @@ Historically, Organized Sessions enjoy the [highest acceptance rates](https://hs
 
 ## Independent Scholar Award
 
-Thanks to a generous gift by HSS Member Virginia Trimble, the Society will offer an award of \$500 for the best abstract submitted by an independent scholar. Those scholars who are part of an organized session or who submit an individual paper are eligible. Simply indicate on the submission form if an author wishes to be considered for this award.
+Thanks to a generous gift by HSS Member Virginia Trimble, the Society will offer for the first time an award of $500 for the best abstract submitted by an independent scholar. Those scholars who are part of an organized session or who submit a contributed paper, and whose institutions do not consider these scholars to be working historians are eligible. If you meet this criteria and would like to be considered, please inform your organizer or select this option on the submission form.
 
 ## Joint Session
 

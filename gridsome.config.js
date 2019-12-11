@@ -17,21 +17,21 @@ function addStyleResource(rule) {
 module.exports = {
   siteName: "History of Science Society",
   siteUrl: "https://hssmeeting.org",
-  templates: {
-    Doc: "/:slug"
-  },
+  // templates: {
+  //   Doc: "/:slug"
+  // },
 
   plugins: [
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        path: "docs/**/*.md",
-        typeName: "Doc",
-        remark: {
-          plugins: ["@gridsome/remark-prismjs"]
-        }
-      }
-    },
+    // {
+    //   use: "@gridsome/source-filesystem",
+    //   options: {
+    //     path: "docs/**/*.md",
+    //     typeName: "Doc",
+    //     remark: {
+    //       plugins: ["@gridsome/remark-prismjs"]
+    //     }
+    //   }
+    // },
     {
       use: "@gridsome/plugin-google-analytics",
       options: {
@@ -43,15 +43,15 @@ module.exports = {
       options: {
         cacheTime: 600000
       }
+    },
+    {
+      use: "@gridsome/vue-remark",
+      options: {
+        typeName: "Doc", // Required
+        baseDir: "./docs", // Where .md files are located
+        template: "./src/templates/Doc.vue" // Optional
+      }
     }
-    // {
-    //   use: "@gridsome/vue-remark",
-    //   options: {
-    //     typeName: "Documentation", // Required
-    //     baseDir: "./docs", // Where .md files are located
-    //     template: "./src/templates/Doc.vue" // Optional
-    //   }
-    // }
   ],
   chainWebpack: config => {
     const types = ["vue-modules", "vue", "normal-modules", "normal"];

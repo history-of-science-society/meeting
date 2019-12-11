@@ -1,221 +1,214 @@
 .markdown {
-    img {
-        max-width: 100%;
-    }
+  img {
+    max-width: 100%;
+  }
 
-    li {
-        margin-bottom: .5rem;
-    }
+  li {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .external-link,
 .form-button {
-    display: inline-block;
-    width: 300px;
-    max-width: 100%;
-    padding: 0.5rem;
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  padding: 0.5rem;
 
-    border-radius: 9px;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.2s ease;
-    @include box-shadow($large: true);
+  border-radius: 9px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  @include box-shadow($large: true);
 
-    .dark & {
-        background: $darkLink;
-        color: $textBright;
+  .dark & {
+    background: $darkLink;
+    color: $textBright;
 
-        &:hover {
-            background: shade($darkLink, 35%);
-            @include box-shadow($small: true);
-        }
+    &:hover {
+      background: shade($darkLink, 35%);
+      @include box-shadow($small: true);
     }
+  }
 
-    .bright & {
-        background: $lightLink;
-        color: $textDark;
+  .bright & {
+    background: $brightLink;
+    color: $textDark;
 
-        &:hover {
-            background: shade($lightLink, 35%);
-            @include box-shadow($small: true);
-        }
+    &:hover {
+      background: shade($brightLink, 35%);
+      @include box-shadow($small: true);
     }
+  }
 }
 
-
 .subtitle {
-    font-size: x-large;
-    font-weight: 600;
-    display: block;
-    margin: 1.5em 0 0.25em;
-    position: relative;
+  font-size: x-large;
+  font-weight: 600;
+  display: block;
+  margin: 1.5em 0 0.25em;
+  position: relative;
 }
 
 .submission-type {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &__item {
+    min-width: 250px;
+    margin: 0.5rem;
+    flex: 1;
+    padding: 1rem;
+    border-radius: 9px;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-direction: column;
 
-    &__item {
-        min-width: 250px;
-        margin: .5rem;
-        flex: 1;
-        padding: 1rem;
-        border-radius: 9px;
-        display: flex;
-        flex-direction: column;
+    justify-content: space-between;
 
-        justify-content: space-between;
-
-        @include respond-above(md) {
-            width: calc(50% - 1rem);
-        }
-
-        .dark & {
-            border: 1px solid $textDark;
-        }
-
-        .bright & {
-            border: 1px solid $textBright;
-        }
+    @include respond-above(md) {
+      width: calc(50% - 1rem);
     }
 
+    .dark & {
+      border: 1px solid $textDark;
+    }
+
+    .bright & {
+      border: 1px solid $textBright;
+    }
+  }
 }
 
 .deadline {
-    background: #663333;
-    font-weight: 600;
-    padding: .25rem .5rem;
-    font-size: 1.1rem;
-    color: $textDark;
+  background: #663333;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.1rem;
+  color: $textDark;
 }
 
 // Form
 
 .form-button {
-    display: block;
-    width: auto;
-    padding: .5rem .75rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    border: none;
+  display: block;
+  width: auto;
+  padding: 0.5rem 0.75rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
 
-    &:focus .bright & {
-        outline: 2px dotted $darkLink;
-        outline-offset: 2px;
-    }
+  &:focus .bright & {
+    outline: 2px dotted $darkLink;
+    outline-offset: 2px;
+  }
 
-    &:focus .dark & {
-        outline: 2px dotted $lightLink;
-        outline-offset: 2px;
-    }
+  &:focus .dark & {
+    outline: 2px dotted $brightLink;
+    outline-offset: 2px;
+  }
 }
 
 .fsRow {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .form {
-    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    input {
-        width: 100%;
-        background: none;
-        border: none;
-        line-height: 1.2;
-        font-size: 1rem;
+  input {
+    width: 100%;
+    background: none;
+    border: none;
+    line-height: 1.2;
+    font-size: 1rem;
 
-        .bright & {
-            border-bottom: 2px dotted $lightLink;
-            color: $textBright;
-
-        }
-
-        .dark & {
-            border-bottom: 2px dotted $darkLink;
-            color: $textDark;
-        }
-
-        &:focus {
-            border-bottom-style: solid;
-            outline: none;
-        }
+    .bright & {
+      border-bottom: 2px dotted $brightLink;
+      color: $textBright;
     }
 
-    textarea {
-        display: block;
-        margin-top: .25rem;
-        width: 100%;
-        border: none;
-        background: none;
-        padding: .25rem;
-        font-size: 1rem;
-        line-height: 1.2;
-
-        .bright & {
-            color: $textBright;
-            border: 2px dotted $lightLink;
-
-        }
-
-        .dark & {
-            color: $textDark;
-            border: 2px dotted $darkLink;
-        }
-
-        &:focus {
-            border-style: solid;
-            outline: none;
-        }
+    .dark & {
+      border-bottom: 2px dotted $darkLink;
+      color: $textDark;
     }
 
-    fieldset {
-        .bright & {
-            border: 2px solid #bbb;
-
-        }
-
-        .dark & {
-            border: 2px solid $sidebarDark;
-        }
+    &:focus {
+      border-bottom-style: solid;
+      outline: none;
     }
+  }
+
+  textarea {
+    display: block;
+    margin-top: 0.25rem;
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.2;
+
+    .bright & {
+      color: $textBright;
+      border: 2px dotted $brightLink;
+    }
+
+    .dark & {
+      color: $textDark;
+      border: 2px dotted $darkLink;
+    }
+
+    &:focus {
+      border-style: solid;
+      outline: none;
+    }
+  }
+
+  fieldset {
+    .bright & {
+      border: 2px solid #bbb;
+    }
+
+    .dark & {
+      border: 2px solid $sidebarDark;
+    }
+  }
 }
 
 .form-name {
-    display: flex;
+  display: flex;
 
-    &>div {
-        flex: 1
-    }
+  & > div {
+    flex: 1;
+  }
 }
 
 .fsNameFirst {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .fsLabel {
-    font-weight: 600;
-
+  font-weight: 600;
 }
 
 .fsSupporting {
-    display: block;
-    margin-bottom: .5rem;
-    font-size: .8rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .required {
-    .dark & {
-        color: #B25250;
-    }
+  .dark & {
+    color: #b25250;
+  }
 
-    .bright & {
-        color: #663333;
-    }
-
+  .bright & {
+    color: #663333;
+  }
 }
 
 // .fsOptionLabel,

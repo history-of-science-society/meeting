@@ -23,7 +23,11 @@
           icon="message-square-icon"
           class="support"
         />
-        <Shortcut link="/cfp#find-a-collaborator" text="Find a Collaborator" icon="user-plus-icon" />
+        <Shortcut
+          link="/cfp#find-a-collaborator"
+          text="Find a Collaborator"
+          icon="user-plus-icon"
+        />
       </nav>
     </div>
     <p class="tagline">{{ this.description }}</p>
@@ -79,8 +83,9 @@ export default {
 }
 
 p.subheader {
-  margin: 1.5em auto 0;
-  font-weight: 100;
+  margin: 1.5rem auto 0.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -93,7 +98,7 @@ h1 {
 h1,
 .subheader {
   max-width: 600px;
-  margin: 0 auto 0.35em;
+  margin: 0 auto 1rem;
   text-align: center;
 
   @include respond-above(md) {
@@ -105,13 +110,13 @@ h1,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 4rem;
   font-size: 1.25rem;
   line-height: 1.2;
   // color: $volta;
 
   @include respond-above(md) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   div {
@@ -120,8 +125,9 @@ h1,
     svg {
       height: 1rem;
       width: 1rem;
-      margin-right: 0.25rem;
-      transform: translateY(0.07em);
+      margin-right: 0.15rem;
+      transform: translateY(0.1em);
+      stroke-width: 1px;
 
       @include respond-above(md) {
         height: 2rem;
