@@ -1,16 +1,17 @@
 <template>
   <a :href="link" class="external-link" target="_blank" rel="noopener">
     <slot></slot>
-    <external-link-icon />
+    <!-- <external-link-icon /> -->
   </a>
 </template>
 
 <script>
-import { ExternalLinkIcon } from "vue-feather-icons";
+// import { ExternalLinkIcon } from "vue-feather-icons";
+
 export default {
-  components: {
-    ExternalLinkIcon
-  },
+  // components: {
+  //   ExternalLinkIcon
+  // },
   props: {
     link: {
       type: String,
