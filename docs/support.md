@@ -4,7 +4,7 @@ date: 2019-12-11 07:42:34
 slug: support
 ---
 
-import externalLink from '~/components/externalLink.vue'
+import btnLink from '~/components/btnLink.vue'
 import supportCard from '~/components/supportCard.vue'
 
 ## Levels of Support
@@ -39,7 +39,7 @@ The History of Science Society's book exhibit is the epicenter of the annual mee
 | Additional | $215  | ❌                            |
 
 
-<externalLink link="https://google.com">Reserve a Table</externalLink>
+<btn-link link="https://google.com">Reserve a Table</btn-link>
 
 **Collective Book Exhibit (CBE)**
 
