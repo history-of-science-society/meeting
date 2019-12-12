@@ -1,6 +1,6 @@
 <template>
   <a :href="link" class="external-link" target="_blank" rel="noopener">
-    <!-- <external-link-icon /> -->
+    <slot></slot>
   </a>
 </template>
 
