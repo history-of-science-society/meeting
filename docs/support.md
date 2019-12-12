@@ -3,6 +3,7 @@ title: Support HSS 2020
 date: 2019-12-11 07:42:34
 slug: support
 ---
+
 import externalLink from '~/components/externalLink.vue'
 import supportCard from '~/components/supportCard.vue'
 
@@ -38,7 +39,7 @@ The History of Science Society's book exhibit is the epicenter of the annual mee
 | Additional | $215  | ❌                            |
 
 
-<external-link link="https://google.com">Reserve a Table</external-link>
+<externalLink link="https://google.com">Reserve a Table</externalLink>
 
 **Collective Book Exhibit (CBE)**
 
