@@ -1,16 +1,17 @@
 <template>
-  <a :href="link" class="external-link" target="_blank" rel="noopener">
+  <a :href="link" class="btn" target="_blank" rel="noopener">
     <slot></slot>
+    <external-link-icon />
   </a>
 </template>
 
 <script>
-// import { ExternalLinkIcon } from "vue-feather-icons";
+import { ExternalLinkIcon } from "vue-feather-icons";
 
 export default {
-  // components: {
-  //   ExternalLinkIcon
-  // },
+  components: {
+    ExternalLinkIcon
+  },
   props: {
     link: {
       type: String,
@@ -21,7 +22,10 @@ export default {
 </script>
 
 <style lang="scss">
-.external-link {
+.btn {
+  padding: 0.25rem 0.5rem;
+  margin: 1rem 0;
+
   svg {
     height: 1rem;
     margin-left: 1px;

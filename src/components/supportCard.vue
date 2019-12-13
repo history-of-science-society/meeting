@@ -1,9 +1,7 @@
 <template>
   <div class="support__card">
     <div class="support__header">
-      <p>
-        {{ computedHeader }}
-      </p>
+      <p>{{ computedHeader }}</p>
     </div>
     <slot></slot>
     <div class="support__body">
@@ -98,20 +96,24 @@ export default {
     flex-direction: column;
     width: 20rem;
     margin: 1rem;
-    @include box-shadow($large: true) // padding: 0.5rem;;;;;;;;;;;;;;;;;
+    @include box-shadow($large: true);
+    @include respond-above(lg) {
+      width: 22rem;
+    }
   }
 
   &__header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
-    font-size: 1.2rem;
-    font-weight: 700;
+    height: 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     padding: 0.25rem;
     margin: 0;
     line-height: 1.1;
     text-align: center;
+    text-transform: uppercase;
 
     & > p {
       margin: 0;
@@ -138,6 +140,24 @@ export default {
   &__body {
     padding: 0.5rem;
     flex: 1;
+  }
+
+  &__footer {
+    height: 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.25rem;
+    margin: 0;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $accent;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: scale-color($accent, $lightness: -25%);
+    }
   }
 }
 </style>

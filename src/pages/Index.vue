@@ -122,7 +122,7 @@ h1,
       height: 1rem;
       width: 1rem;
       margin-right: 0.15rem;
-      transform: translateY(0.1em);
+      transform: translateY(0.3em);
       stroke-width: 1px;
 
       @include respond-above(md) {
