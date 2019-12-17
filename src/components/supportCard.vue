@@ -144,16 +144,24 @@ export default {
 
   &__footer {
     height: 3rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding: 0.25rem;
+
     margin: 0;
-    line-height: 1.1;
+
+    line-height: 3rem;
     text-align: center;
     text-transform: uppercase;
     background-color: $accent;
     text-decoration: none;
     transition: background-color 0.2s ease;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    a {
+      color: $textBright;
+      text-decoration: none;
+    }
 
     &:hover {
       background-color: scale-color($accent, $lightness: -25%);

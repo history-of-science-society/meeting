@@ -119,25 +119,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.support__benefits {
-  padding-bottom: 0.15rem;
-  .dark & {
-    border-bottom: 1px solid $sidebarBright;
-  }
-  .bright & {
-    border-bottom: 1px solid $sidebarDark;
-  }
-}
-
-.support__link {
-  height: 100%;
-  width: 100%;
-  display: block;
-  line-height: 2.5rem;
-  text-decoration: none;
-  .bright &,
-  .dark & {
-    color: #ffffff;
-  }
-}
 </style>

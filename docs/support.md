@@ -7,6 +7,7 @@ slug: support
 import btnLink from '~/components/btnLink.vue'
 import supportCard from '~/components/supportCard.vue'
 import adCard from '~/components/adCard.vue'
+import sponsorCard from '~/components/sponsorCard.vue'
 
 ## Levels of Support
 
@@ -60,21 +61,26 @@ Don't need an entire table? Ship your titles to NOLA to be exhibited individuall
 
 <div class="support__box">
 <adCard id="1"><g-image src="~/components/img/program.jpg" class="support__img" /></adCard>
-</div>
 
 <adCard id="2"><g-image src="~/components/img/newsletter.jpg" class="support__img" /></adCard>
-</div>
 
 <adCard id="3"><g-image src="~/components/img/banner.jpg" class="support__img" /></adCard>
-</div>
 
 <adCard id="4"><g-image src="~/components/img/packet-inserts.jpg" class="support__img" /></adCard>
-</div>
 
 <adCard id="5"><g-image src="~/components/img/lanyard.jpg" class="support__img" /></adCard>
-</div>
 
 <adCard id="6"><g-image src="~/components/img/folder.png" class="support__img" /></adCard>
 </div>
 
 ## Sponsor
+
+<div class="support__box">
+<sponsorCard id="1"><g-image src="~/components/img/coffee.jpg" class="support__img" /></sponsorCard>
+
+<sponsorCard id="2"><g-image src="~/components/img/breakfast.jpg" class="support__img" /></sponsorCard>
+
+<sponsorCard id="3"><g-image src="~/components/img/mixer.jpg" class="support__img" /></sponsorCard>
+
+<sponsorCard id="4"><g-image src="~/components/img/reception.jpg" class="support__img" /></sponsorCard>
+</div>
