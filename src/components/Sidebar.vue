@@ -16,6 +16,7 @@
               <g-link class="topic" :to="'/' + item.slug">{{
                 item.title
               }}</g-link>
+
               <ul
                 v-if="checkAnchors(node.slug, item.slug)"
                 v-for="{ node } in $static.docs.edges"
@@ -102,7 +103,6 @@ export default {
         let section = document.querySelector(link.hash);
         let allCurrent = document.querySelectorAll(".current"),
           i;
-
         if (section.offsetTop <= fromTop) {
           for (i = 0; i < allCurrent.length; ++i) {
             allCurrent[i].classList.remove("current");
@@ -124,6 +124,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.topic + ul {
+  display: none;
+}
+
+.topic.active + ul {
+  display: block;
+}
 .sidebar {
   transition: background 0.15s ease-in-out, transform 0.15s ease-in-out,
     border-color 0.15s linear;

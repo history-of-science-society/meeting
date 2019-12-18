@@ -1,36 +1,35 @@
 {
-  "sidebar": [
-    {
+  "sidebar": [{
       "section": "Welcome",
-      "topics": [
-        {
-          "title": "HSS 2020",
-          "slug": "welcome"
-        }
-      ]
+      "topics": [{
+        "title": "HSS 2020",
+        "slug": "welcome"
+      }]
     },
     {
       "section": "Call for Papers",
-      "topics": [
-        {
-          "title": "Submit an Abstract",
-          "slug": "cfp"
-        }
-      ]
+      "topics": [{
+        "title": "Submit an Abstract",
+        "slug": "cfp"
+      }]
     },
     {
       "section": "Exhibitors, Sponsors, and Advertisers",
-      "topics": [
-        {
-          "title": "Support",
-          "slug": "support"
-        }
-      ]
+      "topics": [{
+        "title": "Support",
+        "slug": "support"
+      }]
+    },
+    {
+      "section": "Grants",
+      "topics": [{
+        "title": "Travel Grants",
+        "slug": "travel-grants"
+      }]
     },
     {
       "section": "About",
-      "topics": [
-        {
+      "topics": [{
           "title": "Contact Us",
           "slug": "contact-us"
         },
