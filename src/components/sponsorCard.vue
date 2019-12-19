@@ -33,7 +33,7 @@ export default {
           body: [
             "Coffee Break Sponsorship: $500+",
             "Sponsors enjoy all Ptolemy-Level Benefits, including acknowledgment on HSS meeting website, personalized sponsor page on meeting website, and more",
-            'Deadline: XXXX 2019"'
+            'Deadline: 16 August 2020"'
           ],
           footer: "Sponsor a Coffee Break"
         },
@@ -44,7 +44,8 @@ export default {
             "Established in 1973, the HSS Women’s Caucus was founded to evaluate and improve the continuing status of women in the history of science. HSS provides assistance for the breakfasts, especially so that students can attend without cost",
           body: [
             "WC Breakfast Sponsorship: $500+",
-            "Reception sponsors enjoy all Ptolemy-Level Benefits, including acknowledgment on HSS meeting website, personalized sponsor page on meeting website, and more"
+            "Reception sponsors enjoy all Ptolemy-Level Benefits, including acknowledgment on HSS meeting website, personalized sponsor page on meeting website, and more",
+            "Deadline: 16 August 2020"
           ],
           footer: "Sponsor the WC Breakfast"
         },
@@ -56,7 +57,7 @@ export default {
           body: [
             "Mixer Sponsorship: $500+",
             "Reception sponsors enjoy all Ptolemy-Level Benefits, including acknowledgment on HSS meeting website, personalized sponsor page on meeting website, and more",
-            "Deadline: XXXX"
+            "Deadline: 16 August 2020"
           ],
           footer: "Sponsor the Mixer"
         },
@@ -68,7 +69,7 @@ export default {
           body: [
             "Reception Sponsorship: $2,000+",
             "Reception sponsors enjoy all Einstein-Level Benefits, including branded signage, complimentary registration for two, and more",
-            "Deadline: xxxx"
+            "Deadline: 16 August 2020"
           ],
           footer: "Sponsor a Reception"
         }

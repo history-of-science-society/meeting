@@ -48,7 +48,8 @@ slug: contact-us
                         <div class="fsSubField fsNameFirst">
                             <input type="text" id="field77929774-first" name="field77929774-first" size="20"
                                 aria-label="First Name" value="" required class="fsField fsFieldName fsRequired"
-                                aria-required="true" />
+                                aria-required="true"
+                                autofocus/>
                             <label class="fsSupporting fsRequiredLabel" for="field77929774-first">First Name</label>
                         </div>
                         <div class="fsSubField fsNameLast">

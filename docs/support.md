@@ -20,7 +20,6 @@ The following benefits correspond to the sponsorship, advertising, and exhibitio
 <supportCard id="4"><g-image src="~/components/img/darwin.png" class="support__img" /></supportCard>
 </div>
 
-
 ## Exhibit
 
 **Book Exhibit**
@@ -54,7 +53,7 @@ Don't need an entire table? Ship your titles to NOLA to be exhibited individuall
 | 2          | $50   |
 | Additional | $40   |
 
-*Titles must arrive in NOLA by XXXX Oct 2020*
+*Shipping dates &amp; details TBD*
 
 <btn-link link="https://google.com">Join the CBE</btn-link>
 

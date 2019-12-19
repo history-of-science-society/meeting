@@ -13,7 +13,9 @@
       </ul>
     </div>
     <div class="support__footer">
-      <a href="#" class="support__link" target="blank" rel="noopener">{{ computedFooter }}</a>
+      <a href="#" class="support__link" target="blank" rel="noopener">{{
+        computedFooter
+      }}</a>
     </div>
   </div>
 </template>
@@ -33,7 +35,7 @@ export default {
             "Inside Cover: $400",
             'Size: 4.25" x 7"',
             "Format: High-Resolution PDF",
-            "Deadline: 15 Aug 2019"
+            "Deadline: 1 September 2019"
           ],
           footer: "Reserve a Program Ad"
         },
@@ -46,8 +48,8 @@ export default {
             'Full-Page Ad (9" x 7.5"): $500',
             'Vertical Half-Page Ad (4.5" x 5.5"): $300',
             'Quarter-Page Ad (3" x 5"): $150',
-            "Deadline for July 2020 issue: 1 Jun 2020",
-            "Deadline for October 2020 issue: 1 Sep 2020",
+            "Deadline for July 2020 issue: 1 June 2020",
+            "Deadline for October 2020 issue: 1 September 2020",
             "<em>Book for both issues and get your second ad half price</em>"
           ],
           footer: "Reserve a Newsletter Ad"
@@ -68,7 +70,7 @@ export default {
           body: [
             "(1) packet insert to be included with registration materials: $475",
             'Inserts must fit within a 9" x 12" envelope or folder',
-            "Organization must ship inserts to arrive at meeting location no later than ------"
+            "Dates and details TBD"
           ],
           footer: "Reserve Packet Inserts"
         },
@@ -77,7 +79,7 @@ export default {
           header: "Branded Lanyards",
           description:
             "Stand out at our annual meeting by sponsoring customized lanyards, branded with your company name and logo. These lanyards hold the name badges that our attendees brandish with gusto.",
-          body: ["Branded Lanyards: $TBD", "Deadline: 15 March 2019"],
+          body: ["Branded Lanyards: ---", "Deadline: 16 August 2020"],
           footer: "Reserve Branded Lanyards"
         },
         {
@@ -85,7 +87,7 @@ export default {
           header: "Branded Folders",
           description:
             "Help deliver our meeting materials in style! These customized folders will feature your company name and logo, with the addition of any other information you would like to communicate. Every attendee will receive this folder upon check in.",
-          body: ["Branded Folders: $TBD", "Deadline: 15 March 2019"],
+          body: ["Branded Folders: ---", "Deadline: 16 August 2020"],
           footer: "Reserve Branded Folders"
         }
       ]
@@ -118,5 +120,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

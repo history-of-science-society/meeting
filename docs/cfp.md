@@ -1,6 +1,6 @@
 ---
 title: Submit an Abstract
-date: 2018-09-15 07:42:34
+date: 2019-12-19 07:42:34
 description: Submit an abstract to the History of Science Society 2020 Annual Meeting
 slug: cfp
 ---
@@ -33,14 +33,13 @@ The submission form only accepts plain text, which disallows italics and bold. A
 
 A diverse community is necessary for the HSS to fulfill its mission statement, &ldquo;to foster interest in the history of science,&rdquo; and to help scholars tell the stories of science. Therefore, the HSS collects demographic information for the following purposes: to understand the composition of its submitting authors, members, meeting attendees, and website visitors; to identify underserved and under-represented communities; to formulate strategies to increase representation from affected communities; and to communicate this data with its members and the public.
 
-The HSS will give strong preference to sessions that reflect diversity in affiliation, employment status, country of residence, gender, race/ethnicity, and presentation history.
+The HSS will give strong preference to sessions that reflect diversity in affiliation, employment status, gender, race/ethnicity, and presentation history.
 
 Because of this committment to diversity, the HSS requires authors and organizers to provide the following demographic information for each person participating on the panel:
 
 - Name
 - Email
 - Affiliation (e.g., university, institution, company, independent scholar, etc.)
-- Country of residence
 - Gender
 - Race and/or Ethnicity
 - Presentation history
@@ -109,7 +108,7 @@ Historically, Organized Sessions enjoy the [highest acceptance rates](https://hs
 
 Thanks to a generous gift by HSS Member Virginia Trimble, the Society will offer for the first time an award of $500 for the best abstract submitted by an independent scholar. Those scholars who are part of an organized session or who submit a contributed paper, and whose institutions do not consider these scholars to be working historians are eligible. If you meet this criteria and would like to be considered, please inform your organizer or select this option on the submission form.
 
-## Joint Session
+## HSS/SHOT Joint Session
 
 Session proposals addressing themes and issues with interest to both societies are particularly welcome and will be included in both programs as joint HSS and SHOT sessions. When submitting a proposal for a joint session, please make explicit in your session abstract why/how your session brings together approaches/themes/speakers of interest to both HSS and SHOT.
 

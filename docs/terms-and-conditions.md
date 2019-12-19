@@ -4,7 +4,7 @@ date: 2019-12-06 07:42:34
 slug: terms-and-conditions
 ---
 
-**Privacy Policy**
+## Privacy Policy
 
 **Purpose of Collecting Your Information**
 
@@ -36,7 +36,7 @@ When you submit information for the HSS Annual Meeting, you should be aware that
 
 Upon registering for a HSS event, you are providing HSS the irrevocable right to use your photograph. Such use may include but is not limited to hosting photographs on the Society or related website(s), social media or email campaigns, or in promotional materials. Any claim to remove a photograph from a website or media controlled by HSS must be submitted via the contact form on the meeting website or by email to HSS. Whenever possible, HSS will honor such requests; however, the Society will not guarantee the removal of photographs.
 
-**Respectful Behavior Policy**
+## Respectful Behavior Policy
 
 Freedom of expression and vigorous debate are crucial to scholarly exchange. The History of Science Society strongly values mutual respect and strives to provide an environment for exchange that is free from bias and intimidation. The Society is dedicated to securing a safe, hospitable, and productive environment for everyone. Accordingly, the Society deplores all harassment and is sensitive to the harm suffered by persons who experience it. We expect speakers and questioners at our meetings to demonstrate self-control and civility, even in the midst of strong disagreement, and not to engage in ad hominem attacks. Furthermore, we expect those participating in the Society’s meetings and events to treat others with respect and not to engage in behavior that is discriminatory, intimidating, threatening, or harassing. This expectation applies to our speakers, staff, volunteers, and attendees.
 
@@ -56,6 +56,6 @@ Contact the [Society Ombudsperson](mailto:ombudsperson@hssonline.org).
 
 _Approved by HSS Council, 7 June 2017_
 
-**Statement on Scholarly Conduct**
+## Statement on Scholarly Conduct
 
 The HSS believes scholarly conduct should adhere to the highest ethical and professional standards. The Society expects contributors to its publications and meetings to present original work that respects the integrity of the research process and that conforms to rigorous standards in the citation and acknowledgment of the work of other scholars. The American Historical Association’s [Statement on Standards of Professional Conduct](https://www.historians.org/jobs-and-professional-development/statements-standards-and-guidelines-of-the-discipline/statement-on-standards-of-professional-conduct) is a useful guide.
