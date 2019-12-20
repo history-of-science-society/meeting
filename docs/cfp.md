@@ -5,6 +5,8 @@ description: Submit an abstract to the History of Science Society 2020 Annual Me
 slug: cfp
 ---
 
+import btnLink from '~/components/btnLink.vue'
+
 <div class="deadline"><span class="inner-deadline">Deadline:</span> 1&nbsp;March&nbsp;2020&nbsp;(23:59&nbsp;EST)</div>
 
 The History of Science Society (HSS) will hold its 2020 conference in one of the US’s more interesting cities: New Orleans. This will be a joint meeting with the Society for the History of Technology (SHOT). The Society encourages submissions on all topics. Proposals (2,000-character maximum per abstract) must be submitted via the HSS online submission form. Unlike many academic societies, the HSS does not require that participants be members, but all participants must register for the meeting.
@@ -47,12 +49,12 @@ All submissions require a title, abstract, and classification according to topic
 
 **Topics**
 
-- **Tools for Historians of Science:** careers, general histories of science, historiography, interdisciplinary or multitopic approaches, pedagogy, popular history of science, reference works and repositories, social engagement
+- **Tools for Historians of Science:** careers, general histories of science, historiography, interdisciplinary or multi-topic approaches, pedagogy, popular history of science, reference works and repositories, social engagement
 - **Theoretical Approaches to the Study of Science:** historians, history of science as a discipline, Science and Technology Studies, science studies, Sociology of Scientific Knowledge (SSK)
 - **Thematic Approaches to the Study of Science:** arts & literature, economic, ethics, gender, law, politics, race and ethnicity, religion, war
 - **Aspects of Scientific Practice/Organization:** instruments and measurements, military funding of science, patronage, research and development ethics, science policy, scientific institutions and societies, scientific publication
 - **Biology:** biochemistry, botany, ecology, evolutionary biology, genetics, great chain of being, model organisms, molecular biology, natural history, speciation, zoology
-- **Chemistry:** alchemy, atomic theory, atomism, chemical revolution, electrochemistry, periodic system
+- **Chemistry:** alchemy, atomic theory, atomism, chemical revolution, electrochemistry, periodic table/system
 - **Earth and Environmental Sciences:** age of the earth, geography, geology, paleontology, volcanology
 - **Mathematics:** ethnomathematics, general, paleolithic, neolithic, indigenous cultures of the Americas, other indigenous cultures (non-European), indigenous European cultures (pre-Greek, etc.), Egyptian, Babylonian, Greek, Roman, China, Japan, Southeast Asia, Islam (medieval), India, medieval, 15th and 16th centuries, renaissance, 17th century, 18th century, 19th century, 20th century, twenty-first century, contemporary
 - **Medicine and Health:** anatomy, germ theory, nutrition, pharmacy, psychiatry, psychology, public health, wound care
@@ -161,3 +163,7 @@ As part of a special Presidential Session, the HSS invites graduate student prop
 
 </div>
 </div>
+
+## Download the CFP
+
+<btn-link link="http://bit.ly/hss-cfp">Call for Papers (Google Doc)</btn-link>
