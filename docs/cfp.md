@@ -24,25 +24,22 @@ Anyone who appears on the program must register for the meeting. Failure to pay 
 All abstracts must be 2,000 characters or fewer (about 250 words).
 
 **Selection Guidelines**<br>
-The Committee on Meetings and Programs (CoMP) has established a set of best practices and guidelines for proposal. Program chairs will look to these best practices and guidelines when accepting abstracts for the meeting.
+The *Committee on Meetings and Programs (CoMP)* has established a set of [best practices and guidelines](http://bit.ly/comp-guidelines) for proposal. Program chairs will look to these best practices and guidelines when accepting abstracts for the meeting.
 
 **Format**<br>
 The submission form only accepts plain text, which disallows italics and bold. All titles should conform to the Chicago Manual of Style's title guidelines. Use a [title capitalization tool](https://thecapitalizer.com) to ensure your title conforms to CMS rules.
 
 ## Diversity
 
-A diverse community is necessary for the HSS to fulfill its mission statement, &ldquo;to foster interest in the history of science,&rdquo; and to help scholars tell the stories of science. Therefore, the HSS collects demographic information for the following purposes: to understand the composition of its submitting authors, members, meeting attendees, and website visitors; to identify underserved and under-represented communities; to formulate strategies to increase representation from affected communities; and to communicate this data with its members and the public.
+**Why we collect demographic data**
 
-The HSS will give strong preference to sessions that reflect diversity in affiliation, employment status, gender, race/ethnicity, and presentation history.
+Driven by our mission “to foster interest in the history of science,” the HSS collects demographic information to understand the composition of its submitting authors, members, and meeting attendees; to identify under-served and under-represented communities; to formulate strategies to increase representation across communities; and to communicate aggregate, anonymized demographic data to its members and the public.
 
-Because of this committment to diversity, the HSS requires authors and organizers to provide the following demographic information for each person participating on the panel:
+We are cautious of the exploitation enabled by demographic data collection. Therefore, we are committed to collecting information in a manner that is voluntary, promotes self-description, and is purposeful. The information will be used by the program co-chairs to guide their construction of the program with the goal of achieving balance in demographic characteristics and maximizing representativeness among the society’s communities.
 
-- Name
-- Email
-- Affiliation (e.g., university, institution, company, independent scholar, etc.)
-- Gender
-- Race and/or Ethnicity
-- Presentation history
+The structure of this questionnaire is still in a pilot phase. We welcome your feedback via our <g-link to="/contact-us/">contact form</g-link>.
+
+*–Committee on Diversity and Inclusion*
 
 ## Abstract Classification
 
@@ -99,10 +96,7 @@ All submissions require a title, abstract, and classification according to topic
 
 ## Find a Collaborator
 
-Historically, Organized Sessions enjoy the [highest acceptance rates](https://hssonline.org/report/submissions/#acceptance-and-rejection-rates). If you are looking for collaborators to join your panel or are looking for a panel to join, we recommend the following resources:
-
-- Check our [Collaboration Spreadsheet](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) to see panels in need of speakers. Alternatively, to find collaborators, submit your session via our [online form](https://hssonline.formstack.com/forms/collaboration).
-- On Twitter, use or search the hashtag [#hss20](https://twitter.com/search?q=%23hss20) to find collaborators.
+To encourage and aid the creation of panels with strong thematic coherence that draw upon historians of science across institutions and ranks, the HSS has created a [collaboration form](https://hssonline.formstack.com/forms/collaboration) to submit proposals in need of panelists and a [spreadsheet to review](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) submitted proposals. Anyone with a panel, paper, or roundtable idea seeking like-minded presenters should post and consult the postings on [the spreadsheet](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) to round out a prospective session.
 
 ## Independent Scholar Award
 
@@ -110,7 +104,7 @@ Thanks to a generous gift by HSS Member Virginia Trimble, the Society will offer
 
 ## HSS/SHOT Joint Session
 
-Session proposals addressing themes and issues with interest to both societies are particularly welcome and will be included in both programs as joint HSS and SHOT sessions. When submitting a proposal for a joint session, please make explicit in your session abstract why/how your session brings together approaches/themes/speakers of interest to both HSS and SHOT.
+Session proposals addressing themes and issues with interest to both societies are particularly welcome and will be included in both HSS and SHOT programs as joint sessions. When submitting a proposal for a joint session, please make explicit in your session abstract why/how your session brings together approaches/themes/speakers of interest to both HSS and SHOT. Additionally, select the option for joint session inclusion on the abstract form. Finally, authors and organizers must submit their proposals to the HSS and SHOT.
 
 ## Submit an Abstract
 
@@ -122,7 +116,7 @@ Session proposals addressing themes and issues with interest to both societies a
 
 **Organized Session**
 
-A panel about a common theme, consisting of an organizer, chair, and presenters. The organizer submits all abstracts and presenter information. In addition to an organizer and chair, possible configurations include the following: 3 speakers and 1 commentator, 4 speakers, 4 speakers and 1 commentator, and 5 speakers.
+A panel about a common theme, consisting of an organizer, chair, and presenters. The organizer submits all abstracts and presenter information. In addition to an organizer and chair, possible configurations include 3 speakers and 1 commentator/panel discussion or 4 speakers.
 
 </div>
 
@@ -147,7 +141,7 @@ A presentation on the history of science no longer than 20 minutes.
 
 **Roundtable**
 
-Facilitated discussion about a topic in the history of science or about the profession. Roundtable sessions may include 4 to 8 speakers. Roundtable speakers are not permitted to present on the program in any other fashion.
+To facilitate dialogue at its annual meeting, the History of Science Society requests proposals for roundtables. Roundtable participants may not present in another session. The typical roundtable will feature 5 presenters, including a commentator, who will each speak for 10 minutes or less, leaving ample time for exchanges with the audience. (Roundtables may include from 4 to 8 total speakers.)
 
 </div>
 

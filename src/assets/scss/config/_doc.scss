@@ -93,6 +93,26 @@
 
   }
 
+  blockquote {
+    font-size: 1.2rem;
+    border-left-style: solid;
+    border-left-width: 3px;
+    padding: 1rem;
+    font-weight: 600;
+
+    .bright & {
+      background: $sidebarBright;
+      border-left-color: $brightLink;
+
+    }
+
+    .dark & {
+      background: $sidebarDark;
+      border-left-color: $darkLink;
+
+    }
+  }
+
 
   table {
     width: 100%;
