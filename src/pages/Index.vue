@@ -23,7 +23,11 @@
           icon="message-square-icon"
           class="support"
         />
-        <Shortcut link="/cfp#find-a-collaborator" text="Find a Collaborator" icon="user-plus-icon" />
+        <Shortcut
+          link="/cfp#find-a-collaborator"
+          text="Find a Collaborator"
+          icon="user-plus-icon"
+        />
       </nav>
     </div>
     <p class="tagline">{{ this.description }}</p>
@@ -117,12 +121,12 @@ h1,
 
   div {
     margin: 0 0.75em;
+    display: flex;
 
     svg {
       height: 1rem;
       width: 1rem;
       margin-right: 0.15rem;
-      transform: translateY(0.3em);
       stroke-width: 1px;
 
       @include respond-above(md) {
