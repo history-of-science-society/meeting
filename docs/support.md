@@ -41,7 +41,7 @@ The History of Science Society's book exhibit is the epicenter of the annual mee
 | Additional | $215  | ❌                            |
 
 
-<btn-link link="https://google.com">Reserve a Table</btn-link>
+<btn-link link="https://hssonline.formstack.com/forms/support">Reserve a Table</btn-link>
 
 **Collective Book Exhibit (CBE)**
 
@@ -55,7 +55,7 @@ Don't need an entire table? Ship your titles to NOLA to be exhibited individuall
 
 *Shipping dates &amp; details TBD*
 
-<btn-link link="https://google.com">Join the CBE</btn-link>
+<btn-link link="https://hssonline.formstack.com/forms/support">Join the CBE</btn-link>
 
 ## Advertise (Print & Digital)
 

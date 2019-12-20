@@ -13,9 +13,13 @@
       </ul>
     </div>
     <div class="support__footer">
-      <a href="#" class="support__link" target="blank" rel="noopener">{{
-        computedFooter
-      }}</a>
+      <a
+        href="https://hssonline.formstack.com/forms/support"
+        class="support__link"
+        target="blank"
+        rel="noopener"
+        >{{ computedFooter }}</a
+      >
     </div>
   </div>
 </template>
