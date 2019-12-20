@@ -115,6 +115,8 @@ export default {
     line-height: 1.1;
     text-align: center;
     text-transform: uppercase;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 
     & > p {
       margin: 0;
