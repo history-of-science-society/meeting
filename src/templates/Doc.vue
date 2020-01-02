@@ -1,9 +1,7 @@
 <template>
   <Layout>
     <date />
-    <h1>
-      {{ $page.doc.title }}
-    </h1>
+    <h1>{{ $page.doc.title }}</h1>
     <!-- <div class="markdown" v-html="$page.doc.content" /> -->
     <VueRemarkContent class="markdown" />
   </Layout>
@@ -15,6 +13,7 @@ query Doc ($path: String!) {
     title
     path
     date (format: "D. MMMM YYYY")
+    description
 
     content
   }
@@ -36,7 +35,19 @@ export default {
           key: "description",
           name: "description",
           content: this.$page.doc.description
-        }
+        },
+        { itemprop: "name", content: "HSS 2020" },
+        { itemprop: "description", content: this.$page.doc.description },
+        { itemprop: "image", content: "/Rectangle_HSS2020.jpg" },
+        { property: "og:title", content: "HSS 2020" },
+        { property: "og:url", content: "https://hssmeeting.org" },
+        { property: "og:description", content: this.$page.doc.description },
+        { property: "og:image", content: "/Rectangle_HSS2020.jpg" },
+        { name: "twitter:title", content: "HSS 2020" },
+        { name: "twitter:description", content: this.$page.doc.description },
+        { name: "twitter:image", content: "/Rectangle_HSS2020.jpg" },
+        { name: "twitter:site", content: "@hssonline" },
+        { name: "twitter:creator", content: "@theroyalfig" }
       ]
     };
   }

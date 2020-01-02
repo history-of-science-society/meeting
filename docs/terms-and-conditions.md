@@ -2,6 +2,7 @@
 title: Terms & Conditions
 date: 2019-12-06 07:42:34
 slug: terms-and-conditions
+description: HSS 2020 Terms and Conditions
 ---
 
 ## Privacy Policy
