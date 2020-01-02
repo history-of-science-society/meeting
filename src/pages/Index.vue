@@ -77,7 +77,8 @@ export default {
         { name: "twitter:description", content: this.description },
         { name: "twitter:image", content: "/Rectangle_HSS2020.jpg" },
         { name: "twitter:site", content: "@hssonline" },
-        { name: "twitter:creator", content: "@theroyalfig" }
+        { name: "twitter:creator", content: "@theroyalfig" },
+        { name: "twitter:card", content: "summary_large_image" }
       ]
     };
   }
