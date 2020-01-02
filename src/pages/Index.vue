@@ -68,14 +68,23 @@ export default {
         },
         { itemprop: "name", content: "HSS 2020" },
         { itemprop: "description", content: this.description },
-        { itemprop: "image", content: "/Rectangle_HSS2020.jpg" },
+        {
+          itemprop: "image",
+          content: "https://hssmeeting.org/Rectangle_HSS2020.jpg"
+        },
         { property: "og:title", content: "HSS 2020" },
         { property: "og:url", content: "https://hssmeeting.org" },
         { property: "og:description", content: this.description },
-        { property: "og:image", content: "/Rectangle_HSS2020.jpg" },
+        {
+          property: "og:image",
+          content: "https://hssmeeting.org/Rectangle_HSS2020.jpg"
+        },
         { name: "twitter:title", content: "HSS 2020" },
         { name: "twitter:description", content: this.description },
-        { name: "twitter:image", content: "/Rectangle_HSS2020.jpg" },
+        {
+          name: "twitter:image",
+          content: "https://hssmeeting.org/Rectangle_HSS2020.jpg"
+        },
         { name: "twitter:site", content: "@hssonline" },
         { name: "twitter:creator", content: "@theroyalfig" },
         { name: "twitter:card", content: "summary_large_image" }
