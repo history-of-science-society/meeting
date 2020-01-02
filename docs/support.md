@@ -2,7 +2,7 @@
 title: Support HSS 2020
 date: 2019-12-11 07:42:34
 slug: support
-description: Exhibit, advertise, or sponsor at the preeminent meeting for history of science
+description: Exhibit, advertise, or sponsor an event at the preeminent meeting for the history of science
 ---
 
 import btnLink from '~/components/btnLink.vue'
