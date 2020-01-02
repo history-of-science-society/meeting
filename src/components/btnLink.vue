@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" class="btn" target="_blank" rel="noopener">
+  <a :href="link" class="btn-link" target="_blank" rel="noopener">
     <slot></slot>
     <external-link-icon />
   </a>
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-.btn {
+.btn-link {
   padding: 0.25rem 0.5rem;
   margin: 1rem 0;
 

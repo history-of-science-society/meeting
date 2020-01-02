@@ -23,11 +23,7 @@
           icon="message-square-icon"
           class="support"
         />
-        <Shortcut
-          link="/cfp#find-a-collaborator"
-          text="Find a Collaborator"
-          icon="user-plus-icon"
-        />
+        <Shortcut link="/cfp#find-a-collaborator" text="Find a Collaborator" icon="user-plus-icon" />
       </nav>
     </div>
     <p class="tagline">{{ this.description }}</p>
@@ -63,13 +59,25 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.description,
+      title: "HSS 2020",
       meta: [
         {
           key: "description",
           name: "description",
           content: `${this.description} | ${this.date} | ${this.location}`
-        }
+        },
+        { itemprop: "name", content: "HSS 2020" },
+        { itemprop: "description", content: this.description },
+        { itemprop: "image", content: "/Rectangle_HSS2020.jpg" },
+        { property: "og:title", content: "HSS 2020" },
+        { property: "og:url", content: "https://hssmeeting.org" },
+        { property: "og:description", content: this.description },
+        { property: "og:image", content: "/Rectangle_HSS2020.jpg" },
+        { name: "twitter:title", content: "HSS 2020" },
+        { name: "twitter:description", content: this.description },
+        { name: "twitter:image", content: "/Rectangle_HSS2020.jpg" },
+        { name: "twitter:site", content: "@hssonline" },
+        { name: "twitter:creator", content: "@theroyalfig" }
       ]
     };
   }
@@ -122,11 +130,12 @@ h1,
   div {
     margin: 0 0.75em;
     display: flex;
+    align-items: center;
 
     svg {
       height: 1rem;
       width: 1rem;
-      margin-right: 0.15rem;
+      margin-right: 0.25rem;
       stroke-width: 1px;
 
       @include respond-above(md) {

@@ -31,6 +31,9 @@ The *Committee on Meetings and Programs (CoMP)* has established a set of [best p
 **Format**<br>
 The submission form only accepts plain text, which disallows italics and bold. All titles should conform to the Chicago Manual of Style's title guidelines. Use a [title capitalization tool](https://thecapitalizer.com) to ensure your title conforms to CMS rules.
 
+**Double Sessions**<br>
+Organizers who wish to have more than 4 presentations in their session can propose a double panel. Please be aware that we can only accept a limited number of double sessions.
+
 ## Diversity
 
 **Why we collect demographic data**
@@ -42,6 +45,8 @@ We are cautious of the exploitation enabled by demographic data collection. Ther
 The structure of this questionnaire is still in a pilot phase. We welcome your feedback via our <g-link to="/contact-us/">contact form</g-link>.
 
 *–Committee on Diversity and Inclusion*
+
+Demographic questions ask about insitutional affiliation, employment status, country of residence, gender, race and/or ethnicity, and HSS presentation history.
 
 ## Abstract Classification
 
@@ -122,7 +127,9 @@ A panel about a common theme, consisting of an organizer, chair, and presenters.
 
 </div>
 
+<div>
 <a href="https://hssonline.formstack.com/forms/organized_session" class="btn">Submit an Organized Session</a>
+</div>
 
 </div>
 
@@ -135,7 +142,9 @@ A presentation on the history of science no longer than 20 minutes.
 
 </div>
 
+<div>
 <a href="https://hssonline.formstack.com/forms/contributed_paper" class="btn">Submit a Contributed Paper</a>
+</div>
 
 </div>
 <div class="submission-type__item">
@@ -147,7 +156,9 @@ To facilitate dialogue at its annual meeting, the History of Science Society req
 
 </div>
 
+<div>
 <a href="https://hssonline.formstack.com/forms/roundtable" class="btn">Submit a Roundtable</a>
+</div>
 
 </div>
 <div class="submission-type__item">
@@ -155,11 +166,13 @@ To facilitate dialogue at its annual meeting, the History of Science Society req
 
 **Flashtalks ⚡**
 
-As part of a special Presidential Session, the HSS invites graduate student proposals for flashtalks. The presidents of HSS and SHOT will evaluate abstracts and moderate the session. These flashtalks will be presentations of 5 minutes or less and a slide, followed by discussion. Proposals require only a title and a short abstract (2-3 sentences). Flashtalks speakers are not permitted to present on the program in any other fashion.
+As part of a special Presidential Session, the HSS invites graduate student proposals for flashtalks. The president of HSS will evaluate abstracts and moderate the session. These flashtalks will be presentations of 5 minutes or less and a slide, followed by discussion. Proposals require only a title and a short abstract (2-3 sentences). Flashtalks speakers are not permitted to present on the program in any other fashion.
 
 </div>
 
+<div>
 <a href="https://hssonline.formstack.com/forms/flashtalk" class="btn">Submit a Flashtalk</a>
+</div>
 
 </div>
 </div>
