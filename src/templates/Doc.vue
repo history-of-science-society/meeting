@@ -2,7 +2,6 @@
   <Layout>
     <date />
     <h1>{{ $page.doc.title }}</h1>
-    <!-- <div class="markdown" v-html="$page.doc.content" /> -->
     <VueRemarkContent class="markdown" />
   </Layout>
 </template>

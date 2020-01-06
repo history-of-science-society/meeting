@@ -67,20 +67,29 @@ export default {
           content: `${this.description} | ${this.date} | ${this.location}`
         },
         { itemprop: "name", content: "HSS 2020" },
-        { itemprop: "description", content: this.description },
+        {
+          itemprop: "description",
+          content: `${this.description} | ${this.date} | ${this.location}`
+        },
         {
           itemprop: "image",
           content: "https://hssmeeting.org/hssMeta.jpg"
         },
         { property: "og:title", content: "HSS 2020" },
         { property: "og:url", content: "https://hssmeeting.org" },
-        { property: "og:description", content: this.description },
+        {
+          property: "og:description",
+          content: `${this.description} | ${this.date} | ${this.location}`
+        },
         {
           property: "og:image",
           content: "https://hssmeeting.org/hssMeta.jpg"
         },
         { name: "twitter:title", content: "HSS 2020" },
-        { name: "twitter:description", content: this.description },
+        {
+          name: "twitter:description",
+          content: `${this.description} | ${this.date} | ${this.location}`
+        },
         {
           name: "twitter:image",
           content: "https://hssmeeting.org/hssMeta.jpg"
