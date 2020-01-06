@@ -79,6 +79,10 @@
       .bright & {
         border: 1px solid $textBright;
       }
+
+      &>div>p {
+        margin-top: 0;
+      }
     }
   }
 
