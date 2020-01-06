@@ -16,7 +16,7 @@
       </div>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/cfp" text="Submit an Abstract" icon="edit-icon" />
+        <Shortcut link="/cfp/" text="Submit an Abstract" icon="edit-icon" />
         <Shortcut
           link="/support/#advertise-print--digital"
           text="Advertise at HSS"
