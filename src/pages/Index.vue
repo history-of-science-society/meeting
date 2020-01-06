@@ -48,8 +48,7 @@ export default {
     GitLink,
     Shortcut,
     MapIcon,
-    CalendarIcon,
-    HomeIcon
+    CalendarIcon
   },
   data() {
     return {
