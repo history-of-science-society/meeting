@@ -131,6 +131,7 @@ export default {
 .topic.active + ul {
   display: block;
 }
+
 .sidebar {
   transition: background 0.15s ease-in-out, transform 0.15s ease-in-out,
     border-color 0.15s linear;
@@ -241,11 +242,5 @@ ul {
       opacity: 1;
     }
   }
-}
-
-.git {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 </style>

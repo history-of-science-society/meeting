@@ -9,7 +9,7 @@ import btnLink from '~/components/btnLink.vue'
 
 <div class="deadline"><span class="inner-deadline">Deadline:</span> 1&nbsp;March&nbsp;2020&nbsp;(23:59&nbsp;EST)</div>
 
-The History of Science Society (HSS) will hold its 2020 conference in one of the US’s more interesting cities: New Orleans. This will be a joint meeting with the Society for the History of Technology (SHOT). The Society encourages submissions on all topics. Proposals (2,000-character maximum per abstract) must be submitted via the HSS online submission form. Unlike many academic societies, the HSS does not require that participants be members, but all participants must register for the meeting.
+The History of Science Society (HSS) will hold its 2020 conference New Orleans, LA, USA. This will be a joint meeting with the [Society for the History of Technology (SHOT)](https://www.historyoftechnology.org/). The Society encourages submissions on all topics. Proposals (2,000-character maximum per abstract) must be submitted via the HSS online submission form. Unlike many academic societies, the HSS does not require that participants be members, but all participants must register for the meeting.
 
 ## Guidelines
 

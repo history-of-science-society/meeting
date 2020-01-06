@@ -16,14 +16,14 @@
       </div>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/cfp/" text="Submit an Abstract" icon="edit-icon" />
+        <Shortcut link="/welcome" text="Welcome" icon="home-icon" />
+        <Shortcut link="/cfp" text="Submit an Abstract" icon="edit-icon" />
         <Shortcut
           link="/support#advertise-print--digital"
           text="Advertise at HSS"
           icon="message-square-icon"
           class="support"
         />
-        <Shortcut link="/cfp#find-a-collaborator" text="Find a Collaborator" icon="user-plus-icon" />
       </nav>
     </div>
     <p class="tagline">{{ this.description }}</p>
@@ -48,7 +48,8 @@ export default {
     GitLink,
     Shortcut,
     MapIcon,
-    CalendarIcon
+    CalendarIcon,
+    HomeIcon
   },
   data() {
     return {
@@ -169,10 +170,6 @@ nav {
   @include respond-above(sm) {
     flex-direction: row;
   }
-}
-
-.disabled {
-  opacity: 0.5;
 }
 
 .tagline {
