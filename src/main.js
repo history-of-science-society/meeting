@@ -33,11 +33,6 @@ export default function (Vue, {
   })
 
   head.meta.push({
-    name: 'google-site-verification',
-    content: process.env.GSV_META
-  })
-
-  head.meta.push({
     name: 'apple-mobile-web-app-status-bar-style',
     content: 'default'
   })

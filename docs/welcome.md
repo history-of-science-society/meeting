@@ -6,7 +6,7 @@ description: Welcome to the History of Science Society's 2020 Annual Meeting!
 ---
 ![Greetings from Nola graphic](./img/nola.jpg)
 
-The 2020 HSS Annual Meeting will be held jointly with the <a href="https://historyoftechnology.org/" target="_blank" rel="noopener">Society for the History of Technology</a> in the fascinating city of New Orleans.
+The [History of Science Society (HSS)](https://hssonline.org) will hold its 2020 Annual Meeting jointly with the <a href="https://historyoftechnology.org/" target="_blank" rel="noopener">Society for the History of Technology (SHOT)</a> in the fascinating city of New Orleans.
 
 That HSS and SHOT have chosen to co-locate in New Orleans in 2020, the 15th anniversary of Hurricane Katrina and the 10th anniversary of the Deep Horizon oil spill, is no small matter. This co-mingling of associations offers scholars a splendid opportunity to reflect on the relationship between the environment, infrastructure, and social justice and how these elements contribute to the ongoing story of New Orleans and to the maintenance of our modern world.
 
