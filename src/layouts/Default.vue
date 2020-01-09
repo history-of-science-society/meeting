@@ -2,9 +2,13 @@
   <div>
     <Header :menuToggle="sidebar" />
     <Sidebar v-if="sidebar" />
-    <main class="main" :class="{'main--no-sidebar': !sidebar, 'main--sidebar-is-open' : this.$store.state.sidebarOpen}">
-      <slot/>
+    <main
+      class="main"
+      :class="{'main--no-sidebar': !sidebar, 'main--sidebar-is-open' : this.$store.state.sidebarOpen}"
+    >
+      <slot />
     </main>
+    <!-- <Donate /> -->
   </div>
 </template>
 
@@ -17,13 +21,15 @@ query {
 </static-query>
 
 <script>
-import Header from '~/components/Header.vue'
-import Sidebar from '~/components/Sidebar.vue'
+import Header from "~/components/Header.vue";
+import Sidebar from "~/components/Sidebar.vue";
+import Donate from "~/components/donateBtn.vue";
 
 export default {
   components: {
     Header,
-    Sidebar
+    Sidebar,
+    Donate
   },
   props: {
     sidebar: {
@@ -32,23 +38,23 @@ export default {
     }
   },
   mounted() {
-    this.$store.commit('closeSidebar')
+    this.$store.commit("closeSidebar");
     if (process.isClient) {
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker
-          .register('/sw.js')
-          .then(function() { console.log("Service Worker Registered"); });
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then(function() {
+          console.log("Service Worker Registered");
+        });
       }
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
 .main {
   padding: 100px 30px 30px 30px;
   max-width: 800px;
-  transition: transform .15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
 
   @include respond-above(sm) {
     padding: 100px 30px 30px;

@@ -27,6 +27,13 @@ export default function (Vue, {
     href: '/manifest.json'
   })
 
+  head.link.push({
+    rel: "preload",
+    href: "https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343847&id=2",
+    as: "document",
+    crossorigin: ""
+  })
+
   head.meta.push({
     name: 'theme-color',
     content: '#666633'
