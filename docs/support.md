@@ -58,7 +58,7 @@ Don't need an entire table? Ship your titles to NOLA to be exhibited individuall
 
 <btn-link link="https://hssonline.formstack.com/forms/support">Join the CBE</btn-link>
 
-## Advertise (Print & Digital)
+## Advertise (Print and Digital)
 
 <div class="support__box">
 <adCard id="1"><g-image src="~/components/img/program.jpg" class="support__img" /></adCard>

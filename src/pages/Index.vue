@@ -19,10 +19,9 @@
         <Shortcut link="/welcome" text="Welcome" icon="home-icon" />
         <Shortcut link="/cfp" text="Submit an Abstract" icon="edit-icon" />
         <Shortcut
-          link="/support#advertise-print--digital"
+          link="/support#advertise-print-and-digital"
           text="Advertise at HSS"
           icon="message-square-icon"
-          class="support"
         />
       </nav>
     </div>

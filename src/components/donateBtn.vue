@@ -47,17 +47,6 @@ export default {
   methods: {
     toggleModal() {
       this.showModal = !this.showModal;
-
-      const closeByEsc = e => {
-        if (e.key === "Escape") {
-          this.showModal = false;
-          document.body.removeEventListener("keyup", closeByEsc);
-        }
-      };
-
-      if (this.showModal) {
-        document.body.addEventListener("keyup", closeByEsc);
-      }
     }
   }
 };
