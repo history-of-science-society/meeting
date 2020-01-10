@@ -89,12 +89,12 @@ export default {
   z-index: 1001;
 
   .dark & {
-    background: $backgroundDark;
+    background: none;
     color: $textDark;
   }
 
   .bright & {
-    background: $backgroundBright;
+    background: none;
     color: $textBright;
   }
 
@@ -125,6 +125,10 @@ export default {
 
   &--close {
     @extend .donate-btn;
+    .dark &,
+    .bright & {
+      color: $textDark;
+    }
   }
 }
 
