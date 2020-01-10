@@ -21,7 +21,12 @@
       </button>
     </transition>
     <transition name="modal">
-      <div class="donate-modal" v-if="showModal" @click.stop="toggleModal()">
+      <div
+        class="donate-modal"
+        v-if="showModal"
+        @click.stop="toggleModal()"
+        tabindex="0"
+      >
         <iframe
           class="donate-modal__content"
           src="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343847&id=2"
@@ -48,6 +53,15 @@ export default {
     toggleModal() {
       this.showModal = !this.showModal;
     }
+  },
+  mounted() {
+    const closeByEsc = e => {
+      if (e.key === "Escape" && this.showModal === true) {
+        this.showModal = false;
+      }
+    };
+
+    document.body.addEventListener("keyup", closeByEsc, false);
   }
 };
 </script>
