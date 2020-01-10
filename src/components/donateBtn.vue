@@ -7,7 +7,7 @@
         v-if="!showModal"
         key="open"
       >
-        Donate
+        <span class="hide-sm">Donate</span>
         <heart-icon class="icon" />
       </button>
       <button
@@ -16,7 +16,7 @@
         v-else
         key="close"
       >
-        Close
+        <span class="hide-sm">Close</span>
         <x-icon class="icon" />
       </button>
     </transition>
@@ -69,43 +69,58 @@ export default {
 <style lang="scss" scoped>
 .donate-btn {
   align-items: center;
-  background-color: $accent;
   border-radius: 3px;
   border: none;
-  color: $textBright;
   cursor: pointer;
   display: flex;
   font-family: inherit;
   font-size: 1.15rem;
   font-weight: 700;
-  height: 48px;
   justify-content: center;
   letter-spacing: 0.25px;
   line-height: 1;
-  margin-left: 5px;
-  padding: 8px 12px;
+  padding: 0;
   position: relative;
   text-transform: uppercase;
   transition: all 0.1s ease-in;
-  width: 150px;
+  height: 48px;
+  min-width: 48px;
+
   z-index: 1001;
+
+  .dark & {
+    background: $backgroundDark;
+    color: $textDark;
+  }
+
+  .bright & {
+    background: $backgroundBright;
+    color: $textBright;
+  }
+
+  @include respond-above(sm) {
+    width: 150px;
+    padding: 5px;
+    svg {
+      margin-left: 5px;
+    }
+  }
+
+  svg {
+    fill: rgba(0, 0, 0, 0);
+    transition: all 0.1s ease-in-out;
+  }
 
   &:focus,
   &:hover {
-    background-color: #666633;
-    color: #ffffff;
     outline: none;
-  }
-
-  .icon {
-    margin-left: 5px;
+    svg {
+      fill: red;
+    }
   }
 
   &--open {
     @extend .donate-btn;
-    // position: fixed;
-    // bottom: 3rem;
-    // right: 3rem;
   }
 
   &--close {
@@ -115,28 +130,28 @@ export default {
 
 .donate-modal {
   //   display: none;
-  position: fixed;
-  display: flex;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  justify-content: center;
   align-items: center;
-  padding: 5rem 1rem 1rem;
   background: rgba(0, 0, 0, 0.85);
-  z-index: 1000;
+  display: flex;
   flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  padding: 5rem 1rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
 
   &__content {
-    border: none;
-    height: 100%;
-    width: 100%;
-    max-height: 90vh;
-    max-width: 1000px;
+    @include box-shadow($small: true);
     background: #f7f7ef;
     border-radius: 3px;
-    @include box-shadow($small: true);
+    border: none;
+    height: 100%;
+    max-height: 90vh;
+    max-width: 1000px;
+    width: 100%;
   }
 }
 
@@ -155,7 +170,15 @@ export default {
   transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 .theme-enter, .theme-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  transform: translateY(10px);
   opacity: 0;
+  transform: translateY(10px);
+}
+
+.hide-sm {
+  display: none;
+
+  @include respond-above(sm) {
+    display: initial;
+  }
 }
 </style>
