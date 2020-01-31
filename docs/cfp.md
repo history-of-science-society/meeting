@@ -6,6 +6,7 @@ slug: cfp
 ---
 
 import btnLink from '~/components/btnLink.vue'
+import collabData from '~/components/CollabSearch.vue'
 
 <div class="deadline"><span class="inner-deadline">Deadline:</span> 1&nbsp;March&nbsp;2020&nbsp;(23:59&nbsp;EST)</div>
 
@@ -103,7 +104,9 @@ All submissions require a title, abstract, and classification according to topic
 
 ## Find a Collaborator
 
-To encourage and aid the creation of panels with strong thematic coherence that draw upon historians of science across institutions and ranks, the HSS has created a [collaboration form](https://hssonline.formstack.com/forms/collaboration) to submit proposals in need of panelists and a [spreadsheet to review](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) submitted proposals. Anyone with a panel, paper, or roundtable idea seeking like-minded presenters should post and consult the postings on [the spreadsheet](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) to round out a prospective session.
+To encourage and aid the creation of panels with strong thematic coherence that draw upon historians of science across institutions and ranks, the HSS has created a [collaboration form](https://hssonline.formstack.com/forms/collaboration) to submit proposals in need of panelists and a [spreadsheet to review](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) submitted proposals. Anyone with a panel, paper, or roundtable idea seeking like-minded presenters should post and consult the postings on [the spreadsheet](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) or below to round out a prospective session.
+
+<collab-data />
 
 ## Independent Scholar Award
 
