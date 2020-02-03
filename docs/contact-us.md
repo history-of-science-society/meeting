@@ -88,12 +88,5 @@ slug: contact-us
         <div >
         </div>
     </div>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<div class="g-recaptcha"
-aria-hidden="true"
-data-sitekey="6LetKEIUAAAAAPk-uUXqq9E82MG3e40OMt_74gjS"
-data-callback="onSubmit"
-data-size="invisible">
-</div>
 
 </form>
