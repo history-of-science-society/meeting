@@ -62,7 +62,7 @@ export default {
   },
   data() {
     return {
-      collabs: json
+      collabs: json.reverse()
     };
   },
   computed: {
