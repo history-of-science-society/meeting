@@ -12,7 +12,8 @@
       <p class="collab-card__small-title">Abstract</p>
       <p
         class="collab-card__abstract"
-      >{{ data['Session idea, abstract, or other information relevant for potential collaborators'] }}</p>
+        v-html=" data['Session idea, abstract, or other information relevant for potential collaborators']"
+      ></p>
       <div class="collab-card__metabox">
         <div class="collab-card__fixed-cat">
           <p class="collab-card__metadata">
