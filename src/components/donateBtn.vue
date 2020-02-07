@@ -6,6 +6,7 @@
         @click="toggleModal()"
         v-if="!showModal"
         key="open"
+        aria-label="donate"
       >
         <span class="hide-sm">Donate</span>
         <heart-icon class="icon" />
@@ -15,18 +16,14 @@
         @click="toggleModal()"
         v-else
         key="close"
+        aria-label="close"
       >
         <span class="hide-sm">Close</span>
         <x-icon class="icon" />
       </button>
     </transition>
     <transition name="modal">
-      <div
-        class="donate-modal"
-        v-if="showModal"
-        @click.stop="toggleModal()"
-        tabindex="0"
-      >
+      <div class="donate-modal" v-if="showModal" @click.stop="toggleModal()" tabindex="0">
         <iframe
           class="donate-modal__content"
           src="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343847&id=2"
