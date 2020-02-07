@@ -19,7 +19,7 @@
         <Shortcut link="/welcome" text="Welcome" icon="home-icon" />
         <Shortcut link="/cfp" text="Submit an Abstract" icon="edit-icon" />
         <Shortcut
-          link="/support#advertise-print-and-digital"
+          link="/support/#advertise-print-and-digital"
           text="Advertise at HSS"
           icon="message-square-icon"
         />
@@ -51,7 +51,8 @@ export default {
   },
   data() {
     return {
-      description: "Telling the Stories of Science since 1924",
+      description:
+        "History of Science Society Annual Meeting | Telling the Stories of Science since 1924",
       date: "8-11 October 2020",
       location: "New Orleans, LA, USA"
     };
