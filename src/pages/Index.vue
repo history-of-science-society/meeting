@@ -51,10 +51,10 @@ export default {
   },
   data() {
     return {
-      description:
-        "History of Science Society Annual Meeting | Telling the Stories of Science since 1924",
+      description: "History of Science Society Annual Meeting",
       date: "8-11 October 2020",
-      location: "New Orleans, LA, USA"
+      location: "New Orleans, LA, USA",
+      tagline: "Telling the Stories of Science since 1924"
     };
   },
   metaInfo() {
@@ -64,12 +64,12 @@ export default {
         {
           key: "description",
           name: "description",
-          content: `${this.description} | ${this.date} | ${this.location}`
+          content: `${this.description} | ${this.date} | ${this.location} | ${this.tagline}`
         },
         { itemprop: "name", content: "HSS 2020" },
         {
           itemprop: "description",
-          content: `${this.description} | ${this.date} | ${this.location}`
+          content: `${this.description} | ${this.date} | ${this.location} | ${this.tagline}`
         },
         {
           itemprop: "image",
@@ -79,7 +79,7 @@ export default {
         { property: "og:url", content: "https://hssmeeting.org" },
         {
           property: "og:description",
-          content: `${this.description} | ${this.date} | ${this.location}`
+          content: `${this.description} | ${this.date} | ${this.location} | ${this.tagline}`
         },
         {
           property: "og:image",
@@ -88,7 +88,7 @@ export default {
         { name: "twitter:title", content: "HSS 2020" },
         {
           name: "twitter:description",
-          content: `${this.description} | ${this.date} | ${this.location}`
+          content: `${this.description} | ${this.date} | ${this.location} | ${this.tagline}`
         },
         {
           name: "twitter:image",
