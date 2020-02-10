@@ -29,7 +29,7 @@
             {{ data['Abstract Geography'] }}
           </p>
         </div>
-        <p class="collab-card__metadata--full-width">
+        <p class="collab-card__metadata--full-width" v-if="data['Self-Designated Keywords']">
           <tag-icon />
           {{ data['Self-Designated Keywords'] }}
         </p>
@@ -164,6 +164,7 @@ export default {
     line-height: 1.2;
     margin: 0.25rem;
     padding: 5px 8px;
+    flex: 1;
 
     &:last-child {
       margin-right: 0;
