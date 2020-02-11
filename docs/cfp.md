@@ -1,5 +1,5 @@
 ---
-title: Submit an Abstract
+title: Submission Instructions
 date: 2020-02-10 08:00:00
 description: Submit an abstract to the History of Science Society 2020 Annual Meeting
 slug: cfp
