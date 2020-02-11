@@ -1,5 +1,5 @@
 ---
-title: Submit an Abstract
+title: Call for Papers
 date: 2019-12-19 07:42:34
 description: Submit an abstract to the History of Science Society 2020 Annual Meeting
 slug: cfp
