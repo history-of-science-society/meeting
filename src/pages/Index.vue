@@ -25,7 +25,7 @@
         />
       </nav>
     </div>
-    <p class="tagline">{{ this.description }}</p>
+    <p class="tagline">{{ this.tagline }}</p>
   </Layout>
 </template>
 
