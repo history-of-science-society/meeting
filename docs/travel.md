@@ -1,8 +1,8 @@
 ---
-title: Location
+title: Hotel and Travel
 date: 2020-02-13 07:42:34
 description: The meeting hotel for the History of Science Society 2020 annual meeting
-slug: location
+slug: travel
 ---
 
 import Hotel from '~/components/Hotel'
