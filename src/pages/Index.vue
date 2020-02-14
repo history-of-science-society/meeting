@@ -25,6 +25,17 @@
         />
       </nav>
     </div>
+    <div class="full-width">
+      <div class="upcoming-dates">
+        <alert-circle-icon class="upcoming-dates__icon" />
+        <div class="upcoming-dates__text">
+          <p class="upcoming-dates__title">Abstract Submission Deadline:</p>
+          <p class="upcoming-dates__date">
+            <time datetime="2020-03-01">1 March 2020 (23:59 EST)</time>
+          </p>
+        </div>
+      </div>
+    </div>
     <p class="tagline">{{ this.tagline }}</p>
   </Layout>
 </template>
@@ -40,14 +51,15 @@ query {
 <script>
 import GitLink from "~/components/GitLink.vue";
 import Shortcut from "~/components/Shortcut.vue";
-import { MapIcon, CalendarIcon } from "vue-feather-icons";
+import { MapIcon, CalendarIcon, AlertCircleIcon } from "vue-feather-icons";
 
 export default {
   components: {
     GitLink,
     Shortcut,
     MapIcon,
-    CalendarIcon
+    CalendarIcon,
+    AlertCircleIcon
   },
   data() {
     return {
@@ -184,5 +196,41 @@ nav {
   margin: 3em auto 0;
   font-style: italic;
   text-align: center;
+}
+.full-width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.upcoming-dates {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 15px;
+  border-radius: 3px;
+  background-color: #663333;
+  color: #fff;
+
+  &__icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 0.5rem;
+  }
+
+  &__text {
+    display: flex;
+  }
+
+  &__title {
+    margin-right: 0.5rem;
+  }
+
+  &__title,
+  &__date {
+    font-size: 1.2em;
+  }
 }
 </style>

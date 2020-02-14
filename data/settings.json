@@ -19,6 +19,15 @@
       ]
     },
     {
+      "section": "NOLA",
+      "topics": [
+        {
+          "title": "Hotel and Travel",
+          "slug": "travel"
+        }
+      ]
+    },
+    {
       "section": "Exhibitors, Sponsors, and Advertisers",
       "topics": [
         {

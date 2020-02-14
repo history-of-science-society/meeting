@@ -196,19 +196,20 @@ ul {
 }
 
 .section {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .section-title {
   text-transform: uppercase;
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   opacity: 0.3;
   letter-spacing: 0.15em;
   font-weight: 700;
 }
 
 .topic {
+  padding-top: 2px;
   font-weight: 700;
 }
 

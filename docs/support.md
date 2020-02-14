@@ -12,7 +12,7 @@ import sponsorCard from '~/components/sponsorCard.vue'
 
 ## Levels of Support
 
-The following benefits correspond to the sponsorship, advertising, and exhibition opportunities as listed below.
+The following benefits correspond to the sponsorship, advertising, and exhibition opportunities listed below.
 
 <div class="support__box">
 <supportCard id="1"><g-image src="~/components/img/ptolemy.jpg" class="support__img" /></supportCard>
@@ -23,24 +23,22 @@ The following benefits correspond to the sponsorship, advertising, and exhibitio
 
 ## Exhibit
 
-**Book Exhibit**
+**HSS/SHOT Book Exhibit**
 
-The History of Science Society's book exhibit is the epicenter of the annual meeting. Attendees gather at the exhibit to meet with colleagues, peruse the latest titles in the field, to chat with potential publishers, or take a break from sessions.
+The History of Science Society's book exhibit is the epicenter of the annual meeting. For the 2020 meeting, this is doubly true because the book exhibit will also include the Society for the History of Technology. That means even more attendees will gather at the exhibit to meet with colleagues, peruse the latest titles in the field, chat with potential publishers, and just take a needed break from sessions. _Don't miss the opportunity to engage these scholars!_
 
-- Over 88% of our 700 attendees actively visit the book exhibit, and over 35% of them will purchase at least one book.
-- Scholars from around the world will use this opportunity to meet with editors - and to browse your display.
-- Historians of science read widely in many disciplines and have diverse interests.
-- The meeting will offer numerous opportunities to speak with potential authors and meeting attendees.
-- Mid-morning and mid-afternoon coffee breaks will be set up in the exhibit area to encourage browsing.
+- Over 88% of our 800+ attendees actively visit the book exhibit, and over 35% of them will purchase at least one book
+- Scholars from around the world will use this opportunity to meet with editors - and to browse your display
+- Historians of science and technology read widely in many disciplines and have diverse interests
+- The meeting offers numerous opportunities to find your next authors
 
-**Book Exhibit Pricing**
+**2020 Book Exhibit Pricing**
 
 | Table      | Price | 1 complimentary registration |
 | ---------- | ----- | ---------------------------- |
-| 1          | $415  | ✔️                           |
-| 2          | $315  | ✔️                           |
-| Additional | $215  | ❌                            |
-
+| 1          | \$415 | ✔️                           |
+| 2          | \$315 | ✔️                           |
+| Additional | \$215 | ❌                           |
 
 <btn-link link="https://hssonline.formstack.com/forms/support">Reserve a Table</btn-link>
 
@@ -50,11 +48,11 @@ Don't need an entire table? Ship your titles to NOLA to be exhibited individuall
 
 | Title      | Price |
 | ---------- | ----- |
-| 1          | $75   |
-| 2          | $50   |
-| Additional | $40   |
+| 1          | \$75  |
+| 2          | \$50  |
+| Additional | \$40  |
 
-*Shipping dates &amp; details TBD*
+_All titles must be shipped directly to the Sheraton New Orleans Hotel. Shipping dates &amp; details TBA_
 
 <btn-link link="https://hssonline.formstack.com/forms/support">Join the CBE</btn-link>
 
@@ -72,6 +70,7 @@ Don't need an entire table? Ship your titles to NOLA to be exhibited individuall
 <adCard id="5"><g-image src="~/components/img/lanyard.jpg" class="support__img" /></adCard>
 
 <adCard id="6"><g-image src="~/components/img/folder.png" class="support__img" /></adCard>
+
 </div>
 
 ## Sponsor
@@ -84,4 +83,5 @@ Don't need an entire table? Ship your titles to NOLA to be exhibited individuall
 <sponsorCard id="3"><g-image src="~/components/img/mixer.jpg" class="support__img" /></sponsorCard>
 
 <sponsorCard id="4"><g-image src="~/components/img/reception.jpg" class="support__img" /></sponsorCard>
+
 </div>

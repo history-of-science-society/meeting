@@ -2,7 +2,7 @@
   <div class="widget-header">
     <div class="widget-header__date">
       <calendar-icon class="icon" />
-      <p>{{ date }}</p>
+      <p v-html="date"></p>
     </div>
 
     <div class="widget-header__location">
@@ -23,7 +23,8 @@ export default {
   data() {
     return {
       description: "Telling the Stories of Science",
-      date: "8-11 October 2020",
+      date:
+        "<time datetime='2020-10-8'>8</time>-<time datetime='2020-10-11'>11 October 2020</time>",
       location: "New Orleans, LA, USA"
     };
   }
