@@ -222,14 +222,12 @@ nav {
 
   &__text {
     display: flex;
-  }
-
-  &__title {
-    margin-right: 0.5rem;
+    flex-wrap: wrap;
   }
 
   &__title,
   &__date {
+    margin: 0 0.5rem;
     font-size: 1.2em;
   }
 }
