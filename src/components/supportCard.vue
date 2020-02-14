@@ -6,8 +6,8 @@
     <slot></slot>
     <div class="support__body">
       <p class="support__benefits">Benefits</p>
-      <ul v-for="item in computedBenefit" :key="item">
-        <li>{{ item }}</li>
+      <ul>
+        <li v-for="item in computedBenefit" :key="item.id">{{ item }}</li>
       </ul>
     </div>
     <div>{{ computedFooter }}</div>
@@ -34,7 +34,7 @@ export default {
           header: "Rosalind Franklin ($1,000–$1,499)",
           body: [
             "Everything in Ptolemy",
-            "Complimentary registration for one",
+            "One complimentary registration",
             "Acknowledgment in the printed and digital program"
           ]
         },
@@ -43,7 +43,7 @@ export default {
           header: "Albert Einstein ($1,500-$2,499",
           body: [
             "Everything in Franklin",
-            "Complimentary registration for two",
+            "Two complimentary registration",
             "Acknowledgment in the HSS Newsletter (October 2020)",
             "Branded signage at the meeting"
           ]

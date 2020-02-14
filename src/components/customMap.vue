@@ -25,7 +25,7 @@
             <a
               class="marker__title"
               href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel/"
-              >Sheraton New Orleans Hotel</a
+              >Sheraton New Orleans</a
             >
             <p class="marker__subtitle">Meeting Hotel</p>
           </div>

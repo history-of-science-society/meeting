@@ -25,9 +25,9 @@ The following benefits correspond to the sponsorship, advertising, and exhibitio
 
 **HSS/SHOT Book Exhibit**
 
-The History of Science Society's book exhibit is the epicenter of the annual meeting. For the 2020 meeting, this is doubly true because the book exhibit will also include the Society for the History of Technology. That means even more attendees will gather at the exhibit to meet with colleagues, peruse the latest titles in the field, chat with potential publishers, and just take a needed break from sessions. _Don't miss the opportunity to engage these scholars!_
+The History of Science Society's book exhibit is the epicenter of the annual meeting. It'll be even bigger in 2020 because HSS with the addition of the [Society for the History of Technology](https://www.historyoftechnology.org/). That means more attendees visiting the exhibit, more scholars perusing the latest titles in the field, an more authors meeting with publishers. _Don't miss the opportunity to engage these historians of science and tech!_
 
-- Over 88% of our 800+ attendees actively visit the book exhibit, and over 35% of them will purchase at least one book
+- Over 88% of our projected 1200+ attendees will actively visit the book exhibit, and over 35% of them will purchase at least one book
 - Scholars from around the world will use this opportunity to meet with editors - and to browse your display
 - Historians of science and technology read widely in many disciplines and have diverse interests
 - The meeting offers numerous opportunities to find your next authors
@@ -44,7 +44,7 @@ The History of Science Society's book exhibit is the epicenter of the annual mee
 
 **Collective Book Exhibit (CBE)**
 
-Don't need an entire table? Ship your titles to NOLA to be exhibited individually at HSS/SHOT 2020!
+Don't need an entire table? Ship your titles to NOLA to be exhibited individually at the HSS/SHOT 2020 Collective Book Exhibit!
 
 | Title      | Price |
 | ---------- | ----- |

@@ -39,7 +39,7 @@ export default {
             "Inside Cover: $400",
             'Size: 4.25" x 7"',
             "Format: High-Resolution PDF",
-            "Deadline: 1 September 2019"
+            "Deadline: 16 August 2020"
           ],
           footer: "Reserve a Program Ad"
         },
@@ -53,7 +53,7 @@ export default {
             'Vertical Half-Page Ad (4.5" x 5.5"): $300',
             'Quarter-Page Ad (3" x 5"): $150',
             "Deadline for July 2020 issue: 1 June 2020",
-            "Deadline for October 2020 issue: 1 September 2020",
+            "Deadline for October 2020 issue: 16 August 2020",
             "<em>Book for both issues and get your second ad half price</em>"
           ],
           footer: "Reserve a Newsletter Ad"
@@ -63,7 +63,11 @@ export default {
           header: "Website",
           description:
             "Projected to reach over 20,000 pageviews, greet our attendees with your customized banner ad on our meeting website",
-          body: ["Banner ad: $800", "Ad will be live from time of reception"],
+          body: [
+            "Banner ad: $800",
+            "For the HSS meeting website",
+            "Ad will be live from time of reception"
+          ],
           footer: "Reserve a Banner Ad"
         },
         {
@@ -74,7 +78,8 @@ export default {
           body: [
             "(1) packet insert to be included with registration materials: $475",
             'Inserts must fit within a 9" x 12" envelope or folder',
-            "Dates and details TBD"
+            "Packet inserts for HSS attendees only. To order inserts for SHOT, visit their website",
+            "Dates and details TBA"
           ],
           footer: "Reserve Packet Inserts"
         },
@@ -83,7 +88,11 @@ export default {
           header: "Branded Lanyards",
           description:
             "Stand out at our annual meeting by sponsoring customized lanyards, branded with your company name and logo. These lanyards hold the name badges that our attendees brandish with gusto.",
-          body: ["Branded Lanyards: ---", "Deadline: 16 August 2020"],
+          body: [
+            "Branded Lanyards: $750.00",
+            "For HSS attendees only",
+            "Deadline: 26 June 2020"
+          ],
           footer: "Reserve Branded Lanyards"
         },
         {
@@ -91,7 +100,11 @@ export default {
           header: "Branded Folders",
           description:
             "Help deliver our meeting materials in style! These customized folders will feature your company name and logo, with the addition of any other information you would like to communicate. Every attendee will receive this folder upon check in.",
-          body: ["Branded Folders: ---", "Deadline: 16 August 2020"],
+          body: [
+            "Branded Folders: $1,000.00",
+            "For HSS attendees only",
+            "Deadline: 26 June 2020"
+          ],
           footer: "Reserve Branded Folders"
         }
       ]
