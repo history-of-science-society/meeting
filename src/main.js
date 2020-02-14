@@ -1,50 +1,52 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import DefaultLayout from '~/layouts/Default.vue'
-import '~/assets/scss/globals.scss'
-import Vuex from 'vuex'
-require('typeface-source-sans-pro')
+import DefaultLayout from "~/layouts/Default.vue";
+import "~/assets/scss/globals.scss";
+import Vuex from "vuex";
+require("typeface-source-sans-pro");
+import * as VueGoogleMaps from "vue2-google-maps";
 
-export default function (Vue, {
-  router,
-  head,
-  isClient,
-  appOptions
-}) {
-  Vue.use(Vuex)
+export default function(Vue, { router, head, isClient, appOptions }) {
+  Vue.use(Vuex);
+  Vue.use(VueGoogleMaps, {
+    load: {
+      key: "AIzaSyAWT_-Njf_ACD0NX9zJV59hbu8ZSpUFgzY",
+      libraries: "places"
+    },
+    installComponents: true
+  });
 
   // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout)
+  Vue.component("Layout", DefaultLayout);
 
   // Add attributes to HTML tag
   head.htmlAttrs = {
-    lang: 'en'
-  }
+    lang: "en"
+  };
 
   head.link.push({
-    rel: 'manifest',
-    href: '/manifest.json'
-  })
+    rel: "manifest",
+    href: "/manifest.json"
+  });
 
   head.link.push({
     rel: "preload",
-    href: "https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343847&id=2",
+    href:
+      "https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343847&id=2",
     as: "document",
     crossorigin: ""
-  })
+  });
 
   head.meta.push({
-    name: 'theme-color',
-    content: '#666633'
-  })
+    name: "theme-color",
+    content: "#666633"
+  });
 
   head.meta.push({
-    name: 'apple-mobile-web-app-status-bar-style',
-    content: 'default'
-  })
-
-
+    name: "apple-mobile-web-app-status-bar-style",
+    content: "default"
+  });
 
   // State
   appOptions.store = new Vuex.Store({
@@ -53,14 +55,14 @@ export default function (Vue, {
     },
     mutations: {
       toggleSidebar(state) {
-        state.sidebarOpen = !state.sidebarOpen
+        state.sidebarOpen = !state.sidebarOpen;
       },
       closeSidebar(state) {
-        state.sidebarOpen = false
+        state.sidebarOpen = false;
       },
       openSidebar(state) {
-        state.sidebarOpen = true
+        state.sidebarOpen = true;
       }
     }
-  })
+  });
 }

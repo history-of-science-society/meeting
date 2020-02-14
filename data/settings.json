@@ -19,6 +19,15 @@
       ]
     },
     {
+      "section": "NOLA",
+      "topics": [
+        {
+          "title": "Location",
+          "slug": "location"
+        }
+      ]
+    },
+    {
       "section": "Exhibitors, Sponsors, and Advertisers",
       "topics": [
         {
