@@ -36,9 +36,9 @@ The History of Science Society's book exhibit is the epicenter of the annual mee
 
 | Table      | Price | 1 complimentary registration |
 | ---------- | ----- | ---------------------------- |
-| 1          | \$415 | ✔️                           |
-| 2          | \$315 | ✔️                           |
-| Additional | \$215 | ❌                           |
+| 1          | $415 | ✔️                           |
+| 2          | $315 | ✔️                           |
+| Additional | $215 | ❌                           |
 
 <btn-link link="https://hssonline.formstack.com/forms/support">Reserve a Table</btn-link>
 
@@ -48,9 +48,9 @@ Don't need an entire table? Ship your titles to NOLA to be exhibited individuall
 
 | Title      | Price |
 | ---------- | ----- |
-| 1          | \$75  |
-| 2          | \$50  |
-| Additional | \$40  |
+| 1          | $75  |
+| 2          | $50  |
+| Additional | $40  |
 
 _All titles must be shipped directly to the Sheraton New Orleans Hotel. Shipping dates &amp; details TBA_
 
