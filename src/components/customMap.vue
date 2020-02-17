@@ -59,7 +59,9 @@
       <gmap-custom-marker :marker="airport">
         <div class="marker__container">
           <div class="marker__text-container">
-            <a href="#" class="marker__title">New Orleans Airport</a>
+            <a href="https://g.page/flyneworleans?share" class="marker__title"
+              >New Orleans Airport</a
+            >
             <p class="marker__subtitle">Airport Code: MSY</p>
           </div>
           <svg
