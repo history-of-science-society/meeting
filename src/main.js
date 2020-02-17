@@ -11,7 +11,7 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(Vuex);
   Vue.use(VueGoogleMaps, {
     load: {
-      key: "AIzaSyAWT_-Njf_ACD0NX9zJV59hbu8ZSpUFgzY",
+      key: process.env.GMAP_API,
       libraries: "places"
     },
     installComponents: true
