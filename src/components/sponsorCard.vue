@@ -29,11 +29,11 @@ export default {
           id: "1",
           header: "Coffee Break",
           description:
-            "After the investigation of science history, our attendees are most passionate and vocal about coffee (and tea). Fuel these scholars’ minds by sponsoring a coffee break at the 2019 annual meeting. Attendees will be forever grateful.",
+            "After the investigation of science history, our attendees are most passionate and vocal about coffee (and tea). Fuel these scholars’ minds by sponsoring a coffee break at the 2020 annual meeting. Attendees will be forever grateful.",
           body: [
             "Coffee Break Sponsorship: $500+",
             "Sponsors enjoy all Ptolemy-Level Benefits, including acknowledgment on HSS meeting website, personalized sponsor page on meeting website, and more",
-            'Deadline: 16 August 2020"'
+            "Deadline: 16 August 2020"
           ],
           footer: "Sponsor a Coffee Break"
         },

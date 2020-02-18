@@ -21,7 +21,7 @@ export default {
       supportLevels: [
         {
           id: "1",
-          header: "Ptolemy ($500-$900)",
+          header: "Ptolemy ($500-$999)",
           body: [
             "Acknowledgment on HSS meeting website",
             "Personalized sponsor page on meeting website",
@@ -40,7 +40,7 @@ export default {
         },
         {
           id: "3",
-          header: "Albert Einstein ($1,500-$2,499",
+          header: "Albert Einstein ($1,500-$2,499)",
           body: [
             "Everything in Franklin",
             "Two complimentary registration",

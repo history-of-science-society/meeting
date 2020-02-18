@@ -1,5 +1,5 @@
 ---
-title: Support HSS 2020
+title: Support the History of Science
 date: 2019-12-11 07:42:34
 slug: support
 description: Exhibit, advertise, or sponsor an event at the preeminent meeting for the history of science
@@ -25,7 +25,7 @@ The following benefits correspond to the sponsorship, advertising, and exhibitio
 
 **HSS/SHOT Book Exhibit**
 
-The History of Science Society's book exhibit is the epicenter of the annual meeting. It'll be even bigger in 2020 because HSS with the addition of the [Society for the History of Technology](https://www.historyoftechnology.org/). That means more attendees visiting the exhibit, more scholars perusing the latest titles in the field, an more authors meeting with publishers. _Don't miss the opportunity to engage these historians of science and tech!_
+The History of Science Society's book exhibit is the epicenter of the annual meeting. It'll be even bigger in 2020 because HSS with the addition of the [Society for the History of Technology](https://www.historyoftechnology.org/). That means more attendees visiting the exhibit, more scholars perusing the latest titles in the field, and more authors meeting with publishers. _Don't miss the opportunity to engage these historians of science and tech!_
 
 - Over 88% of our projected 1200+ attendees will actively visit the book exhibit, and over 35% of them will purchase at least one book
 - Scholars from around the world will use this opportunity to meet with editors - and to browse your display
