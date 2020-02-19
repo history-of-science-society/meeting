@@ -126,7 +126,7 @@ Session proposals addressing themes and issues with interest to both societies a
 
 **Organized Session**
 
-A panel about a common theme, consisting of an organizer, chair, and presenters. The organizer submits all abstracts and presenter information. In addition to an organizer and chair, possible configurations include 3 speakers and 1 commentator/panel discussion or 4 speakers. [See a sample submission.](/organizedsession_sample.pdf)
+A panel about a common theme, consisting of an organizer, chair, and presenters. The organizer submits all abstracts and presenter information. In addition to an organizer and chair, possible configurations include 3 speakers and 1 commentator/panel discussion or 4 speakers. [See a sample submission (PDF).](/organizedsession_sample.pdf)
 
 </div>
 
@@ -141,7 +141,7 @@ A panel about a common theme, consisting of an organizer, chair, and presenters.
 
 **Contributed Paper**
 
-A presentation on the history of science no longer than 20 minutes. [See a sample submission.](/contributedpaper_sample.pdf)
+A presentation on the history of science no longer than 20 minutes. [See a sample submission  (PDF).](/contributedpaper_sample.pdf)
 
 </div>
 
@@ -155,7 +155,7 @@ A presentation on the history of science no longer than 20 minutes. [See a sampl
 
 **Roundtable**
 
-To facilitate dialogue at its annual meeting, the History of Science Society requests proposals for roundtables. Roundtable participants may not present in another session. The typical roundtable will feature 5 presenters, including a commentator, who will each speak for 10 minutes or less, leaving ample time for exchanges with the audience. (Roundtables may include from 4 to 8 total speakers.) [See a sample submission.](/roundtable_sample.pdf)
+To facilitate dialogue at its annual meeting, the History of Science Society requests proposals for roundtables. Roundtable participants may not present in another session. The typical roundtable will feature 5 presenters, including a commentator, who will each speak for 10 minutes or less, leaving ample time for exchanges with the audience. (Roundtables may include from 4 to 8 total speakers.) [See a sample submission  (PDF).](/roundtable_sample.pdf)
 
 </div>
 
@@ -169,7 +169,7 @@ To facilitate dialogue at its annual meeting, the History of Science Society req
 
 **Flashtalks ⚡**
 
-As part of a special Presidential Session, the HSS invites graduate student proposals for flashtalks. The president of HSS will evaluate abstracts and moderate the session. These flashtalks will be presentations of 5 minutes or less and a slide, followed by discussion. Proposals require only a title and a short abstract (2-3 sentences). Flashtalks speakers are not permitted to present on the program in any other fashion. [See a sample submission.](/flashtalk_sample.pdf)
+As part of a special Presidential Session, the HSS invites graduate student proposals for flashtalks. The president of HSS will evaluate abstracts and moderate the session. These flashtalks will be presentations of 5 minutes or less and a slide, followed by discussion. Proposals require only a title and a short abstract (2-3 sentences). Flashtalks speakers are not permitted to present on the program in any other fashion. [See a sample submission (PDF).](/flashtalk_sample.pdf)
 
 </div>
 
