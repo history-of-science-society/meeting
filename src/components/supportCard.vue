@@ -91,8 +91,8 @@ export default {
     margin-bottom: 3rem;
 
     align-items: stretch;
-    justify-content: center;
   }
+
   &__card {
     display: flex;
     flex-direction: column;

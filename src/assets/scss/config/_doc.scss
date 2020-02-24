@@ -19,29 +19,21 @@
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
 
-    @include box-shadow($large: true);
+    background-color: #90ee90;
+    @include box-shadow($small: true);
+    color: $textBright;
+    border: 1px solid #000;
 
-    .dark & {
-      border: 1px solid $textDark;
-      &:hover {
-        transition: all 0.2s ease-in-out;
-        background: shade($darkLink, 35%);
-        color: $textBright;
-      }
+    &:hover {
+      transition: all 0.1s ease-in-out;
+      background: shade(#90ee90, 35%);
+      color: $textDark;
     }
 
-    .bright & {
-      border: 1px solid $textBright;
-      &:hover {
-        transition: all 0.2s ease-in-out;
-        background: shade($brightLink, 35%);
-        color: $textDark;
-      }
-    }
     &:active {
-      @include box-shadow($small: true);
+      box-shadow: 0 0 1 rgba(0, 0, 0, 0.3);
     }
   }
 
