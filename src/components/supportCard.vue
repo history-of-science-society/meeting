@@ -97,6 +97,12 @@ export default {
     flex-direction: column;
     width: 20rem;
     margin: 1rem;
+    .bright & {
+      background-color: $sidebarBright;
+    }
+    .dark & {
+      background-color: $sidebarDark;
+    }
     @include box-shadow($large: true);
     @include respond-above(lg) {
       width: 22rem;
@@ -141,7 +147,7 @@ export default {
     font-weight: 600;
   }
   &__body {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     flex: 1;
   }
 
