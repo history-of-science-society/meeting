@@ -96,8 +96,8 @@ export default {
   &__card {
     display: flex;
     flex-direction: column;
+    width: 20rem;
     margin: 1rem;
-    max-width: 540px;
     .bright & {
       background-color: $sidebarBright;
     }
@@ -105,6 +105,9 @@ export default {
       background-color: $sidebarDark;
     }
     @include box-shadow($large: true);
+    @include respond-above(lg) {
+      width: 22rem;
+    }
   }
 
   &__header {
