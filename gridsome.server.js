@@ -39,21 +39,14 @@ module.exports = function(api) {
     });
 
     for (const item of submissions) {
-      const logo = path.resolve(
-        process.cwd() +
-          "/src/assets/img/" +
-          slugify(item.data["73848747"].value) +
-          ".jpg"
-      );
-      console.log(logo);
       Sponsors.addNode({
         id: item.id || "",
         type: item.data["88779197"]
           ? item.data["88779197"].value.split(/\n/)
           : "",
-        name: item.data["73848747"] ? item.data["73848747"].value : "",
+        name: item.data["73848845"] ? item.data["73848845"].value : "",
         description: item.data["73848753"] ? item.data["73848753"].value : "",
-        website: item.data["73848845"] ? item.data["73848845"].value : "",
+        website: item.data["73848747"] ? item.data["73848747"].value : "",
         social: {
           blog: item.data["73848915"] ? item.data["73848915"].value : "",
           twitter: item.data["73848950"] ? item.data["73848950"].value : "",
@@ -67,7 +60,11 @@ module.exports = function(api) {
           title2: item.data["73850476"] ? item.data["73850476"].value : "",
           title3: item.data["73850472"] ? item.data["73850472"].value : ""
         },
-        logo: logo
+        logo: path.resolve(
+          process.cwd(),
+          "src/assets/img",
+          slugify(item.data["73848845"].value) + ".jpg"
+        )
       });
     }
   });

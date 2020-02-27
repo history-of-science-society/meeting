@@ -37,7 +37,6 @@ export default {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 1rem;
-  opacity: 0.5;
 
   .dark & {
     color: $sidebarBright;

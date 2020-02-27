@@ -203,7 +203,7 @@ ul {
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: 0;
-  opacity: 0.3;
+  opacity: 0.6;
   letter-spacing: 0.15em;
   font-weight: 700;
 }

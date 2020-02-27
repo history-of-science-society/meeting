@@ -6,8 +6,8 @@
       :key="node.id"
     >
       <div class="card__top">
+        <g-image class="card__img--exhibitor" :src="node.logo" />
         <a class="card__link" :href="node.website">
-          <g-image class="card__img--exhibitor" :src="node.logo" />
           <p class="card__title">{{ node.name }}</p>
         </a>
 
