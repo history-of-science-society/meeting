@@ -45,10 +45,11 @@
     position: relative;
   }
 
-  .submission-type {
+  .card {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: flex-start;
 
     &__item {
       min-width: 250px;
@@ -75,6 +76,104 @@
 
       & > div > p {
         margin-top: 0;
+      }
+    }
+    &__img {
+      width: 100%;
+      height: 15rem;
+      object-fit: cover;
+      margin-bottom: 0.75rem;
+    }
+    &__title {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__icon {
+      transform: translateY(0.2rem);
+      margin-left: 0.12em;
+      height: 20px;
+      width: 20px;
+    }
+    &__social {
+      display: flex;
+      flex-direction: column;
+      &-header {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        border-bottom: 1px solid currentColor;
+      }
+      &-item {
+        margin: 0.25rem 0;
+        text-decoration: none;
+        .card__icon {
+          margin-left: 0;
+          margin-right: 0.5rem;
+          stroke-width: 2px;
+        }
+        &--twitter {
+          @extend .card__social-item;
+
+          &:hover {
+            color: $twitter;
+            svg {
+              stroke: $twitter;
+            }
+          }
+        }
+        &--facebook {
+          @extend .card__social-item;
+
+          &:hover {
+            color: $facebook;
+            svg {
+              stroke: $facebook;
+            }
+          }
+        }
+        &--youtube {
+          @extend .card__social-item;
+          &:hover {
+            color: $youtube;
+            svg {
+              stroke: $youtube;
+            }
+          }
+        }
+        &--instagram {
+          @extend .card__social-item;
+          &:hover {
+            color: $instagram;
+            svg {
+              stroke: $instagram;
+            }
+          }
+        }
+        &--blog {
+          @extend .card__social-item;
+          &:hover {
+            .dark & {
+              color: $accent;
+            }
+            .bright & {
+              color: $hss;
+            }
+            svg {
+              .dark & {
+                stroke: $accent;
+              }
+              .bright {
+                stroke: $hss;
+              }
+            }
+          }
+        }
       }
     }
   }

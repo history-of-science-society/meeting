@@ -1,37 +1,51 @@
 <template>
   <div>
     <h3>Open Sessions ({{ sessions }})</h3>
-    <article class="collab-card" v-for="(data,idx) in collabs" :key="idx">
-      <p class="collab-card__badge">{{ data['I\'m interested in...'] }}</p>
-      <p class="collab-card__title">{{ data['Tentative Title'] }}</p>
+    <article
+      class="collab-card"
+      v-for="(data, idx) in collabReversed"
+      :key="idx"
+    >
+      <p class="collab-card__badge">{{ data["I'm interested in..."] }}</p>
+      <p class="collab-card__title">{{ data["Tentative Title"] }}</p>
       <p class="collab-card__small-title">Organizer</p>
-      <a class="collab-card__name" :href="'mailto:'+data.Email+'?subject=HSS 2020 Collaboration'">
-        {{ data['Name (First)'] }} {{ data['Name (Last)'] }}
+      <a
+        class="collab-card__name"
+        :href="'mailto:' + data.Email + '?subject=HSS 2020 Collaboration'"
+      >
+        {{ data["Name (First)"] }} {{ data["Name (Last)"] }}
         <mail-icon class="collab-card__mail-icon"></mail-icon>
       </a>
       <p class="collab-card__small-title">Abstract</p>
       <p
         class="collab-card__abstract"
-        v-html=" data['Session idea, abstract, or other information relevant for potential collaborators']"
+        v-html="
+          data[
+            'Session idea, abstract, or other information relevant for potential collaborators'
+          ]
+        "
       ></p>
       <div class="collab-card__metabox">
         <div class="collab-card__fixed-cat">
           <p class="collab-card__metadata">
             <archive-icon />
-            &nbsp;{{ data['Abstract Topic'] }}
+            &nbsp;{{ data["Abstract Topic"] }}
           </p>
           <p class="collab-card__metadata">
             <clock-icon />
-            {{ data['Abstract Chronology'] }}
+            {{ data["Abstract Chronology"] }}
           </p>
           <p class="collab-card__metadata">
             <map-icon />
-            {{ data['Abstract Geography'] }}
+            {{ data["Abstract Geography"] }}
           </p>
         </div>
-        <p class="collab-card__metadata--full-width" v-if="data['Self-Designated Keywords']">
+        <p
+          class="collab-card__metadata--full-width"
+          v-if="data['Self-Designated Keywords']"
+        >
           <tag-icon />
-          {{ data['Self-Designated Keywords'] }}
+          {{ data["Self-Designated Keywords"] }}
         </p>
       </div>
       <p class="collab-card__notes" v-if="data.Notes">
@@ -63,12 +77,15 @@ export default {
   },
   data() {
     return {
-      collabs: json.reverse()
+      collabs: json
     };
   },
   computed: {
     sessions: function() {
       return this.collabs.length;
+    },
+    collabReversed: function() {
+      return this.collabs.slice().reverse();
     }
   }
 };

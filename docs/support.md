@@ -7,29 +7,37 @@ description: Exhibit, advertise, or sponsor an event at the preeminent meeting f
 
 import btnLink from '~/components/btnLink.vue'
 import supportCard from '~/components/supportCard.vue'
-import adCard from '~/components/adCard.vue'
-import sponsorCard from '~/components/sponsorCard.vue'
 
 ## Levels of Support
 
 The following benefits correspond to the sponsorship, advertising, and exhibition opportunities listed below.
 
-<div class="support__box">
-<supportCard id="1"><g-image src="~/components/img/ptolemy.jpg" class="support__img" /></supportCard>
-<supportCard id="2"><g-image src="~/components/img/franklin.jpg" class="support__img" /></supportCard>
-<supportCard id="3"><g-image src="~/components/img/einstein.jpg" class="support__img" /></supportCard>
-<supportCard id="4"><g-image src="~/components/img/darwin.png" class="support__img" /></supportCard>
+<div class="card">
+
+<supportCard v-bind:property="{deftype: 'level', id: 0}">
+<g-image src="~/assets/img/ptolemy.jpg" class="card__img" /></supportCard>
+
+<supportCard :property="{deftype: 'level', id: 1}">
+<g-image src="~/assets/img/franklin.jpg" class="card__img" /></supportCard>
+
+<supportCard :property="{deftype: 'level', id: 2}">
+<g-image src="~/assets/img/einstein.jpg" class="card__img" /></supportCard>
+
+<supportCard :property="{deftype: 'level', id: 3}">
+<g-image src="~/assets/img/darwin.png" class="card__img" /></supportCard>
+
 </div>
 
 ## Exhibit
 
 **HSS/SHOT Book Exhibit**
 
-The History of Science Society's book exhibit is the epicenter of the annual meeting. It'll be even bigger in 2020 because HSS with the addition of the [Society for the History of Technology](https://www.historyoftechnology.org/). That means more attendees visiting the exhibit, more scholars perusing the latest titles in the field, and more authors meeting with publishers. _Don't miss the opportunity to engage these historians of science and tech!_
+The History of Science Society’s book exhibit is the epicenter of the annual meeting. It’ll be even bigger in 2020 because HSS is meeting with the [Society for the History of Technology](https://www.historyoftechnology.org/). That means more attendees visiting the exhibit, more scholars perusing the latest titles in the field, and more authors meeting with publishers. _Don’t miss the opportunity to engage these historians of science and tech!_
 
 - Over 88% of our projected 1200+ attendees will actively visit the book exhibit, and over 35% of them will purchase at least one book
 - Scholars from around the world will use this opportunity to meet with editors - and to browse your display
 - Historians of science and technology read widely in many disciplines and have diverse interests
+- Books discovered at the exhibit become required reading on future syllabi
 - The meeting offers numerous opportunities to find your next authors
 
 **2020 Book Exhibit Pricing**
@@ -44,7 +52,9 @@ The History of Science Society's book exhibit is the epicenter of the annual mee
 
 **Collective Book Exhibit (CBE)**
 
-Don't need an entire table? Ship your titles to NOLA to be exhibited individually at the HSS/SHOT 2020 Collective Book Exhibit!
+Don’t need an entire table? Ship your titles to NOLA to be exhibited individually at the HSS/SHOT 2020 Collective Book Exhibit!
+
+The Collective Book Exhibit gathers individual titles and displays them *collectively* on one exhibit table. You ship the books to the exhibit hotel, and we handle the rest.
 
 | Title      | Price |
 | ---------- | ----- |
@@ -58,30 +68,42 @@ _All titles must be shipped directly to the Sheraton New Orleans Hotel. Shipping
 
 ## Advertise (Print and Digital)
 
-<div class="support__box">
-<adCard id="1"><g-image src="~/components/img/program.jpg" class="support__img" /></adCard>
+<div class="card">
 
-<adCard id="2"><g-image src="~/components/img/newsletter.jpg" class="support__img" /></adCard>
+<supportCard :property="{deftype: 'ad', id: 0}">
+<g-image src="~/assets/img/program.jpg" class="card__img" /></supportCard>
 
-<adCard id="3"><g-image src="~/components/img/banner.jpg" class="support__img" /></adCard>
+<supportCard :property="{deftype: 'ad', id: 1}">
+<g-image src="~/assets/img/newsletter.jpg" class="card__img" /></supportCard>
 
-<adCard id="4"><g-image src="~/components/img/packet-inserts.jpg" class="support__img" /></adCard>
+<supportCard :property="{deftype: 'ad', id: 2}">
+<g-image src="~/assets/img/banner.jpg" class="card__img" /></supportCard>
 
-<adCard id="5"><g-image src="~/components/img/lanyard.jpg" class="support__img" /></adCard>
+<supportCard :property="{deftype: 'ad', id: 3}">
+<g-image src="~/assets/img/packet-inserts.jpg" class="card__img" /></supportCard>
 
-<adCard id="6"><g-image src="~/components/img/folder.png" class="support__img" /></adCard>
+<supportCard :property="{deftype: 'ad', id: 4}">
+<g-image src="~/assets/img/lanyard.jpg" class="card__img" /></supportCard>
+
+<supportCard :property="{deftype: 'ad', id: 5}">
+<g-image src="~/assets/img/folder.png" class="card__img" /></supportCard>
 
 </div>
 
 ## Sponsor
 
-<div class="support__box">
-<sponsorCard id="1"><g-image src="~/components/img/coffee.jpg" class="support__img" /></sponsorCard>
+<div class="card">
 
-<sponsorCard id="2"><g-image src="~/components/img/breakfast.jpg" class="support__img" /></sponsorCard>
+<supportCard :property="{deftype: 'sponsor', id: 0}">
+<g-image src="~/assets/img/coffee.jpg" class="card__img" /></supportCard>
 
-<sponsorCard id="3"><g-image src="~/components/img/mixer.jpg" class="support__img" /></sponsorCard>
+<supportCard :property="{deftype: 'sponsor', id: 1}">
+<g-image src="~/assets/img/breakfast.jpg" class="card__img" /></supportCard>
 
-<sponsorCard id="4"><g-image src="~/components/img/reception.jpg" class="support__img" /></sponsorCard>
+<supportCard :property="{deftype: 'sponsor', id: 2}">
+<g-image src="~/assets/img/mixer.jpg" class="card__img" /></supportCard>
+
+<supportCard :property="{deftype: 'sponsor', id: 3}">
+<g-image src="~/assets/img/reception.jpg" class="card__img" /></supportCard>
 
 </div>

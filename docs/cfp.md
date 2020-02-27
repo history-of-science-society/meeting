@@ -118,9 +118,9 @@ Session proposals addressing themes and issues with interest to both societies a
 
 ## Submit an Abstract
 
-<div class="submission-type">
+<div class="card">
 
-<div class="submission-type__item">
+<div class="card__item">
 
 <div>
 
@@ -136,7 +136,7 @@ A panel about a common theme, consisting of an organizer, chair, and presenters.
 
 </div>
 
-<div class="submission-type__item">
+<div class="card__item">
 <div>
 
 **Contributed Paper**
@@ -150,7 +150,7 @@ A presentation on the history of science no longer than 20 minutes. [See a sampl
 </div>
 
 </div>
-<div class="submission-type__item">
+<div class="card__item">
 <div>
 
 **Roundtable**
@@ -164,7 +164,7 @@ To facilitate dialogue at its annual meeting, the History of Science Society req
 </div>
 
 </div>
-<div class="submission-type__item">
+<div class="card__item">
 <div>
 
 **Flashtalks ⚡**
