@@ -130,7 +130,7 @@ A panel about a common theme, consisting of an organizer, chair, and presenters.
 
 </div>
 
-<div>
+<div class="card__bottom">
 <a href="https://hssonline.formstack.com/forms/organized_session" class="btn">Submit an Organized Session</a>
 </div>
 
@@ -145,7 +145,7 @@ A presentation on the history of science no longer than 20 minutes. [See a sampl
 
 </div>
 
-<div>
+<div class="card__bottom">
 <a href="https://hssonline.formstack.com/forms/contributed_paper" class="btn">Submit a Contributed Paper</a>
 </div>
 
@@ -159,7 +159,7 @@ To facilitate dialogue at its annual meeting, the History of Science Society req
 
 </div>
 
-<div>
+<div class="card__bottom">
 <a href="https://hssonline.formstack.com/forms/roundtable" class="btn">Submit a Roundtable</a>
 </div>
 
@@ -173,7 +173,7 @@ As part of a special Presidential Session, the HSS invites graduate student prop
 
 </div>
 
-<div>
+<div class="card__bottom">
 <a href="https://hssonline.formstack.com/forms/flashtalk" class="btn">Submit a Flashtalk</a>
 </div>
 
