@@ -14,7 +14,7 @@ import customMap from '~/components/customMap'
 
 ## Meeting Hotel
 
-![HSS 2020 Meeting Hotel Sheraton New Orleans](./img/hotel.jpg)
+![HSS 2020 Meeting Hotel Sheraton New Orleans](~/assets/img/hotel.jpg)
 
 <Hotel />
 

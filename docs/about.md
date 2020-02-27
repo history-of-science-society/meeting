@@ -1,9 +1,13 @@
 ---
-title: Terms & Conditions
+title: About
 date: 2019-12-06 07:42:34
-slug: terms-and-conditions
-description: HSS 2020 Terms and Conditions
+slug: about
+description: Information about the 2020 History of Science Society, including a contact form, terms and conditions, privacy policy, and more
 ---
+
+## Contact Us
+
+<iframe src="https://hssonline.formstack.com/forms/contact" title="Contact HSS" width="100%" height="1000px"></iframe>
 
 ## Privacy Policy
 
