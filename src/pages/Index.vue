@@ -16,16 +16,12 @@
       </div>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/welcome/" text="Welcome" icon="home-icon" />
-        <Shortcut link="/cfp/" text="Submit an Abstract" icon="edit-icon" />
-        <Shortcut
-          link="/support/"
-          text="Advertise at HSS"
-          icon="message-square-icon"
-        />
+        <Shortcut link="/welcome" text="Welcome" icon="home-icon" />
+        <Shortcut link="/travel" text="Hotel and Travel" icon="briefcase-icon" />
+        <Shortcut link="/support" text="Advertise at HSS" icon="message-square-icon" />
       </nav>
     </div>
-    <div class="full-width">
+    <!-- <div class="full-width">
       <div class="upcoming-dates">
         <alert-circle-icon class="upcoming-dates__icon" />
         <div class="upcoming-dates__text">
@@ -35,7 +31,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div>-->
     <p class="tagline">{{ this.tagline }}</p>
   </Layout>
 </template>
@@ -51,15 +47,20 @@ query {
 <script>
 import GitLink from "~/components/GitLink.vue";
 import Shortcut from "~/components/Shortcut.vue";
-import { MapIcon, CalendarIcon, AlertCircleIcon } from "vue-feather-icons";
+import {
+  MapIcon,
+  CalendarIcon,
+  AlertCircleIcon,
+  BriefcaseIcon
+} from "vue-feather-icons";
 
 export default {
   components: {
-    GitLink,
     Shortcut,
     MapIcon,
     CalendarIcon,
-    AlertCircleIcon
+    AlertCircleIcon,
+    BriefcaseIcon
   },
   data() {
     return {

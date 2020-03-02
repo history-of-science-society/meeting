@@ -1,10 +1,6 @@
 <template>
   <div class="card">
-    <div
-      class="card__item"
-      v-for="{ node } in $static.sponsors.edges"
-      :key="node.id"
-    >
+    <div class="card__item" v-for="{ node } in $static.sponsors.edges" :key="node.id">
       <div class="card__top">
         <g-image class="card__img--exhibitor" :src="node.logo" />
         <a class="card__link" :href="node.website">
@@ -28,40 +24,46 @@
             v-if="node.social.twitter"
             class="card__social-item--twitter"
             :href="node.social.twitter"
-            ><twitter-icon class="card__icon" aria-label="twitter" />@{{
-              extractEnd(node.social.twitter)
+          >
+            <twitter-icon class="card__icon" aria-label="twitter" />
+            @{{
+            extractEnd(node.social.twitter)
             }}
           </a>
           <a
             v-if="node.social.facebook"
             class="card__social-item--facebook"
             :href="node.social.facebook"
-            ><facebook-icon class="card__icon" aria-label="facebook" />{{
-              extractEnd(node.social.facebook)
+          >
+            <facebook-icon class="card__icon" aria-label="facebook" />
+            {{
+            extractEnd(node.social.facebook)
             }}
           </a>
           <a
             v-if="node.social.youtube"
             class="card__social-item--youtube"
             :href="node.social.youtube"
-            ><youtube-icon class="card__icon" aria-label="youtube" />{{
-              extractEnd(node.social.youtube)
+          >
+            <youtube-icon class="card__icon" aria-label="youtube" />
+            {{
+            extractEnd(node.social.youtube)
             }}
           </a>
           <a
             v-if="node.social.instagram"
             class="card__social-item--instagram"
             :href="node.social.instagram"
-            ><instagram-icon class="card__icon" aria-label="instagram" />{{
-              extractEnd(node.social.instagram)
+          >
+            <instagram-icon class="card__icon" aria-label="instagram" />
+            {{
+            extractEnd(node.social.instagram)
             }}
           </a>
-          <a
-            v-if="node.social.blog"
-            class="card__social-item--blog"
-            :href="node.social.blog"
-            ><pen-tool-icon class="card__icon" aria-label="blog" />{{
-              extractEnd(node.social.blog)
+          <a v-if="node.social.blog" class="card__social-item--blog" :href="node.social.blog">
+            <pen-tool-icon class="card__icon" aria-label="blog" />
+            {{
+            extractEnd(node.social.blog)
             }}
           </a>
         </div>
@@ -73,7 +75,7 @@
 
 <static-query>
 query Sponsors {
-  sponsors: allSponsors(order: ASC) {
+  sponsors: allSponsors(order: ASC, filter: {type: {contains: ["Exhibitor"]}}) {
     edges {
       node {
         id

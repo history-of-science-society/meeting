@@ -23,9 +23,10 @@ module.exports = function(api) {
       });
     }
   });
-  const url = "http://www.formstack.com/api/v2/form/3340779/submission.json";
-  api.loadSource(async store => {
-    const { data } = await axios.get(url, {
+  const urlForExhibitors =
+    "http://www.formstack.com/api/v2/form/3340779/submission.json";
+  api.loadSource(async actions => {
+    const { data } = await axios.get(urlForExhibitors, {
       params: {
         data: 1
       },
@@ -34,7 +35,7 @@ module.exports = function(api) {
 
     const { submissions } = data;
 
-    const Sponsors = store.addCollection({
+    const Sponsors = actions.addCollection({
       typeName: "Sponsors"
     });
 

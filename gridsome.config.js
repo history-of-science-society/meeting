@@ -17,21 +17,8 @@ function addStyleResource(rule) {
 module.exports = {
   siteName: "History of Science Society",
   siteUrl: "https://hssmeeting.org",
-  // templates: {
-  //   Doc: "/:slug"
-  // },
 
   plugins: [
-    // {
-    //   use: "@gridsome/source-filesystem",
-    //   options: {
-    //     path: "docs/**/*.md",
-    //     typeName: "Doc",
-    //     remark: {
-    //       plugins: ["@gridsome/remark-prismjs"]
-    //     }
-    //   }
-    // },
     {
       use: "@gridsome/plugin-sitemap"
     },

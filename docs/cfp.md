@@ -8,7 +8,7 @@ slug: cfp
 import btnLink from '~/components/btnLink.vue'
 import collabData from '~/components/CollabSearch.vue'
 
-<div class="deadline"><span class="inner-deadline">Deadline:</span> 1&nbsp;March&nbsp;2020&nbsp;(23:59&nbsp;EST)</div>
+<div class="deadline"><span class="inner-deadline">⚠ We are no longer accepting abstracts</span></div>
 
 The History of Science Society (HSS) will hold its 2020 conference in New Orleans, LA, USA. This will be a joint meeting with the [Society for the History of Technology (SHOT)](https://www.historyoftechnology.org/). The Society encourages submissions on all topics. Proposals (2,000-character maximum per abstract) must be submitted via the HSS online submission form. Unlike many academic societies, the HSS does not require that participants be members, but all participants must register for the meeting.
 
@@ -104,9 +104,7 @@ All submissions require a title, abstract, and classification according to topic
 
 ## Find a Collaborator
 
-To encourage and aid the creation of panels with strong thematic coherence that draw upon historians of science across institutions and ranks, the HSS has created a [collaboration form](https://hssonline.formstack.com/forms/collaboration) to submit proposals in need of panelists and a [spreadsheet to review](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) submitted proposals. Anyone with a panel, paper, or roundtable idea seeking like-minded presenters should post and consult the postings on [the spreadsheet](https://docs.google.com/spreadsheets/d/17DK9wBx_V4UvyNB747hbSaAGkBct4h9Gjg0S5T9Jl0k/edit?usp=sharing) or below to round out a prospective session.
-
-<collab-data />
+Collaboration information has been removed because the abstract submission deadline has passed.
 
 ## Independent Scholar Award
 
@@ -130,9 +128,9 @@ A panel about a common theme, consisting of an organizer, chair, and presenters.
 
 </div>
 
-<div class="card__bottom">
+<!-- <div class="card__bottom">
 <a href="https://hssonline.formstack.com/forms/organized_session" class="btn">Submit an Organized Session</a>
-</div>
+</div> -->
 
 </div>
 
@@ -145,9 +143,9 @@ A presentation on the history of science no longer than 20 minutes. [See a sampl
 
 </div>
 
-<div class="card__bottom">
+<!-- <div class="card__bottom">
 <a href="https://hssonline.formstack.com/forms/contributed_paper" class="btn">Submit a Contributed Paper</a>
-</div>
+</div> -->
 
 </div>
 <div class="card__item">
@@ -159,9 +157,9 @@ To facilitate dialogue at its annual meeting, the History of Science Society req
 
 </div>
 
-<div class="card__bottom">
+<!-- <div class="card__bottom">
 <a href="https://hssonline.formstack.com/forms/roundtable" class="btn">Submit a Roundtable</a>
-</div>
+</div> -->
 
 </div>
 <div class="card__item">
@@ -173,9 +171,9 @@ As part of a special Presidential Session, the HSS invites graduate student prop
 
 </div>
 
-<div class="card__bottom">
+<!-- <div class="card__bottom">
 <a href="https://hssonline.formstack.com/forms/flashtalk" class="btn">Submit a Flashtalk</a>
-</div>
+</div> -->
 
 </div>
 </div>
