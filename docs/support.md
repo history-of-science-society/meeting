@@ -15,16 +15,16 @@ The following benefits correspond to the sponsorship, advertising, and exhibitio
 <div class="card">
 
 <supportCard v-bind:property="{deftype: 'level', id: 0}">
-<g-image src="~/assets/img/ptolemy.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/ptolemy.jpg" class="card__img" width="500"/></supportCard>
 
 <supportCard :property="{deftype: 'level', id: 1}">
-<g-image src="~/assets/img/franklin.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/franklin.jpg" class="card__img" width="500"/></supportCard>
 
 <supportCard :property="{deftype: 'level', id: 2}">
-<g-image src="~/assets/img/einstein.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/einstein.jpg" class="card__img" width="500"/></supportCard>
 
 <supportCard :property="{deftype: 'level', id: 3}">
-<g-image src="~/assets/img/darwin.png" class="card__img" /></supportCard>
+<g-image src="~/assets/img/darwin.png" class="card__img" width="500"/></supportCard>
 
 </div>
 
@@ -71,22 +71,22 @@ _All titles must be shipped directly to the Sheraton New Orleans Hotel. Shipping
 <div class="card">
 
 <supportCard :property="{deftype: 'ad', id: 0}">
-<g-image src="~/assets/img/program.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/program.jpg" class="card__img" width="500" /></supportCard>
 
 <supportCard :property="{deftype: 'ad', id: 1}">
-<g-image src="~/assets/img/newsletter.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/newsletter.jpg" class="card__img" width="500" /></supportCard>
 
 <supportCard :property="{deftype: 'ad', id: 2}">
-<g-image src="~/assets/img/banner.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/banner.jpg" class="card__img" width="500" /></supportCard>
 
 <supportCard :property="{deftype: 'ad', id: 3}">
-<g-image src="~/assets/img/packet-inserts.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/packet-inserts.jpg" class="card__img" width="500" /></supportCard>
 
 <supportCard :property="{deftype: 'ad', id: 4}">
-<g-image src="~/assets/img/lanyard.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/lanyard.jpg" class="card__img" width="500" /></supportCard>
 
 <supportCard :property="{deftype: 'ad', id: 5}">
-<g-image src="~/assets/img/folder.png" class="card__img" /></supportCard>
+<g-image src="~/assets/img/folder.png" class="card__img" width="500" /></supportCard>
 
 </div>
 
@@ -95,15 +95,15 @@ _All titles must be shipped directly to the Sheraton New Orleans Hotel. Shipping
 <div class="card">
 
 <supportCard :property="{deftype: 'sponsor', id: 0}">
-<g-image src="~/assets/img/coffee.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/coffee.jpg" class="card__img" width="500"/></supportCard>
 
 <supportCard :property="{deftype: 'sponsor', id: 1}">
-<g-image src="~/assets/img/breakfast.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/breakfast.jpg" class="card__img" width="500"/></supportCard>
 
 <supportCard :property="{deftype: 'sponsor', id: 2}">
-<g-image src="~/assets/img/mixer.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/mixer.jpg" class="card__img" width="500"/></supportCard>
 
 <supportCard :property="{deftype: 'sponsor', id: 3}">
-<g-image src="~/assets/img/reception.jpg" class="card__img" /></supportCard>
+<g-image src="~/assets/img/reception.jpg" class="card__img" width="500"/></supportCard>
 
 </div>
