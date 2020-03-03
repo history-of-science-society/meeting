@@ -67,7 +67,39 @@
             }}
           </a>
         </div>
-        <div class="card__social-item--featured-titles"></div>
+        <p
+          v-if="node.books.title1Img || node.books.title3Url || node.books.title3Url"
+          class="card__social-header"
+        >Featured Titles</p>
+        <div
+          v-if="node.books.title1Img || node.books.title3Url || node.books.title3Url"
+          class="card__featured-titles"
+        >
+          <a
+            v-if="node.books.title1Url"
+            :href="node.books.title1Url"
+            class="card__featured-titles-link"
+            title="Learn More"
+          >
+            <img class="card__featured-titles-img" :src="node.books.title1Img" />
+          </a>
+          <a
+            v-if="node.books.title2Url"
+            :href="node.books.title2Url"
+            class="card__featured-titles-link"
+            title="Learn More"
+          >
+            <img class="card__featured-titles-img" :src="node.books.title2Img" />
+          </a>
+          <a
+            v-if="node.books.title3Url"
+            :href="node.books.title3Url"
+            class="card__featured-titles-link"
+            title="Learn More"
+          >
+            <img class="card__featured-titles-img" :src="node.books.title3Img" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -92,9 +124,12 @@ query Sponsors {
           other
         }
         books {
-          title1
-          title2
-          title3
+          title1Url
+          title2Url
+          title3Url
+          title1Img
+          title2Img
+          title3Img
         }
         logo
       }
@@ -153,6 +188,22 @@ export default {
     height: 15rem;
     margin-bottom: 0.75rem;
     object-fit: contain;
+  }
+  &__social {
+    padding-bottom: 0.5rem;
+  }
+  &__featured-titles {
+    display: flex;
+    padding-top: 0.5rem;
+  }
+  &__featured-titles-link {
+    img {
+      transition: all 0.2 ease-in-out;
+    }
+    &:hover img {
+      transition: all 0.2 ease-in-out;
+      filter: saturate(1.75);
+    }
   }
 }
 </style>

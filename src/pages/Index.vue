@@ -32,12 +32,39 @@
         </div>
       </div>
     </div>-->
+    <div class="supporters">
+      <p>
+        <strong>Thank you to our supporters!</strong>
+      </p>
+      <div class="supporters__container">
+        <a
+          v-for="{ node } in $static.sponsors.edges"
+          :key="node.id"
+          :href="node.website"
+          class="supporters__link"
+        >
+          <g-image :src="node.logo" width="60" class="supporters__img" />
+          {{ node.name }}
+        </a>
+      </div>
+    </div>
     <p class="tagline">{{ this.tagline }}</p>
   </Layout>
 </template>
 
 <static-query>
 query {
+  sponsors: allSponsors(sortBy: "name", order: ASC, filter: {level: {ne: "None"}}) {
+    edges {
+      node {
+        id
+        name
+        website
+        level
+        logo
+      }
+    }
+  }
   metadata {
     siteName
   }
@@ -230,6 +257,43 @@ nav {
   &__date {
     margin: 0 0.5rem;
     font-size: 1.2em;
+  }
+}
+
+.supporters {
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      .bright & {
+        color: $hss;
+      }
+      .dark & {
+        color: $accent;
+      }
+    }
+  }
+  &__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid currentColor;
   }
 }
 </style>

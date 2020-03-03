@@ -57,10 +57,14 @@ module.exports = function(api) {
           other: item.data["73849899"] ? item.data["73849899"].value : ""
         },
         books: {
-          title1: item.data["73850442"] ? item.data["73850442"].value : "",
-          title2: item.data["73850476"] ? item.data["73850476"].value : "",
-          title3: item.data["73850472"] ? item.data["73850472"].value : ""
+          title1Url: item.data["88952778"] ? item.data["88952778"].value : "",
+          title2Url: item.data["88952779"] ? item.data["88952779"].value : "",
+          title3Url: item.data["88952780"] ? item.data["88952780"].value : "",
+          title1Img: item.data["88952791"] ? item.data["88952791"].value : "",
+          title2Img: item.data["88952792"] ? item.data["88952792"].value : "",
+          title3Img: item.data["88952800"] ? item.data["88952800"].value : ""
         },
+        level: item.data["89169540"] ? item.data["89169540"].value : "",
         logo: path.resolve(
           process.cwd(),
           "src/assets/img",
