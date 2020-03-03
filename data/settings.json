@@ -9,15 +9,7 @@
         }
       ]
     },
-    {
-      "section": "Call for Papers",
-      "topics": [
-        {
-          "title": "Submission Instructions",
-          "slug": "cfp"
-        }
-      ]
-    },
+
     {
       "section": "NOLA",
       "topics": [
@@ -51,6 +43,15 @@
         {
           "title": "Travel Grants",
           "slug": "travel-grants"
+        }
+      ]
+    },
+    {
+      "section": "Call for Papers",
+      "topics": [
+        {
+          "title": "Submission Instructions",
+          "slug": "cfp"
         }
       ]
     },

@@ -45,9 +45,9 @@ module.exports = function(api) {
         type: item.data["88779197"]
           ? item.data["88779197"].value.split(/\n/)
           : "",
-        name: item.data["73848845"] ? item.data["73848845"].value : "",
+        name: item.data["73848747"] ? item.data["73848747"].value : "",
         description: item.data["73848753"] ? item.data["73848753"].value : "",
-        website: item.data["73848747"] ? item.data["73848747"].value : "",
+        website: item.data["73848845"] ? item.data["73848845"].value : "",
         social: {
           blog: item.data["73848915"] ? item.data["73848915"].value : "",
           twitter: item.data["73848950"] ? item.data["73848950"].value : "",
@@ -64,7 +64,7 @@ module.exports = function(api) {
         logo: path.resolve(
           process.cwd(),
           "src/assets/img",
-          slugify(item.data["73848845"].value) + ".jpg"
+          slugify(item.data["73848747"].value) + ".jpg"
         )
       });
     }

@@ -1,19 +1,18 @@
 <template>
   <div class="card__item" :bind="property">
     <div class="card__top">
-      <p class="card__title">
-        {{ dataList[this.property.deftype][this.property.id]["header"] }}
-      </p>
+      <p class="card__title">{{ dataList[this.property.deftype][this.property.id]["header"] }}</p>
       <slot></slot>
-      <p><strong>Benefits</strong></p>
+      <p>
+        <strong>Benefits</strong>
+      </p>
       <ul>
         <li
-          v-for="item in dataList[this.property.deftype][this.property.id][
+          v-for="(item, index) in dataList[this.property.deftype][this.property.id][
             'body'
           ]"
-        >
-          {{ item }}
-        </li>
+          :key="index"
+        >{{ item }}</li>
       </ul>
     </div>
     <div class="card__bottom">
@@ -25,8 +24,8 @@
         rel="noopener"
       >
         {{ dataList[this.property.deftype][this.property.id]["footer"] }}
-        <external-link-icon class="card__icon"
-      /></a>
+        <external-link-icon class="card__icon" />
+      </a>
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <div class="card__item" v-for="{ node } in $static.sponsors.edges" :key="node.id">
+    <div class="card__item--exhibitor" v-for="{ node } in $static.sponsors.edges" :key="node.id">
       <div class="card__top">
         <g-image class="card__img--exhibitor" :src="node.logo" />
         <a class="card__link" :href="node.website">
@@ -75,7 +75,7 @@
 
 <static-query>
 query Sponsors {
-  sponsors: allSponsors(order: ASC, filter: {type: {contains: ["Exhibitor"]}}) {
+  sponsors: allSponsors(sortBy: "name", order: ASC, filter: {type: {contains: ["Exhibitor"]}}) {
     edges {
       node {
         id
@@ -130,10 +130,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card__img--exhibitor {
-  width: 100%;
-  height: 15rem;
-  margin-bottom: 0.75rem;
-  object-fit: contain;
+.card {
+  &__item--exhibitor {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 9px;
+    .dark & {
+      border: 1px solid $textDark;
+    }
+
+    .bright & {
+      border: 1px solid $textBright;
+    }
+    & > div > p {
+      margin: 0;
+    }
+  }
+
+  &__img--exhibitor {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 0.75rem;
+    object-fit: contain;
+  }
 }
 </style>
