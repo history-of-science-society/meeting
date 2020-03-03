@@ -43,7 +43,7 @@
           :href="node.website"
           class="supporters__link"
         >
-          <g-image :src="node.logo" width="60" class="supporters__img" />
+          <g-image :src="node.logo" class="supporters__img" />
           {{ node.name }}
         </a>
       </div>
@@ -61,7 +61,7 @@ query {
         name
         website
         level
-        logo
+        logo (width: 80, height: 80, quality: 90)
       }
     }
   }

@@ -131,7 +131,7 @@ query Sponsors {
           title2Img
           title3Img
         }
-        logo
+        logo (width: 700, quality: 80)
       }
     }
   }
