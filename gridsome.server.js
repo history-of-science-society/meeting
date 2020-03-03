@@ -23,8 +23,11 @@ module.exports = function(api) {
       });
     }
   });
+
+  // Exhibitors
   const urlForExhibitors =
     "http://www.formstack.com/api/v2/form/3340779/submission.json";
+
   api.loadSource(async actions => {
     const { data } = await axios.get(urlForExhibitors, {
       params: {
@@ -66,6 +69,46 @@ module.exports = function(api) {
           "src/assets/img",
           slugify(item.data["73848747"].value) + ".jpg"
         )
+      });
+    }
+  });
+
+  // For abstracts
+  const urlForAbstracts =
+    "http://www.formstack.com/api/v2/form/3672713/submission.json";
+
+  api.loadSource(async actions => {
+    const { data } = await axios.get(urlForAbstracts, {
+      params: {
+        data: 1
+      },
+      headers: { Authorization: "Bearer fcb9c2653a8bff17c5336ebbb020b1ab" }
+    });
+
+    const { submissions } = data;
+
+    const Abstracts = actions.addCollection({
+      typeName: "Abstracts"
+    });
+
+    for (const item of submissions) {
+      Abstracts.addNode({
+        id: item.id || "",
+        title: item.data["85330541"].value,
+        abstract: item.data["85330542"].value,
+        metadata: {
+          topic: item.data["85330544"].value,
+          chronology: item.data["85330545"].value,
+          geography: item.data["85330546"].value,
+          keywords: item.data["85330547"].value
+        },
+        author: {
+          name: item.data["85330549"].value,
+
+          first: item.data["85330549"].value.match(/first = (\w+)/)[1],
+
+          last: item.data["85330549"].value.match(/last = (\w+)/)[1]
+        }
       });
     }
   });
