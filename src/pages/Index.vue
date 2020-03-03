@@ -266,6 +266,7 @@ nav {
   margin-top: 4rem;
   &__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   &__link {
