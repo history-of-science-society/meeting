@@ -25,8 +25,7 @@
             <a
               class="marker__title"
               href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel/"
-              >Sheraton New Orleans</a
-            >
+            >Sheraton New Orleans</a>
             <p class="marker__subtitle">Meeting Hotel</p>
           </div>
           <svg
@@ -59,9 +58,7 @@
       <gmap-custom-marker :marker="airport">
         <div class="marker__container">
           <div class="marker__text-container">
-            <a href="https://g.page/flyneworleans?share" class="marker__title"
-              >New Orleans Airport</a
-            >
+            <a href="https://g.page/flyneworleans?share" class="marker__title">New Orleans Airport</a>
             <p class="marker__subtitle">Airport Code: MSY</p>
           </div>
           <svg
@@ -85,13 +82,22 @@
           </svg>
         </div>
       </gmap-custom-marker>
+      <gmap-custom-marker :marker="starbucks">
+        <div class="marker__container">
+          <div class="marker__text-container">
+            <a href="https://goo.gl/maps/PaM39qCzxAvbLwXo6" class="marker__title">Coffee</a>
+            <p class="marker__subtitle">Starbucks</p>
+          </div>
+          <coffee-icon />
+        </div>
+      </gmap-custom-marker>
     </GmapMap>
   </div>
 </template>
 
 <script>
 import GmapCustomMarker from "vue2-gmap-custom-marker";
-import { MapPinIcon, HomeIcon, FeatherIcon } from "vue-feather-icons";
+import { MapPinIcon, HomeIcon, CoffeeIcon } from "vue-feather-icons";
 export default {
   data() {
     return {
@@ -102,6 +108,10 @@ export default {
       airport: {
         lat: 29.991016,
         lng: -90.25909
+      },
+      starbucks: {
+        lat: 29.95252,
+        lng: -90.067688
       }
     };
   },
@@ -109,7 +119,7 @@ export default {
     GmapCustomMarker,
     MapPinIcon,
     HomeIcon,
-    FeatherIcon
+    CoffeeIcon
   }
 };
 </script>
