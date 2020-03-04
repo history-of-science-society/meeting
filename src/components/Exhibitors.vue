@@ -186,6 +186,7 @@ export default {
   &__img--exhibitor {
     width: 100%;
     height: 15rem;
+    padding: 2rem;
     margin-bottom: 0.75rem;
     object-fit: contain;
   }
