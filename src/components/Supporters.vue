@@ -107,7 +107,7 @@
 
 <static-query>
 query Sponsors {
-  sponsors: allSponsors(sortBy: "name", order: ASC, filter: {type: {contains: ["Exhibitor"]}}) {
+  sponsors: allSponsors(sortBy: "name", order: ASC, filter: {level: {ne: "None"}}) {
     edges {
       node {
         id
