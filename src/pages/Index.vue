@@ -47,6 +47,9 @@
           {{ node.name }}
         </a>
       </div>
+      <div class="markdown">
+        <g-link to="/support/" class="btn">Become a Supporter</g-link>
+      </div>
     </div>
     <p class="tagline">{{ this.tagline }}</p>
   </Layout>
@@ -267,18 +270,27 @@ nav {
   &__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    @include respond-above(xxs) {
+      justify-content: center;
+    }
   }
   &__link {
     display: flex;
     align-items: center;
-    margin-left: 1rem;
+    margin-bottom: 0.5rem;
     text-decoration: none;
     position: relative;
     transition: color 0.2s ease-in-out;
-    &:first-child {
-      margin-left: 0;
+
+    @include respond-above(xxs) {
+      margin: 0 0 1rem 1rem;
+      &:first-child {
+        margin-left: 0;
+      }
     }
+
     &:hover {
       .bright & {
         color: $hss;
