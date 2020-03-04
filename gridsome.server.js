@@ -53,7 +53,7 @@ module.exports = function(api) {
           twitter: item.data["73848950"] ? item.data["73848950"].value : "",
           facebook: item.data["73848986"] ? item.data["73848986"].value : "",
           youtube: item.data["73849007"] ? item.data["73849007"].value : "",
-          instagram: item.data["73849007"] ? item.data["73849007"].value : "",
+          instagram: item.data["73849017"] ? item.data["73849017"].value : "",
           other: item.data["73849899"] ? item.data["73849899"].value : ""
         },
         books: {
