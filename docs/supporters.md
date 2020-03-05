@@ -8,5 +8,3 @@ slug: supporters
 import Supporters from '~/components/Supporters.vue'
 
 <Supporters />
-
-<a href="https://hssonline.formstack.com/forms/support" class="btn" target="blank" rel="noopener">Support HSS</a>
