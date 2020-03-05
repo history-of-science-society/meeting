@@ -272,7 +272,7 @@ nav {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 1rem;
-    @include respond-above(xxs) {
+    @include respond-above(sm) {
       justify-content: center;
     }
   }
@@ -284,7 +284,7 @@ nav {
     position: relative;
     transition: color 0.2s ease-in-out;
 
-    @include respond-above(xxs) {
+    @include respond-above(sm) {
       margin: 0 0 1rem 1rem;
       &:first-child {
         margin-left: 0;
