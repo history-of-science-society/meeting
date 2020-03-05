@@ -241,10 +241,7 @@ export default {
     padding-top: 0.5rem;
   }
   &__featured-titles-link {
-    height: 275px;
-    @include respond-above(lg) {
-      height: 16rem;
-    }
+    max-width: 200px;
     flex: 1;
     display: flex;
     img {
