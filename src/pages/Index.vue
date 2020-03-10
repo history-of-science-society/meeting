@@ -43,7 +43,7 @@
           :href="node.website"
           class="supporters__link"
         >
-          <g-image :src="node.logo" class="supporters__img" />
+          <g-image :src="node.logo" class="supporters__img" fit="contain" />
           {{ node.name }}
         </a>
       </div>
