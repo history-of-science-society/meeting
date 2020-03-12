@@ -1,10 +1,13 @@
 <template>
   <section class="abstract-full">
-    <button class="abstract-full__button" @click="toggleAbstract($event)">
-      <arrow-down-circle-icon class="abstract-full__icon" id="abstract-toggle-icon" />
-      <span v-if="!showAbstract">Read More</span>
-      <span v-else>Close Abstract</span>
-    </button>
+    <div class="abstract-full__button-bar">
+      <p class="abstract-full__keywords">{{ computedKeywords }}</p>
+      <button class="abstract-full__button" @click="toggleAbstract($event)">
+        <arrow-down-circle-icon class="abstract-full__icon" id="abstract-toggle-icon" />
+        <span v-if="!showAbstract">Read More</span>
+        <span v-else>Close Abstract</span>
+      </button>
+    </div>
     <transition name="slide-down">
       <div v-if="showAbstract" class="abstract-full__container">
         <p class="abstract-full__title">
@@ -29,13 +32,26 @@ export default {
       iconValue: "Read More"
     };
   },
-  props: ["title", "abstract", "authorFirst", "authorLast"],
+  props: ["title", "abstract", "authorFirst", "authorLast", "keywords"],
   methods: {
     toggleAbstract(e) {
       this.showAbstract = !this.showAbstract;
       const button = e.target.parentNode.querySelector("svg");
 
       button.classList.toggle("rotated");
+    }
+  },
+  computed: {
+    computedKeywords() {
+      const keywordArray = [];
+      const keywords = this.keywords.replace(/(;)\S/g, "; ").split("; ");
+      keywords.forEach(element => {
+        const keyword = "#" + element;
+        console.log(keyword);
+        keywordArray.push(keyword);
+      });
+      const keywordString = keywordArray.join(" ");
+      return keywordString;
     }
   }
 };
@@ -44,7 +60,30 @@ export default {
 <style lang="scss" scoped>
 .abstract-full {
   margin-bottom: 1rem;
-
+  &__button-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: -5px;
+    padding-top: 5px;
+    font-size: 0.9rem;
+    .dark & {
+      background-color: rgb(60, 60, 60);
+    }
+    .bright & {
+      background-color: rgb(204, 204, 204);
+    }
+  }
+  &__keywords {
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    flex: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
   &__button {
     background: none;
     border: none;
@@ -52,18 +91,15 @@ export default {
     font-family: "Opens Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
-    font-size: 0.9rem;
-    border-radius: 4px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 0.25rem;
     margin-left: auto;
-    border-radius: 4px;
-    margin-top: -5px;
-    padding-top: 5px;
+    vertical-align: text-bottom;
     z-index: 0;
     position: relative;
+
+    &:hover,
+    &:focus {
+    }
     .dark & {
       background-color: rgb(60, 60, 60);
     }

@@ -79,6 +79,7 @@
               :abstract="node.abstract"
               :authorLast="node.author.last"
               :authorFirst="node.author.first"
+              :keywords="node.metadata.keywords"
             />
           </section>
         </transition-group>
@@ -133,7 +134,6 @@ export default {
       }
 
       const absFilter = (filterName, category, items) => {
-        console.log(filterName, category, items);
         if (filterName === "All") {
           return items;
         }
