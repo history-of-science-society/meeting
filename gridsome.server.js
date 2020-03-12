@@ -7,6 +7,13 @@
 const axios = require("axios");
 const slugify = require("slugify");
 const path = require("path");
+const getValue = input => {
+  if (!input) {
+    return null;
+  }
+
+  return input.value;
+};
 
 module.exports = function(api) {
   api.loadSource(store => {
@@ -78,14 +85,35 @@ module.exports = function(api) {
     "http://www.formstack.com/api/v2/form/3672713/submission.json";
 
   api.loadSource(async actions => {
-    const { data } = await axios.get(urlForAbstracts, {
+    const {
+      data: { pages }
+    } = await axios.get(urlForAbstracts, {
       params: {
-        data: 1
+        data: 0
       },
       headers: { Authorization: "Bearer fcb9c2653a8bff17c5336ebbb020b1ab" }
     });
 
-    const { submissions } = data;
+    const total = [];
+
+    const forLoop = async () => {
+      for (let i = 1; i < pages; i++) {
+        const {
+          data: { submissions }
+        } = await axios.get(urlForAbstracts, {
+          params: {
+            data: true,
+            page: i
+          },
+          headers: { Authorization: "Bearer fcb9c2653a8bff17c5336ebbb020b1ab" }
+        });
+
+        total.push(submissions);
+      }
+      return total.flat();
+    };
+
+    const submissions = await forLoop();
 
     const Abstracts = actions.addCollection({
       typeName: "Abstracts"
@@ -100,7 +128,7 @@ module.exports = function(api) {
           topic: item.data["85330544"].value,
           chronology: item.data["85330545"].value,
           geography: item.data["85330546"].value,
-          keywords: item.data["85330547"].value
+          keywords: getValue(item.data["85330547"])
         },
         author: {
           name: item.data["85330549"].value,
