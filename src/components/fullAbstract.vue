@@ -1,9 +1,16 @@
 <template>
-  <section class="abstract-full">
+  <div class="abstract-full">
     <div class="abstract-full__button-bar">
-      <p class="abstract-full__keywords">{{ computedKeywords }}</p>
+      <div class="abstract-full__keywords">
+        <div v-for="(kw,idx) in computedKeywords" :key="idx" class="abstract-full__icon">
+          <hash-icon />
+          <p>{{ kw }}</p>
+        </div>
+      </div>
       <button class="abstract-full__button" @click="toggleAbstract($event)">
-        <arrow-down-circle-icon class="abstract-full__icon" id="abstract-toggle-icon" />
+        <div class="abstract-full__icon">
+          <arrow-down-circle-icon class="abstract-toggle-icon" />
+        </div>
         <span v-if="!showAbstract">Read More</span>
         <span v-else>Close Abstract</span>
       </button>
@@ -17,14 +24,15 @@
         <p class="abstract-full__abstract">{{ abstract }}</p>
       </div>
     </transition>
-  </section>
+  </div>
 </template>
 
 <script>
-import { ArrowDownCircleIcon } from "vue-feather-icons";
+import { ArrowDownCircleIcon, HashIcon } from "vue-feather-icons";
 export default {
   components: {
-    ArrowDownCircleIcon
+    ArrowDownCircleIcon,
+    HashIcon
   },
   data() {
     return {
@@ -36,8 +44,7 @@ export default {
   methods: {
     toggleAbstract(e) {
       this.showAbstract = !this.showAbstract;
-      const button = e.target.parentNode.querySelector("svg");
-
+      const button = e.target.parentNode.querySelector(".abstract-toggle-icon");
       button.classList.toggle("rotated");
     }
   },
@@ -46,12 +53,10 @@ export default {
       const keywordArray = [];
       const keywords = this.keywords.replace(/(;)\S/g, "; ").split("; ");
       keywords.forEach(element => {
-        const keyword = "#" + element;
-        console.log(keyword);
-        keywordArray.push(keyword);
+        keywordArray.push(element);
       });
-      const keywordString = keywordArray.join(" ");
-      return keywordString;
+      const threeKeywords = keywordArray.slice(0, 3);
+      return threeKeywords;
     }
   }
 };
@@ -63,64 +68,84 @@ export default {
   &__button-bar {
     display: flex;
     align-items: center;
-    border-radius: 4px;
-    margin-top: -5px;
-    padding-top: 5px;
     font-size: 0.9rem;
+    border: 1px solid currentColor;
+    border-top: none;
+    height: 40px;
     .dark & {
-      background-color: rgb(60, 60, 60);
     }
     .bright & {
-      background-color: rgb(204, 204, 204);
     }
   }
   &__keywords {
+    flex: 75%;
     margin: 0;
     padding: 0.25rem 0.5rem;
-    flex: 75%;
+    height: 100%;
     overflow: hidden;
-    text-overflow: ellipsis;
     line-height: 1.2;
     white-space: nowrap;
     font-size: 0.8rem;
+
+    .abstract-full__icon svg {
+      height: 0.5rem;
+      width: 0.5rem;
+      top: 0.3em;
+    }
+    p {
+      margin: 0 0.25em 0 0;
+    }
   }
   &__button {
     background: none;
     border: none;
     color: currentColor;
-    font-family: "Opens Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     cursor: pointer;
     margin-left: auto;
     vertical-align: text-bottom;
     z-index: 0;
     position: relative;
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+    width: 115px;
+    height: 100%;
 
     &:hover,
     &:focus {
-    }
-    .dark & {
-      background-color: rgb(60, 60, 60);
-    }
-    .bright & {
-      background-color: rgb(204, 204, 204);
+      outline: none;
+
+      .dark & {
+        background-color: $sidebarBright;
+        color: $textBright;
+      }
+      .bright & {
+        background-color: $sidebarDark;
+        color: $textDark;
+      }
     }
   }
 
   &__icon {
-    margin-right: 0.25rem;
-    height: 1em;
-    width: 1em;
-    transition: transform 0.2s ease-in-out;
+    display: inline-flex;
+    align-self: center;
+    margin-right: 2px;
+    svg {
+      position: relative;
+      top: 0.125em;
+      transition: transform 0.2s ease-in-out;
+      height: 1em;
+      width: 1em;
+    }
   }
 
   &__container {
-    background: #eeeeee;
-    border-radius: 4px;
-    color: $textBright;
+    border: 1px solid currentColor;
+    border-top: none;
     padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
+    color: $textBright;
   }
 }
 .rotated {
@@ -131,11 +156,11 @@ export default {
 .slide-down-enter-active,
 .slide-down-leave-active {
   transition: all 0.1s ease-in-out;
-  height: 800px;
+  opacity: 1;
 }
 .slide-down-enter,
 .slide-down-leave-to {
-  height: 0;
+  opacity: 0;
   transition: all 0.1s ease-in-out;
 }
 </style>

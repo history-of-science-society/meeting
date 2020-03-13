@@ -60,18 +60,26 @@
     <div class="abstract__container">
       <div v-if="abstractCount">
         <transition-group name="abstracts" tag="div" mode="in-out">
-          <section v-for="{ node } in abstractFilter" :key="node.id">
+          <article v-for="{ node } in abstractFilter" :key="node.id">
             <div class="abstract__item">
               <div class="abstract__item--top">
-                <h2 class="abstract__title">{{ node.title }}</h2>
-                <p
-                  class="abstract__author"
-                >{{ properCase(node.author.last) }}, {{ firstLetter(node.author.first) }}.</p>
+                <div class="abstract__title">
+                  <h2>{{ node.title }}</h2>
+                </div>
+                <div class="abstract__author">
+                  <p>{{ properCase(node.author.last) }}, {{ firstLetter(node.author.first) }}.</p>
+                </div>
               </div>
               <div class="abstract__item--bottom">
-                <p class="abstract__metadata-item">{{ node.metadata.topic }}</p>
-                <p class="abstract__metadata-item">{{ node.metadata.chronology }}</p>
-                <p class="abstract__metadata-item">{{ node.metadata.geography }}</p>
+                <div class="abstract__metadata">
+                  <p class="abstract__metadata-item">{{ node.metadata.topic }}</p>
+                </div>
+                <div class="abstract__metadata">
+                  <p class="abstract__metadata-item">{{ node.metadata.chronology }}</p>
+                </div>
+                <div class="abstract__metadata">
+                  <p class="abstract__metadata-item">{{ node.metadata.geography }}</p>
+                </div>
               </div>
             </div>
             <full-abstract
@@ -81,7 +89,7 @@
               :authorFirst="node.author.first"
               :keywords="node.metadata.keywords"
             />
-          </section>
+          </article>
         </transition-group>
       </div>
       <div v-else>
@@ -196,6 +204,10 @@ query {
 }
 </static-query>
 <style lang="scss" scoped>
+section {
+  padding-bottom: 800px;
+}
+
 .abstract {
   &__alert {
     display: flex;
@@ -211,92 +223,92 @@ query {
     margin-top: 2rem;
   }
   &__item {
-    border-radius: 4px;
-    cursor: pointer;
+    // border-top-left-radius: 4px;
+    // border-top-right-radius: 4px;
 
     &--top,
     &--bottom {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      height: 40px;
+    }
+    &--top {
+      border: 1px solid currentColor;
+    }
+    &--bottom {
+      border: 1px solid currentColor;
+      border-top: none;
     }
   }
   &__title {
-    z-index: 5;
-    margin: 0;
-    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid currentColor;
     padding: 0.25rem 0.5rem;
     width: 75%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.2;
-    white-space: nowrap;
-    font-weight: 600;
-    font-size: 1rem;
-    @include box-shadow($small: true);
+    height: 100%;
+    & > h2 {
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.2;
+      white-space: nowrap;
+      font-size: 1rem;
+      font-weight: 600;
+    }
 
     .dark & {
-      background-color: rgb(50, 50, 50);
+      //   background-color: rgb(50, 50, 50);
     }
     .bright & {
-      background-color: rgb(194, 193, 193);
+      //   background-color: rgb(194, 193, 193);
     }
   }
   &__author {
-    position: relative;
-    z-index: 6;
-    margin: 0;
-    left: -5px;
-    margin-right: -5px;
-    font-size: 1rem;
-    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
     padding: 0.25rem 0.5rem;
-    width: calc(25% + 5px);
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.2;
-    white-space: nowrap;
-    @include box-shadow($small: true);
+    width: 25%;
+    & > p {
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.2;
+      white-space: nowrap;
+      font-size: 1rem;
+    }
+
     .dark & {
-      background-color: rgb(60, 60, 60);
+      //   background-color: rgb(60, 60, 60);
     }
     .bright & {
-      background-color: rgb(204, 204, 204);
+      //   background-color: rgb(204, 204, 204);
+    }
+  }
+  &__metadata {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    width: 33%;
+    height: 100%;
+    &:nth-child(2) {
+      border-left: 1px solid currentColor;
+    }
+    &:last-child {
+      border-left: 1px solid currentColor;
     }
   }
   &__metadata-item {
-    flex: 1;
-    transform: translate3d(0, -2px, 0);
-    z-index: 1;
     margin: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    position: relative;
-    padding: calc(0.25rem + 2px) 0.5rem 0.25rem;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.2;
     white-space: nowrap;
-    font-size: 0.9rem;
-
-    @include box-shadow($small: true);
-
-    &:nth-child(2) {
-      left: -5px;
-      margin-right: -5px;
-    }
-    &:nth-child(3) {
-      border-radius: 4px;
-      left: -5px;
-      margin-right: -5px;
-    }
-    .dark & {
-      background-color: hsl(252, 14%, 50%);
-    }
-    .bright & {
-      background-color: hsl(252, 44%, 90%);
-    }
+    font-size: 0.8rem;
   }
 }
 
