@@ -6,9 +6,7 @@
     @media (min-width: $breakpoint-value) {
       @content;
     }
-  }
-
-  @else {
+  } @else {
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }
@@ -21,9 +19,7 @@
     @media (max-width: ($breakpoint-value - 1)) {
       @content;
     }
-  }
-
-  @else {
+  } @else {
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }
@@ -37,14 +33,12 @@
     @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
       @content;
     }
-  }
-
-  @else {
-    @if (map-has-key($breakpoints, $lower)==false) {
+  } @else {
+    @if (map-has-key($breakpoints, $lower) ==false) {
       @warn 'Your lower breakpoint was invalid: #{$lower}.';
     }
 
-    @if (map-has-key($breakpoints, $upper)==false) {
+    @if (map-has-key($breakpoints, $upper) ==false) {
       @warn 'Your upper breakpoint was invalid: #{$upper}.';
     }
   }
@@ -57,5 +51,32 @@
 
   @if $large {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+// Generate border color
+@mixin border($property: default, $all: false) {
+  @if $all {
+    border-width: 1px;
+    border-style: solid;
+
+    .dark & {
+      border-color: #f7f7ef70;
+    }
+
+    .bright & {
+      border-color: #2a2c2f70;
+    }
+  } @else {
+    border-#{$property}-width: 1px;
+    border-#{$property}-style: solid;
+
+    .dark & {
+      border-color: #f7f7ef70;
+    }
+
+    .bright & {
+      border-color: #2a2c2f70;
+    }
   }
 }

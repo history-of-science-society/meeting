@@ -69,7 +69,7 @@ export default {
     display: flex;
     align-items: center;
     font-size: 0.9rem;
-    border: 1px solid currentColor;
+    @include border($all: true);
     border-top: none;
     height: 40px;
     .dark & {
@@ -86,6 +86,7 @@ export default {
     line-height: 1.2;
     white-space: nowrap;
     font-size: 0.8rem;
+    @include border(right);
 
     .abstract-full__icon svg {
       height: 0.5rem;
@@ -142,10 +143,9 @@ export default {
   }
 
   &__container {
-    border: 1px solid currentColor;
+    @include border($all: true);
     border-top: none;
     padding: 0.5rem 1rem;
-    color: $textBright;
   }
 }
 .rotated {
