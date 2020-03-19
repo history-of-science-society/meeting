@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="site">
     <Header :menuToggle="sidebar" />
     <Sidebar v-if="sidebar" />
     <main
@@ -51,6 +51,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.site {
+  overflow: hidden;
+}
 .main {
   padding: 100px 30px 30px 30px;
   max-width: 800px;
