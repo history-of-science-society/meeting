@@ -4,7 +4,10 @@
     <Sidebar v-if="sidebar" />
     <main
       class="main"
-      :class="{'main--no-sidebar': !sidebar, 'main--sidebar-is-open' : this.$store.state.sidebarOpen}"
+      :class="{
+        'main--no-sidebar': !sidebar,
+        'main--sidebar-is-open': this.$store.state.sidebarOpen
+      }"
     >
       <slot />
     </main>
@@ -55,14 +58,14 @@ export default {
   overflow: hidden;
 }
 .main {
-  padding: 100px 30px 30px 30px;
   max-width: 800px;
+  padding: 100px 30px 30px 30px;
   transition: transform 0.15s ease-in-out;
 
   @include respond-above(sm) {
+    width: calc(100% - 300px);
     padding: 100px 30px 30px;
     transform: translateX(300px);
-    width: calc(100% - 300px);
   }
 
   @include respond-above(md) {
@@ -70,10 +73,10 @@ export default {
   }
 
   &--no-sidebar {
-    transform: translate(0);
-    margin: 0 auto;
     width: 100%;
     max-width: 1400px;
+    margin: 0 auto;
+    transform: translate(0);
   }
 
   &--sidebar-is-open {
