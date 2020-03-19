@@ -122,20 +122,20 @@ export default {
     align-items: center;
   }
   &__text-container {
-    background: rgba(0, 0, 0, 0.75);
-    color: white;
     padding: 0.5rem 1em;
-    border-radius: 8px;
-    font-size: 14px;
     margin-bottom: 0.25rem;
+    font-size: 14px;
+    color: white;
     text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
   }
 
   &__title {
     .bright &,
     .dark & {
-      font-weight: 700;
       margin: 0;
+      font-weight: 700;
       color: white;
     }
   }
@@ -147,8 +147,8 @@ export default {
   }
 
   &__icon {
-    height: 40px;
     width: 40px;
+    height: 40px;
     fill: #000;
   }
 }

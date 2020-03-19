@@ -93,17 +93,17 @@ export default {
 
 <style lang="scss" scoped>
 .collab-card {
-  border-radius: 6px;
-  border: 1px solid currentColor;
-  margin: 2rem 0;
   padding: 1rem;
+  margin: 2rem 0;
+  border: 1px solid currentColor;
+  border-radius: 6px;
 
   &__badge {
-    border-radius: 6px;
-    border: 1px solid currentColor;
     display: inline-block;
-    margin: 0;
     padding: 2px 5px;
+    margin: 0;
+    border: 1px solid currentColor;
+    border-radius: 6px;
     transform: translateY(calc(-1em + -50%));
 
     .bright & {
@@ -115,18 +115,18 @@ export default {
   }
 
   &__title {
+    margin-top: -0.5em;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-top: -0.5em;
   }
 
   &__small-title {
+    margin-bottom: 0;
     font-size: 0.75em;
     font-weight: 700;
-    margin-bottom: 0;
-    opacity: 0.65;
     text-transform: uppercase;
+    opacity: 0.65;
   }
 
   &__name {
@@ -140,23 +140,23 @@ export default {
   }
 
   &__mail-icon {
+    width: 1rem;
     height: 1rem;
     margin-left: 0.05rem;
+    vertical-align: baseline;
     stroke-width: 2;
     transform: translateY(0.15rem);
-    vertical-align: baseline;
-    width: 1rem;
   }
 
   &__abstract {
     margin-top: 0;
   }
   &__metabox {
-    border-radius: 6px;
     display: flex;
     flex-wrap: wrap;
-    font-size: 15px;
     justify-content: space-between;
+    font-size: 15px;
+    border-radius: 6px;
 
     .bright & {
       background: $sidebarBright;
@@ -177,20 +177,20 @@ export default {
   }
 
   &__metadata {
+    flex: 1;
+    padding: 5px 8px;
+    margin: 0.25rem;
     font-size: 1em;
     line-height: 1.2;
-    margin: 0.25rem;
-    padding: 5px 8px;
-    flex: 1;
 
     &:last-child {
       margin-right: 0;
     }
 
     svg {
+      width: 15px;
       height: 15px;
       transform: translateY(2px);
-      width: 15px;
     }
     &--full-width {
       @extend .collab-card__metadata;
@@ -202,9 +202,9 @@ export default {
     margin-bottom: 0;
 
     svg {
+      width: 1rem;
       height: 1rem;
       transform: translateY(2px);
-      width: 1rem;
     }
   }
 }
