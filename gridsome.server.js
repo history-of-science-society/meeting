@@ -7,6 +7,7 @@
 const axios = require("axios");
 const slugify = require("slugify");
 const path = require("path");
+require("dotenv").config();
 
 module.exports = function(api) {
   api.loadSource(store => {
@@ -30,7 +31,7 @@ module.exports = function(api) {
       params: {
         data: 1
       },
-      headers: { Authorization: "Bearer fcb9c2653a8bff17c5336ebbb020b1ab" }
+      headers: { Authorization: "Bearer " + process.env.FORMSTACK_API }
     });
 
     const { submissions } = data;
