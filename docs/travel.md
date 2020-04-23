@@ -19,3 +19,5 @@ import customMap from '~/components/customMap'
 <Hotel />
 
 _Information about rates and reservations coming soon_
+
+[Visit New Orleans Digitally](https://www.neworleans.com/plan/virtual-experience/)
