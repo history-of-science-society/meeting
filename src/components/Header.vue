@@ -80,19 +80,19 @@ export default {
   }
 
   &--scrolled {
-    @include respond-below(sm) {
-      padding: 15px 30px;
+    // @include respond-below(sm) {
+    padding: 15px 30px;
 
-      .dark & {
-        background: $sidebarDark;
-        border-color: shade($sidebarDark, 40%);
-      }
-
-      .bright & {
-        background: $sidebarBright;
-        border-color: shade($sidebarBright, 10%);
-      }
+    .dark & {
+      background: $sidebarDark;
+      border-color: shade($sidebarDark, 40%);
     }
+
+    .bright & {
+      background: $sidebarBright;
+      border-color: shade($sidebarBright, 10%);
+    }
+    // }
   }
 
   &__left {
