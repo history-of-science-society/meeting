@@ -88,6 +88,15 @@
             :author="node.commentatorName"
             :institution="node.commentatorInstitutionalAffiliation"
           />
+          <!-- Presenter 5 -->
+          <presenter-section
+            num="5"
+            :author="node.author5Name"
+            :institution="node.author5InstitutionalAffiliation"
+            :title="node.abstract5Title"
+            :coauthor="node.coAuthor5Name"
+            :coinstitution="node.coAuthor5InstitutionalAffiliation"
+          />
           <!-- Presenter 6 -->
           <presenter-section
             num="6"
@@ -265,10 +274,10 @@ h4 {
 .session {
   position: relative;
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1rem;
+  margin: 2rem 1rem;
   @include respond-above(sm) {
     padding: 1.5rem;
-    margin: 1rem;
   }
   border: 1px solid;
   .dark & {

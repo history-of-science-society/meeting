@@ -11,14 +11,26 @@ require("dotenv").config();
 
 const nameRender = (name) => {
   const first =
-    name.match(/first = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç ]+)/) &&
-    name.match(/first = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç ]+)/)[1];
+    name.match(
+      /first = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç.'ÉÈÊËĒÁÄÀÂĀÃĪÎÌÏÍÕŌÔÒÖÓŪÛÜÚ ]+)/
+    ) &&
+    name.match(
+      /first = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç.'ÉÈÊËĒÁÄÀÂĀÃĪÎÌÏÍÕŌÔÒÖÓŪÛÜÚ ]+)/
+    )[1];
   const middle =
-    name.match(/middle = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç ]+)/) &&
-    name.match(/middle = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç ]+)/)[1];
+    name.match(
+      /middle = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç.'ÉÈÊËĒÁÄÀÂĀÃĪÎÌÏÍÕŌÔÒÖÓŪÛÜÚ ]+)/
+    ) &&
+    name.match(
+      /middle = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç.'ÉÈÊËĒÁÄÀÂĀÃĪÎÌÏÍÕŌÔÒÖÓŪÛÜÚ ]+)/
+    )[1];
   const last =
-    name.match(/last = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç ]+)/) &&
-    name.match(/last = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç ]+)/)[1];
+    name.match(
+      /last = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç.'ÉÈÊËĒÁÄÀÂĀÃĪÎÌÏÍÕŌÔÒÖÓŪÛÜÚ ]+)/
+    ) &&
+    name.match(
+      /last = ([A-Za-zäáàâāéëèêēūûùüúīîìïíòóöōáäàâç.'ÉÈÊËĒÁÄÀÂĀÃĪÎÌÏÍÕŌÔÒÖÓŪÛÜÚ ]+)/
+    )[1];
   const full =
     middle === null ? first + " " + last : first + " " + middle + " " + last;
   return full;
