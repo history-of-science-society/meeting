@@ -264,8 +264,12 @@ h4 {
 }
 .session {
   position: relative;
-  padding: 1.5rem;
-  margin: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  @include respond-above(sm) {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
   border: 1px solid;
   .dark & {
     border-color: $sidebarDark;
