@@ -14,7 +14,8 @@
         class="btn"
         target="blank"
         rel="noopener"
-      >Become a Supporter</a>
+        >Become a Supporter</a
+      >
     </div>
     <section class="card">
       <div
@@ -33,12 +34,12 @@
 
           <div
             v-if="
-            node.social.twitter ||
-              node.social.facebook ||
-              node.social.youtube ||
-              node.social.instagram ||
-              node.social.blog
-          "
+              node.social.twitter ||
+                node.social.facebook ||
+                node.social.youtube ||
+                node.social.instagram ||
+                node.social.blog
+            "
             class="card__social"
           >
             <p class="card__social-header">Social Media and Links</p>
@@ -48,9 +49,7 @@
               :href="node.social.twitter"
             >
               <twitter-icon class="card__icon" aria-label="twitter" />
-              @{{
-              extractEnd(node.social.twitter)
-              }}
+              @{{ extractEnd(node.social.twitter) }}
             </a>
             <a
               v-if="node.social.facebook"
@@ -58,9 +57,7 @@
               :href="node.social.facebook"
             >
               <facebook-icon class="card__icon" aria-label="facebook" />
-              {{
-              extractEnd(node.social.facebook)
-              }}
+              {{ extractEnd(node.social.facebook) }}
             </a>
             <a
               v-if="node.social.youtube"
@@ -68,9 +65,7 @@
               :href="node.social.youtube"
             >
               <youtube-icon class="card__icon" aria-label="youtube" />
-              {{
-              extractEnd(node.social.youtube)
-              }}
+              {{ extractEnd(node.social.youtube) }}
             </a>
             <a
               v-if="node.social.instagram"
@@ -78,23 +73,33 @@
               :href="node.social.instagram"
             >
               <instagram-icon class="card__icon" aria-label="instagram" />
-              {{
-              extractEnd(node.social.instagram)
-              }}
+              {{ extractEnd(node.social.instagram) }}
             </a>
-            <a v-if="node.social.blog" class="card__social-item--blog" :href="node.social.blog">
+            <a
+              v-if="node.social.blog"
+              class="card__social-item--blog"
+              :href="node.social.blog"
+            >
               <pen-tool-icon class="card__icon" aria-label="blog" />
-              {{
-              extractEnd(node.social.blog)
-              }}
+              {{ extractEnd(node.social.blog) }}
             </a>
           </div>
           <p
-            v-if="node.books.title1Img || node.books.title3Url || node.books.title3Url"
+            v-if="
+              node.books.title1Img ||
+                node.books.title3Url ||
+                node.books.title3Url
+            "
             class="card__social-header"
-          >Featured Titles</p>
+          >
+            Featured Titles
+          </p>
           <div
-            v-if="node.books.title1Img || node.books.title3Url || node.books.title3Url"
+            v-if="
+              node.books.title1Img ||
+                node.books.title3Url ||
+                node.books.title3Url
+            "
             class="card__featured-titles"
           >
             <a
@@ -103,7 +108,10 @@
               class="card__featured-titles-link"
               title="Learn More"
             >
-              <img class="card__featured-titles-img" :src="node.books.title1Img" />
+              <img
+                class="card__featured-titles-img"
+                :src="node.books.title1Img"
+              />
             </a>
             <a
               v-if="node.books.title2Url"
@@ -111,7 +119,10 @@
               class="card__featured-titles-link"
               title="Learn More"
             >
-              <img class="card__featured-titles-img" :src="node.books.title2Img" />
+              <img
+                class="card__featured-titles-img"
+                :src="node.books.title2Img"
+              />
             </a>
             <a
               v-if="node.books.title3Url"
@@ -119,7 +130,10 @@
               class="card__featured-titles-link"
               title="Learn More"
             >
-              <img class="card__featured-titles-img" :src="node.books.title3Img" />
+              <img
+                class="card__featured-titles-img"
+                :src="node.books.title3Img"
+              />
             </a>
           </div>
         </div>
@@ -167,7 +181,7 @@ import {
   YoutubeIcon,
   InstagramIcon,
   GlobeIcon,
-  PenToolIcon
+  PenToolIcon,
 } from "vue-feather-icons";
 export default {
   components: {
@@ -176,26 +190,26 @@ export default {
     YoutubeIcon,
     InstagramIcon,
     GlobeIcon,
-    PenToolIcon
+    PenToolIcon,
   },
   methods: {
     extractEnd(input) {
       const result = input.match(/[^/]+(?=\/$|$)/);
       return result[0];
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .exhibitorList {
+  margin-bottom: 1rem;
   border-top: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
-  margin-bottom: 1rem;
 }
 .promo {
-  margin: 1rem 0;
   padding: 1rem;
+  margin: 1rem 0;
   border-radius: 9px;
 
   .dark & {
@@ -209,18 +223,19 @@ export default {
 .card {
   &__item--exhibitor {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem 0;
     border-radius: 9px;
+    @include box-shadow(small);
     &:first-child {
       margin-top: 0;
     }
     .dark & {
-      border: 1px solid $textDark;
+      border: 1px solid $sidebarDark;
     }
 
     .bright & {
-      border: 1px solid $textBright;
+      border: 1px solid $sidebarBright;
     }
     & > div > p {
       margin: 0;

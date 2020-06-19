@@ -9,8 +9,8 @@
         <div class="meta-container">
           <p class="label">{{ node.sessionType }}</p>
           <p class="label" v-if="node.joint === 'Yes'">
-            Joint Session with
             <a href="https://www.historyoftechnology.org/">SHOT</a>
+            Joint Session
           </p>
           <p v-if="node.sessionTopic" class="label">{{ node.sessionTopic }}</p>
         </div>

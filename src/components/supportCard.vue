@@ -1,18 +1,22 @@
 <template>
-  <div class="card__item" :bind="property">
+  <div class="card__item">
     <div class="card__top">
-      <p class="card__title">{{ dataList[this.property.deftype][this.property.id]["header"] }}</p>
+      <p class="card__title">
+        {{ dataList[this.property.deftype][this.property.id]["header"] }}
+      </p>
       <slot></slot>
       <p>
         <strong>Benefits</strong>
       </p>
       <ul>
         <li
-          v-for="(item, index) in dataList[this.property.deftype][this.property.id][
-            'body'
-          ]"
+          v-for="(item, index) in dataList[this.property.deftype][
+            this.property.id
+          ]['body']"
           :key="index"
-        >{{ item }}</li>
+        >
+          {{ item }}
+        </li>
       </ul>
     </div>
     <div class="card__bottom">
@@ -34,10 +38,10 @@
 import { ExternalLinkIcon } from "vue-feather-icons";
 export default {
   components: {
-    ExternalLinkIcon
+    ExternalLinkIcon,
   },
   props: {
-    property: Object
+    property: Object,
   },
   data: function() {
     return {
@@ -49,16 +53,16 @@ export default {
               "Acknowledgment on HSS meeting website",
               "Personalized sponsor card on meeting website",
               "Links to organization’s social media pages",
-              "Promotion of up to three titles or other products"
-            ]
+              "Promotion of up to three titles or other products",
+            ],
           },
           {
             header: "Franklin ($1,000–$1,499)",
             body: [
               "Everything in Ptolemy",
               "One complimentary registration",
-              "Acknowledgment in the printed and digital program"
-            ]
+              "Acknowledgment in the printed and digital program",
+            ],
           },
           {
             header: "Einstein ($1,500-$2,499)",
@@ -66,17 +70,17 @@ export default {
               "Everything in Franklin",
               "Two complimentary registrations",
               "Acknowledgment in the HSS Newsletter (October 2020)",
-              "Branded signage at the meeting"
-            ]
+              "Branded signage at the meeting",
+            ],
           },
           {
             header: "Darwin ($2,500+)",
             body: [
               "Everything in Einstein",
               "Complimentary exhibition table",
-              "Promotion on HSS Twitter and Facebook"
-            ]
-          }
+              "Promotion on HSS Twitter and Facebook",
+            ],
+          },
         ],
         ad: [
           {
@@ -88,9 +92,9 @@ export default {
               "Inside Cover: $400",
               'Size: 4.25" x 7"',
               "Format: High-Resolution PDF",
-              "Deadline: 16 August 2020"
+              "Deadline: 16 August 2020",
             ],
-            footer: "Reserve a Program Ad"
+            footer: "Reserve a Program Ad",
           },
           {
             header: "Newsletter",
@@ -102,9 +106,9 @@ export default {
               'Quarter-Page Ad (3" x 5"): $150',
               "Deadline for July 2020 issue: 1 June 2020",
               "Deadline for October 2020 issue: 16 August 2020",
-              "⭐Book for both issues and get your second ad half price⭐"
+              "⭐Book for both issues and get your second ad half price⭐",
             ],
-            footer: "Reserve a Newsletter Ad"
+            footer: "Reserve a Newsletter Ad",
           },
           {
             header: "Website",
@@ -113,9 +117,9 @@ export default {
             body: [
               "Banner ad: $800",
               "For the HSS meeting website",
-              "Ad will be live from time of reception until (at least) meeting conclusion"
+              "Ad will be live from time of reception until (at least) meeting conclusion",
             ],
-            footer: "Reserve a Banner Ad"
+            footer: "Reserve a Banner Ad",
           },
           {
             header: "Packet Inserts",
@@ -125,9 +129,9 @@ export default {
               "(1) packet insert to be included with registration materials: $475",
               'Inserts must fit within a 9" x 12" envelope or folder',
               "Packet inserts for HSS attendees only. To order inserts for SHOT, visit their website",
-              "Dates and details TBA"
+              "Dates and details TBA",
             ],
-            footer: "Reserve Packet Inserts"
+            footer: "Reserve Packet Inserts",
           },
           {
             header: "Branded Lanyards",
@@ -136,9 +140,9 @@ export default {
             body: [
               "Branded Lanyards: $750.00",
               "For HSS attendees only",
-              "Deadline: 26 June 2020"
+              "Deadline: 26 June 2020",
             ],
-            footer: "Reserve Branded Lanyards"
+            footer: "Reserve Branded Lanyards",
           },
           {
             header: "Branded Folders",
@@ -147,10 +151,10 @@ export default {
             body: [
               "Branded Folders: $1,000.00",
               "For HSS attendees only",
-              "Deadline: 26 June 2020"
+              "Deadline: 26 June 2020",
             ],
-            footer: "Reserve Branded Folders"
-          }
+            footer: "Reserve Branded Folders",
+          },
         ],
         sponsor: [
           {
@@ -160,9 +164,9 @@ export default {
             body: [
               "Coffee Break Sponsorship: $500+",
               "Sponsors enjoy all Ptolemy-Level Benefits, including acknowledgment on HSS meeting website, personalized sponsor page on meeting website, and more",
-              "Deadline: 16 August 2020"
+              "Deadline: 16 August 2020",
             ],
-            footer: "Sponsor a Coffee Break"
+            footer: "Sponsor a Coffee Break",
           },
           {
             header: "WC Breakfast",
@@ -171,9 +175,9 @@ export default {
             body: [
               "WC Breakfast Sponsorship: $500+",
               "Reception sponsors enjoy all Ptolemy-Level Benefits, including acknowledgment on HSS meeting website, personalized sponsor page on meeting website, and more",
-              "Deadline: 16 August 2020"
+              "Deadline: 16 August 2020",
             ],
-            footer: "Sponsor the WC Breakfast"
+            footer: "Sponsor the WC Breakfast",
           },
           {
             header: "Graduate Student Mixer",
@@ -183,9 +187,9 @@ export default {
               "Mixer Sponsorship: $500+",
               "Reception sponsors enjoy all Ptolemy-Level Benefits, including acknowledgment on HSS meeting website, personalized sponsor page on meeting website, and more",
               "🎉",
-              "Deadline: 16 August 2020"
+              "Deadline: 16 August 2020",
             ],
-            footer: "Sponsor the Mixer"
+            footer: "Sponsor the Mixer",
           },
           {
             header: "Reception",
@@ -194,14 +198,14 @@ export default {
             body: [
               "Reception Sponsorship: $2,000+",
               "Reception sponsors enjoy all Einstein-Level Benefits, including branded signage, complimentary registration for two, and more",
-              "Deadline: 16 August 2020"
+              "Deadline: 16 August 2020",
             ],
-            footer: "Sponsor a Reception"
-          }
-        ]
-      }
+            footer: "Sponsor a Reception",
+          },
+        ],
+      },
     };
-  }
+  },
 };
 </script>
 
@@ -228,12 +232,12 @@ export default {
     }
 
     .dark & {
-      background: $darkLink;
       color: $textBright;
+      background: $darkLink;
     }
     .bright & {
-      background: $brightLink;
       color: $textDark;
+      background: $brightLink;
     }
   }
 

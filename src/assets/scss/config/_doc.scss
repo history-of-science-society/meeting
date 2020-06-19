@@ -54,23 +54,23 @@
       min-width: 250px;
       margin: 0.5rem;
       flex: 1;
-      padding: 1rem;
+      padding: 2rem;
       border-radius: 9px;
       display: flex;
       flex-direction: column;
 
       justify-content: space-between;
-
+      @include box-shadow(small);
       @include respond-above(md) {
         width: calc(50% - 1rem);
       }
 
       .dark & {
-        border: 1px solid $textDark;
+        border: 1px solid $sidebarDark;
       }
 
       .bright & {
-        border: 1px solid $textBright;
+        border: 1px solid $sidebarBright;
       }
 
       & > div > p {

@@ -219,7 +219,7 @@ export default {
   padding: 0.5rem;
   margin: 0 0 1rem 0;
   border: 1px solid;
-  border-radius: 4px;
+  border-radius: 9px;
 
   .dark & {
     border-color: $sidebarDark;

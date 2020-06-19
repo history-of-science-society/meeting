@@ -14,7 +14,8 @@
         class="btn"
         target="blank"
         rel="noopener"
-      >Book a Table</a>
+        >Book a Table</a
+      >
     </div>
     <section class="card">
       <div
@@ -74,7 +75,11 @@
               <instagram-icon class="card__icon" aria-label="instagram" />
               {{ extractEnd(node.social.instagram) }}
             </a>
-            <a v-if="node.social.blog" class="card__social-item--blog" :href="node.social.blog">
+            <a
+              v-if="node.social.blog"
+              class="card__social-item--blog"
+              :href="node.social.blog"
+            >
               <pen-tool-icon class="card__icon" aria-label="blog" />
               {{ extractEnd(node.social.blog) }}
             </a>
@@ -86,7 +91,9 @@
                 node.books.title3Url
             "
             class="card__social-header"
-          >Featured Titles</p>
+          >
+            Featured Titles
+          </p>
           <div
             v-if="
               node.books.title1Img ||
@@ -101,7 +108,10 @@
               class="card__featured-titles-link"
               title="Learn More"
             >
-              <img class="card__featured-titles-img" :src="node.books.title1Img" />
+              <img
+                class="card__featured-titles-img"
+                :src="node.books.title1Img"
+              />
             </a>
             <a
               v-if="node.books.title2Url"
@@ -109,7 +119,10 @@
               class="card__featured-titles-link"
               title="Learn More"
             >
-              <img class="card__featured-titles-img" :src="node.books.title2Img" />
+              <img
+                class="card__featured-titles-img"
+                :src="node.books.title2Img"
+              />
             </a>
             <a
               v-if="node.books.title3Url"
@@ -117,7 +130,10 @@
               class="card__featured-titles-link"
               title="Learn More"
             >
-              <img class="card__featured-titles-img" :src="node.books.title3Img" />
+              <img
+                class="card__featured-titles-img"
+                :src="node.books.title3Img"
+              />
             </a>
           </div>
         </div>
@@ -165,7 +181,7 @@ import {
   YoutubeIcon,
   InstagramIcon,
   GlobeIcon,
-  PenToolIcon
+  PenToolIcon,
 } from "vue-feather-icons";
 export default {
   components: {
@@ -174,14 +190,14 @@ export default {
     YoutubeIcon,
     InstagramIcon,
     GlobeIcon,
-    PenToolIcon
+    PenToolIcon,
   },
   methods: {
     extractEnd(input) {
       const result = input.match(/[^/]+(?=\/$|$)/);
       return result[0];
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -207,19 +223,20 @@ export default {
 .card {
   &__item--exhibitor {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem 0;
     border-radius: 9px;
+    @include box-shadow(small);
 
     &:first-child {
       margin-top: 0;
     }
     .dark & {
-      border: 1px solid $textDark;
+      border: 1px solid $sidebarDark;
     }
 
     .bright & {
-      border: 1px solid $textBright;
+      border: 1px solid $sidebarBright;
     }
     & > div > p {
       margin: 0;
