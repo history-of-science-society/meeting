@@ -8,7 +8,7 @@
         <!-- To use other icons here, you need to import them in the Shortcut component -->
         <Shortcut
           link="/welcome"
-          text="Coronovirus Update"
+          text="Coronavirus Update"
           icon="alert-octagon-icon"
         />
         <Shortcut link="/program" text="Program" icon="book-open-icon" />
