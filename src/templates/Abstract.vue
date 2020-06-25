@@ -261,6 +261,8 @@ query Program ($id: ID!) {
     abstract4Geography
     abstract4Chronology
     abstract4SelfDesignatedKeywords
+    commentatorName
+    commentatorInstitutionalAffiliation
     author5Name
     author5InstitutionalAffiliation
     abstract5Title

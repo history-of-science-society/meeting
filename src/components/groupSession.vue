@@ -166,67 +166,51 @@ query Program {
         sessionGeography
         keywords
         organizerName
-        organizerEmail
         organizerInstitutionalAffiliation
         coOrganizerName
-        coOrganizerEmail
         coOrganizerInstitutionalAffiliation
         chairName
-        chairEmail
         chairInstitutionalAffiliation
         abstract1Title
         author1Name
-        author1Email
         author1InstitutionalAffiliation
         coAuthor1Name
-        coAuthor1Email
         coAuthor1InstitutionalAffiliation
         abstract2Title
         author2Name
-        author2Email
         author2InstitutionalAffiliation
         coAuthor2Name
-        coAuthor2Email
         coAuthor2InstitutionalAffiliation
         abstract3Title
         author3Name
         author3Email
         author3InstitutionalAffiliation
         coAuthor3Name
-        coAuthor3Email
         coAuthor3InstitutionalAffiliation
         abstract4Title
         author4Name
-        author4Email
         author4InstitutionalAffiliation
         coAuthor4Name
-        coAuthor4Email
         coAuthor4InstitutionalAffiliation
         commentatorName
-        commentatorEmail
         commentatorInstitutionalAffiliation
         abstract5Title
         author5Name
-        author5Email
         author5InstitutionalAffiliation
         abstract6Title
         author6Name
         author6Email
         author6InstitutionalAffiliation
         author6Name
-        author6Email
         author6InstitutionalAffiliation
         abstract7Title
         author7Name
-        author7Email
         author7InstitutionalAffiliation
         abstract8Title
         author8Name
-        author8Email
         author8InstitutionalAffiliation
         abstract9Title
         author9Name
-        author9Email
         author9InstitutionalAffiliation
       }
     }
