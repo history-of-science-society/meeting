@@ -18,7 +18,10 @@ import {
   UserPlusIcon,
   MessageSquareIcon,
   HomeIcon,
-  BriefcaseIcon
+  BriefcaseIcon,
+  AlertOctagonIcon,
+  CalendarIcon,
+  ListIcon,
 } from "vue-feather-icons";
 
 export default {
@@ -30,22 +33,25 @@ export default {
     UserPlusIcon,
     MessageSquareIcon,
     HomeIcon,
-    BriefcaseIcon
+    BriefcaseIcon,
+    AlertOctagonIcon,
+    CalendarIcon,
+    ListIcon,
   },
   props: {
     link: {
       type: String,
-      required: true
+      required: true,
     },
     text: {
       type: String,
-      required: true
+      required: true,
     },
     icon: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 

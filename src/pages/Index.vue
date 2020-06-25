@@ -4,21 +4,19 @@
       <p class="subheader">The Annual Meeting of the</p>
       <h1>{{ $static.metadata.siteName }}</h1>
 
-      <div class="subheader">
-        <div>
-          <calendar-icon class="icon" />
-          {{ this.date }}
-        </div>
-        <div>
-          <map-icon class="icon" />
-          {{ this.location }}
-        </div>
-      </div>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/welcome" text="Welcome" icon="home-icon" />
-        <Shortcut link="/travel" text="Hotel and Travel" icon="briefcase-icon" />
-        <Shortcut link="/support" text="Advertise at HSS" icon="message-square-icon" />
+        <Shortcut
+          link="/welcome"
+          text="Coronovirus Update"
+          icon="alert-octagon-icon"
+        />
+        <Shortcut link="/program" text="Program" icon="list-icon" />
+        <Shortcut
+          link="/support"
+          text="Advertise at HSS"
+          icon="message-square-icon"
+        />
       </nav>
     </div>
     <!-- <div class="full-width">
@@ -75,13 +73,14 @@ query {
 </static-query>
 
 <script>
-import GitLink from "~/components/GitLink.vue";
 import Shortcut from "~/components/Shortcut.vue";
 import {
   MapIcon,
   CalendarIcon,
   AlertCircleIcon,
-  BriefcaseIcon
+  BriefcaseIcon,
+  AlertOctagonIcon,
+  ListIcon,
 } from "vue-feather-icons";
 
 export default {
@@ -90,14 +89,16 @@ export default {
     MapIcon,
     CalendarIcon,
     AlertCircleIcon,
-    BriefcaseIcon
+    AlertOctagonIcon,
+    BriefcaseIcon,
+    ListIcon,
   },
   data() {
     return {
       description: "History of Science Society Annual Meeting",
       date: "8-11 October 2020",
       location: "New Orleans, LA, USA",
-      tagline: "Telling the Stories of Science since 1924"
+      tagline: "Telling the Stories of Science since 1924",
     };
   },
   metaInfo() {
@@ -107,42 +108,50 @@ export default {
         {
           key: "description",
           name: "description",
-          content: `${this.description} | ${this.date} | ${this.location} | ${this.tagline}`
+          content: `${this.description} | ${this.date} | ${this.location} | ${
+            this.tagline
+          }`,
         },
         { itemprop: "name", content: "HSS 2020" },
         {
           itemprop: "description",
-          content: `${this.description} | ${this.date} | ${this.location} | ${this.tagline}`
+          content: `${this.description} | ${this.date} | ${this.location} | ${
+            this.tagline
+          }`,
         },
         {
           itemprop: "image",
-          content: "https://hssmeeting.org/hssMeta.jpg"
+          content: "https://hssmeeting.org/hssMeta.jpg",
         },
         { property: "og:title", content: "HSS 2020" },
         { property: "og:url", content: "https://hssmeeting.org" },
         {
           property: "og:description",
-          content: `${this.description} | ${this.date} | ${this.location} | ${this.tagline}`
+          content: `${this.description} | ${this.date} | ${this.location} | ${
+            this.tagline
+          }`,
         },
         {
           property: "og:image",
-          content: "https://hssmeeting.org/hssMeta.jpg"
+          content: "https://hssmeeting.org/hssMeta.jpg",
         },
         { name: "twitter:title", content: "HSS 2020" },
         {
           name: "twitter:description",
-          content: `${this.description} | ${this.date} | ${this.location} | ${this.tagline}`
+          content: `${this.description} | ${this.date} | ${this.location} | ${
+            this.tagline
+          }`,
         },
         {
           name: "twitter:image",
-          content: "https://hssmeeting.org/hssMeta.jpg"
+          content: "https://hssmeeting.org/hssMeta.jpg",
         },
         { name: "twitter:site", content: "@hssonline" },
         { name: "twitter:creator", content: "@theroyalfig" },
-        { name: "twitter:card", content: "summary_large_image" }
-      ]
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
     };
-  }
+  },
 };
 </script>
 

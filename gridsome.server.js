@@ -105,7 +105,7 @@ module.exports = function(api) {
     }
   });
 
-  // Program
+  // Program - Organized Sessions, Roundtables, and Contributed Papers
   const urlForProgramData =
     "http://www.formstack.com/api/v2/form/3922991/submission.json";
 
@@ -144,6 +144,13 @@ module.exports = function(api) {
         sponsorship: item.data["94044183"] && item.data["94044183"].value,
         sessionType: item.data["94175803"] && item.data["94175803"].value,
         sessionTitle: item.data["94044186"] && item.data["94044186"].value,
+        slug:
+          item.data["94044186"] &&
+          slugify(item.data["94044186"].value, {
+            lower: true,
+            // remove: /[*+~.()'"!:@,?]/g,
+            strict: true,
+          }),
         sessionAbstract: item.data["94044187"] && item.data["94044187"].value,
         sessionTopic: item.data["94044189"] && item.data["94044189"].value,
         sessionChronology: item.data["94044190"] && item.data["94044190"].value,
@@ -245,6 +252,15 @@ module.exports = function(api) {
         commentatorEmail: item.data["94044354"] && item.data["94044354"].value,
         commentatorInstitutionalAffiliation:
           item.data["94044356"] && item.data["94044356"].value,
+        abstract5Title: item.data["94446559"] && item.data["94446559"].value,
+        abstract5: item.data["94446560"] && item.data["94446560"].value,
+        abstract5Topic: item.data["94446561"] && item.data["94446561"].value,
+        abstract5Chronology:
+          item.data["94446562"] && item.data["94446562"].value,
+        abstract5Geography:
+          item.data["94446563"] && item.data["94446563"].value,
+        abstract5SelfDesignatedKeywords:
+          item.data["94446564"] && item.data["94446564"].value,
         author5Name:
           item.data["94044662"] && nameRender(item.data["94044662"].value),
         author5Email: item.data["94044663"] && item.data["94044663"].value,
@@ -255,6 +271,15 @@ module.exports = function(api) {
         coAuthor5Email: item.data["94044670"] && item.data["94044670"].value,
         coAuthor5InstitutionalAffiliation:
           item.data["94044671"] && item.data["94044671"].value,
+        abstract6Title: item.data["94446578"] && item.data["94446578"].value,
+        abstract6: item.data["94446579"] && item.data["94446579"].value,
+        abstract6Topic: item.data["94446580"] && item.data["94446580"].value,
+        abstract6Chronology:
+          item.data["94446581"] && item.data["94446581"].value,
+        abstract6Geography:
+          item.data["94446582"] && item.data["94446582"].value,
+        abstract6SelfDesignatedKeywords:
+          item.data["94446583"] && item.data["94446583"].value,
         author6Name:
           item.data["94044698"] && nameRender(item.data["94044698"].value),
         author6Email: item.data["94044699"] && item.data["94044699"].value,
@@ -265,6 +290,15 @@ module.exports = function(api) {
         coAuthor6Email: item.data["94044714"] && item.data["94044714"].value,
         coAuthor6InstitutionalAffiliation:
           item.data["94044715"] && item.data["94044715"].value,
+        abstract7Title: item.data["94446591"] && item.data["94446591"].value,
+        abstract7: item.data["94446592"] && item.data["94446592"].value,
+        abstract7Topic: item.data["94446593"] && item.data["94446593"].value,
+        abstract7Chronology:
+          item.data["94446594"] && item.data["94446594"].value,
+        abstract7Geography:
+          item.data["94446595"] && item.data["94446595"].value,
+        abstract7SelfDesignatedKeywords:
+          item.data["94446596"] && item.data["94446596"].value,
         author7Name:
           item.data["94044748"] && nameRender(item.data["94044748"].value),
         author7Email: item.data["94044749"] && item.data["94044749"].value,
@@ -275,6 +309,15 @@ module.exports = function(api) {
         coAuthor7Email: item.data["94044759"] && item.data["94044759"].value,
         coAuthor7InstitutionalAffiliation:
           item.data["94044760"] && item.data["94044760"].value,
+        abstract8Title: item.data["94446610"] && item.data["94446610"].value,
+        abstract8: item.data["94446611"] && item.data["94446611"].value,
+        abstract8Topic: item.data["94446612"] && item.data["94446612"].value,
+        abstract8Chronology:
+          item.data["94446613"] && item.data["94446613"].value,
+        abstract8Geography:
+          item.data["94446614"] && item.data["94446614"].value,
+        abstract8SelfDesignatedKeywords:
+          item.data["94446615"] && item.data["94446615"].value,
         author8Name:
           item.data["94044768"] && nameRender(item.data["94044768"].value),
         author8Email: item.data["94044769"] && item.data["94044769"].value,
@@ -285,11 +328,47 @@ module.exports = function(api) {
         coAuthor8Email: item.data["94044875"] && item.data["94044875"].value,
         coAuthor8InstitutionalAffiliation:
           item.data["94044876"] && item.data["94044876"].value,
+        abstract9Title: item.data["94446718"] && item.data["94446718"].value,
+        abstract9: item.data["94446719"] && item.data["94446719"].value,
+        abstract9Topic: item.data["94446720"] && item.data["94446720"].value,
+        abstract9Chronology:
+          item.data["94446721"] && item.data["94446721"].value,
+        abstract9Geography:
+          item.data["94446722"] && item.data["94446722"].value,
+        abstract9SelfDesignatedKeywords:
+          item.data["94446723"] && item.data["94446723"].value,
+        author9Name:
+          item.data["94446652"] && nameRender(item.data["94446652"].value),
+        author9Email: item.data["94446653"] && item.data["94446653"].value,
+        author9InstitutionalAffiliation:
+          item.data["94446654"] && item.data["94446654"].value,
       });
     }
   });
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api
+  api.createPages(async ({ graphql, createPage }) => {
+    const { data } = await graphql(
+      `
+        {
+          allProgram {
+            edges {
+              node {
+                id
+                slug
+              }
+            }
+          }
+        }
+      `
+    );
+    data.allProgram.edges.forEach(({ node }) => {
+      createPage({
+        path: `/program/${node.slug}`,
+        component: "./src/templates/Abstract.vue",
+        context: {
+          id: node.id,
+        },
+      });
+    });
   });
 };

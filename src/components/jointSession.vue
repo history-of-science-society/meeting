@@ -3,7 +3,7 @@
     <article
       class="session"
       id="node.sessionID"
-      v-for="{ node } in filter"
+      v-for="{ node } in $static.program.edges"
       :key="node.sessionTitle"
     >
       <header class="header">
@@ -19,7 +19,7 @@
           <g-link :to="'program/' + node.slug"> {{ node.sessionTitle }}</g-link>
         </h4>
       </header>
-      <section class="detail" :class="{ show: state }">
+      <section class="">
         <div class="organizer-container">
           <!-- Organizers -->
           <p v-if="node.sponsorship" class="label">Sponsor</p>
@@ -144,9 +144,7 @@
 
 <static-query>
 query Program {
-  program: allProgram(sort: [{ by: "sessionGroup", order: ASC }
-      { by: "joint", order: DESC }
-      { by: "sessionTitle", order: ASC }]) {
+  program: allProgram(sortBy: "sessionTitle", order: ASC, filter: {joint: {eq: "Yes"}}) {
     edges {
       node {
         id
@@ -236,25 +234,10 @@ query Program {
 
 <script>
 import presenterSection from "./presenterSection";
-import { PlusCircleIcon, MinusCircleIcon } from "vue-feather-icons";
 
 export default {
   components: {
     presenterSection,
-    PlusCircleIcon,
-    MinusCircleIcon,
-  },
-  props: ["num", "state"],
-  computed: {
-    filter() {
-      const num = this.num;
-      const program = this.$static.program.edges;
-      const filteredProgram = program.filter(
-        (session) => session.node.sessionGroup === num
-      );
-
-      return filteredProgram;
-    },
   },
 };
 </script>

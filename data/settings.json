@@ -4,18 +4,21 @@
       "section": "Welcome",
       "topics": [
         {
-          "title": "HSS 2020",
+          "title": "Coronivus Update",
           "slug": "welcome"
         }
       ]
     },
-
     {
-      "section": "NOLA",
+      "section": "Events",
       "topics": [
         {
-          "title": "Hotel and Travel",
-          "slug": "travel"
+          "title": "Program",
+          "slug": "program"
+        },
+        {
+          "title": "SHOT Joint Sessions",
+          "slug": "joint"
         }
       ]
     },
@@ -52,15 +55,6 @@
         {
           "title": "Supporters",
           "slug": "supporters"
-        }
-      ]
-    },
-    {
-      "section": "Call for Papers",
-      "topics": [
-        {
-          "title": "Submission Instructions",
-          "slug": "cfp"
         }
       ]
     },

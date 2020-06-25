@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <date />
     <h1>{{ $page.doc.title }}</h1>
     <VueRemarkContent class="markdown" />
   </Layout>
@@ -24,7 +23,7 @@ import Date from "~/components/dateAndLocation.vue";
 
 export default {
   components: {
-    Date
+    Date,
   },
   metaInfo() {
     return {
@@ -33,33 +32,33 @@ export default {
         {
           key: "description",
           name: "description",
-          content: this.$page.doc.description
+          content: this.$page.doc.description,
         },
         { itemprop: "name", content: "HSS 2020" },
         { itemprop: "description", content: this.$page.doc.description },
         {
           itemprop: "image",
-          content: "https://hssmeeting.org/hssMeta.jpg"
+          content: "https://hssmeeting.org/hssMeta.jpg",
         },
         { property: "og:title", content: "HSS 2020" },
         { property: "og:url", content: "https://hssmeeting.org" },
         { property: "og:description", content: this.$page.doc.description },
         {
           property: "og:image",
-          content: "https://hssmeeting.org/hssMeta.jpg"
+          content: "https://hssmeeting.org/hssMeta.jpg",
         },
         { name: "twitter:title", content: "HSS 2020" },
         { name: "twitter:description", content: this.$page.doc.description },
         {
           name: "twitter:image",
-          content: "https://hssmeeting.org/hssMeta.jpg"
+          content: "https://hssmeeting.org/hssMeta.jpg",
         },
         { name: "twitter:site", content: "@hssonline" },
         { name: "twitter:creator", content: "@theroyalfig" },
-        { name: "twitter:card", content: "summary_large_image" }
-      ]
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
     };
-  }
+  },
 };
 </script>
 
