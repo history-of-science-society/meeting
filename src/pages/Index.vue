@@ -11,7 +11,7 @@
           text="Coronovirus Update"
           icon="alert-octagon-icon"
         />
-        <Shortcut link="/program" text="Program" icon="list-icon" />
+        <Shortcut link="/program" text="Program" icon="book-open-icon" />
         <Shortcut
           link="/support"
           text="Advertise at HSS"
@@ -80,7 +80,6 @@ import {
   AlertCircleIcon,
   BriefcaseIcon,
   AlertOctagonIcon,
-  ListIcon,
 } from "vue-feather-icons";
 
 export default {
@@ -91,7 +90,6 @@ export default {
     AlertCircleIcon,
     AlertOctagonIcon,
     BriefcaseIcon,
-    ListIcon,
   },
   data() {
     return {

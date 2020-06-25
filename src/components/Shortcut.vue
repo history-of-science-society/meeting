@@ -21,7 +21,7 @@ import {
   BriefcaseIcon,
   AlertOctagonIcon,
   CalendarIcon,
-  ListIcon,
+  BookOpenIcon,
 } from "vue-feather-icons";
 
 export default {
@@ -36,7 +36,7 @@ export default {
     BriefcaseIcon,
     AlertOctagonIcon,
     CalendarIcon,
-    ListIcon,
+    BookOpenIcon,
   },
   props: {
     link: {
