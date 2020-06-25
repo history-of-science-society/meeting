@@ -330,7 +330,7 @@ export default {
         },
         {
           itemprop: "image",
-          content: "https://hssmeeting.org/hssMeta.jpg",
+          content: "https://hssmeeting.org/hss-meta.jpg",
         },
         { property: "og:title", content: this.$page.program.sessionTitle },
         { property: "og:url", content: "https://hssmeeting.org" },
@@ -340,7 +340,7 @@ export default {
         },
         {
           property: "og:image",
-          content: "https://hssmeeting.org/hssMeta.jpg",
+          content: "https://hssmeeting.org/hss-meta.jpg",
         },
         { name: "twitter:title", content: this.$page.program.sessionTitle },
         {
@@ -349,7 +349,7 @@ export default {
         },
         {
           name: "twitter:image",
-          content: "https://hssmeeting.org/hssMeta.jpg",
+          content: "https://hssmeeting.org/hss-meta.jpg",
         },
         { name: "twitter:site", content: "@hssonline" },
         { name: "twitter:creator", content: "@theroyalfig" },

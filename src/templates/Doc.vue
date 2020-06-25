@@ -38,20 +38,20 @@ export default {
         { itemprop: "description", content: this.$page.doc.description },
         {
           itemprop: "image",
-          content: "https://hssmeeting.org/hssMeta.jpg",
+          content: "https://hssmeeting.org/hss-meta.jpg",
         },
         { property: "og:title", content: "HSS 2020" },
         { property: "og:url", content: "https://hssmeeting.org" },
         { property: "og:description", content: this.$page.doc.description },
         {
           property: "og:image",
-          content: "https://hssmeeting.org/hssMeta.jpg",
+          content: "https://hssmeeting.org/hss-meta.jpg",
         },
         { name: "twitter:title", content: "HSS 2020" },
         { name: "twitter:description", content: this.$page.doc.description },
         {
           name: "twitter:image",
-          content: "https://hssmeeting.org/hssMeta.jpg",
+          content: "https://hssmeeting.org/hss-meta.jpg",
         },
         { name: "twitter:site", content: "@hssonline" },
         { name: "twitter:creator", content: "@theroyalfig" },
