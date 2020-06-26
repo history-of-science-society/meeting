@@ -20,18 +20,18 @@ export default {
   components: {
     ThemeSwitch,
     MenuToggle,
-    Logo
+    Logo,
   },
   props: {
     menuToggle: {
       type: Boolean,
-      default: true
-    }
+      default: true,
+    },
   },
   data() {
     return {
       pageScrolled: false,
-      logoColor: "bright"
+      logoColor: "bright",
     };
   },
   methods: {
@@ -47,7 +47,7 @@ export default {
       ) {
         this.pageScrolled = !this.pageScrolled;
       }
-    }
+    },
   },
   mounted() {
     window.addEventListener("scroll", this.headerScroll);
@@ -55,25 +55,25 @@ export default {
     if (process.isClient) {
       this.logoColor = localStorage.getItem("theme");
     }
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   right: -12px;
   left: 0;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 15px 30px;
+  border-bottom: 1px solid transparent;
   transition: padding 0.15s linear, background 0.15s linear,
     border-color 0.15s linear;
   will-change: padding, background;
-  border-bottom: 1px solid transparent;
 
   @include respond-above(sm) {
     padding: 30px;

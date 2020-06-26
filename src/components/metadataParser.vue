@@ -65,6 +65,9 @@ export default {
 .metadata {
   display: flex;
   flex-wrap: wrap;
+  &:first-of-type {
+    margin-top: 0.25rem;
+  }
 
   div {
     display: flex;

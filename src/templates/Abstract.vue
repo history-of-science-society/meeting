@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article class="session">
+    <article class="">
       <header class="header">
         <div class="meta-container">
           <p class="label">{{ $page.program.sessionType }}</p>

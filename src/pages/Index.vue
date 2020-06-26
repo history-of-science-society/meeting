@@ -106,16 +106,12 @@ export default {
         {
           key: "description",
           name: "description",
-          content: `${this.description} | ${this.date} | ${this.location} | ${
-            this.tagline
-          }`,
+          content: `${this.description} | ${this.tagline}`,
         },
         { itemprop: "name", content: "HSS 2020" },
         {
           itemprop: "description",
-          content: `${this.description} | ${this.date} | ${this.location} | ${
-            this.tagline
-          }`,
+          content: `${this.description} | ${this.tagline}`,
         },
         {
           itemprop: "image",
@@ -125,9 +121,7 @@ export default {
         { property: "og:url", content: "https://hssmeeting.org" },
         {
           property: "og:description",
-          content: `${this.description} | ${this.date} | ${this.location} | ${
-            this.tagline
-          }`,
+          content: `${this.description} | ${this.tagline}`,
         },
         {
           property: "og:image",
@@ -136,9 +130,7 @@ export default {
         { name: "twitter:title", content: "HSS 2020" },
         {
           name: "twitter:description",
-          content: `${this.description} | ${this.date} | ${this.location} | ${
-            this.tagline
-          }`,
+          content: `${this.description} | ${this.tagline}`,
         },
         {
           name: "twitter:image",

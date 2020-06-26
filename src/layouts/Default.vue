@@ -6,12 +6,11 @@
       class="main"
       :class="{
         'main--no-sidebar': !sidebar,
-        'main--sidebar-is-open': this.$store.state.sidebarOpen
+        'main--sidebar-is-open': this.$store.state.sidebarOpen,
       }"
     >
       <slot />
     </main>
-    <!-- <Donate /> -->
   </div>
 </template>
 
@@ -26,19 +25,17 @@ query {
 <script>
 import Header from "~/components/Header.vue";
 import Sidebar from "~/components/Sidebar.vue";
-import Donate from "~/components/donateBtn.vue";
 
 export default {
   components: {
     Header,
     Sidebar,
-    Donate
   },
   props: {
     sidebar: {
       type: Boolean,
-      default: true
-    }
+      default: true,
+    },
   },
   mounted() {
     this.$store.commit("closeSidebar");
@@ -49,7 +46,7 @@ export default {
         });
       }
     }
-  }
+  },
 };
 </script>
 

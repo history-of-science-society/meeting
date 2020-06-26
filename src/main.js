@@ -5,53 +5,37 @@ import DefaultLayout from "~/layouts/Default.vue";
 import "~/assets/scss/globals.scss";
 import Vuex from "vuex";
 require("typeface-source-sans-pro");
-import * as VueGoogleMaps from "vue2-google-maps";
 
 export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(Vuex);
-  Vue.use(VueGoogleMaps, {
-    load: {
-      key: "AIzaSyAWT_-Njf_ACD0NX9zJV59hbu8ZSpUFgzY",
-      libraries: "places"
-    },
-    installComponents: true
-  });
 
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
 
   // Add attributes to HTML tag
   head.htmlAttrs = {
-    lang: "en"
+    lang: "en",
   };
 
   head.link.push({
     rel: "manifest",
-    href: "/manifest.json"
-  });
-
-  head.link.push({
-    rel: "preload",
-    href:
-      "https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343847&id=2",
-    as: "document",
-    crossorigin: ""
+    href: "/manifest.json",
   });
 
   head.meta.push({
     name: "theme-color",
-    content: "#666633"
+    content: "#666633",
   });
 
   head.meta.push({
     name: "apple-mobile-web-app-status-bar-style",
-    content: "default"
+    content: "default",
   });
 
   // State
   appOptions.store = new Vuex.Store({
     state: {
-      sidebarOpen: false
+      sidebarOpen: false,
     },
     mutations: {
       toggleSidebar(state) {
@@ -62,7 +46,7 @@ export default function(Vue, { router, head, isClient, appOptions }) {
       },
       openSidebar(state) {
         state.sidebarOpen = true;
-      }
-    }
+      },
+    },
   });
 }
