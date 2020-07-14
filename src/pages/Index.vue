@@ -1,7 +1,7 @@
 <template>
   <Layout :sidebar="false">
     <div class="content">
-      <p class="subheader">The Annual Meeting of the</p>
+      <p class="subheader">A Meeting of the</p>
       <h1>{{ $static.metadata.siteName }}</h1>
 
       <nav>
