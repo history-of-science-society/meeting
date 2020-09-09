@@ -5,7 +5,7 @@ slug: welcome
 description: Welcome to the History of Science Society's 2020 Annual Meeting!
 ---
 
-Because of COVID-19, we are unable to meet in New Orleans in 2020. We are currently setting up a program for the HSS 2020 Virtual Forum, which will run from Oct. 10-12, 2020. HSS and SHOT plan to meet jointly in New Orleans in November 2021. For more information on the HSS 2020 Virtual Forum, please visit [hssonline.org](https://hssonline.org/).
+Because of COVID-19, we are unable to meet in New Orleans in 2020. We are currently setting up a program for the HSS 2020 Virtual Forum, which will run from Oct. 8-11, 2020. HSS and SHOT plan to meet jointly in New Orleans in November 2021. For more information on the HSS 2020 Virtual Forum, please visit [hssonline.org](https://hssonline.org/).
 
 <!-- ![Greetings from Nola graphic](~/assets/img/nola.jpg)
 
